@@ -4,8 +4,8 @@
 
 ## Basics
 ### Fundamentals
-- [Cloud fundamentals](1.Fundamentals/1.Cloud/README.md)
-- [EC2](1.Fundamentals/4.EC2/README.md)
+- [Cloud fundamentals](1.Basics/1.Fundamentals/1.Cloud/README.md)
+- [EC2](1.Fundamentals/1.Basics/4.EC2/README.md)
 
 ### Use cases
 
