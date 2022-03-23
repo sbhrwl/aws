@@ -3,7 +3,6 @@
   - [Public cloud](#public-cloud)
     - [Reasons to choose public cloud](#reasons-to-choose-public-cloud)
   - [Private cloud](#private-cloud)
-  - []()
 - [Service models](#service-models)
   - [Infrastructure As A Service](#infrastructure-as-a-service)
   - [Platform As A Service](#platform-as-a-service)
