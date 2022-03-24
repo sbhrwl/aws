@@ -4,8 +4,9 @@
 
 ## Basics
 ### Fundamentals
-- [Cloud fundamentals](1.Basics/1.Fundamentals/1.Cloud/README.md)
-- [Networking fundamentals](1.Basics/1.Fundamentals/2.Networking/README.md)
+- [Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)
+- [Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)
+- [Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)
 - [EC2](1.Basics/1.Fundamentals/4.EC2/README.md)
 
 ### Use cases
