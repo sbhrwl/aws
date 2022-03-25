@@ -1,14 +1,57 @@
 # EC2
 
-|1. Connect to EC2|			2. Security Group		|	3. IPs	|		4. ENI		|
-|-----------------|-----------------|------|------|
-|i. Windows SSH		|	i. All Inbound Blocked	|		i. Public IP		|	i. ENI is a Network Adaptor		
-|ii. Linux		|	ii. All Outbound Authorized to all IP addresses		|	ii. Private IP (retained when instance is stopped)	|	ii. ENI is attached to EC2 instance|
-|iii. EC2 Instance Connect||iii. Elastic IP (5 per account) - Elastic IP is associated with the **Private IP** on the instance|iii. Gives Public and Private IP to an EC2|
-|iv. Session Manager|||iv. Attaching ENI to Instance:|
-||||a. Hot Attach: When it is running|
-||||b. Warm Attach: When it is Stopped|
-||||c. Cold Attached: When Instance is being Launched|
-
+## 1. Connect to EC2		
+- Windows SSH		
+- Linux		
+- EC2 Instance Connect		
+- Session Manager		
+## 2. Security Group		
+- All Inbound Blocked		
+- All Outbound Authorized to all IP addresses		
+## 3. IPs		
+- Public IP		
+- Private IP (retained when instance is stopped)		
+- Elastic IP (5 per account)
+- Elastic IP is assiciated with the Private IP on the instance
+## 4. ENI		
+- ENI is a Network Adaptor		
+- ENI is attached to EC2 instance		
+- Gives Public and Private IP to an EC2		
+- Attaching ENI to Instance:
+  - Hot Attach: When it is running
+  - Warm Attach: When it is Stopped
+  - Cold Attached: When Instance is being Launched	
+## 5. User Data		
+- Scripts entered as User data are executed as the root user, hence do not need the sudo command in the script.		
+## 6. Default Addressing Protocol		
+- By default, a new EC2 instance uses an IPv4 addressing protocol	
+## 7. Instance Meta data		
+- http://169.254.169.254/latest/meta-data/
+- Instance Metadata Query tool		
+## 8. FTP		
+- The FTP protocol uses TCP via ports 20 and 21	
+## 9. Instance Launch Types		
+- OnDemand 
+  - It has vCPU limit per region for an account
+- Reserved		
+  - Standard Reserved		
+  - Convertible Reserved		
+  - Scheduled Reserved		
+- Dedicated Host		
+- Dedicated Instance		
+- Spot Instance		
+## 10. Instance Family		
+- M/T/R/X/D/H/I/G/P/F/C		
+- T2/T3 burstable		
+- T2/T3 unlimited Burst		
+- An instance family has many instance Types		
+## 11. AMI		
+- Create Instance from AMI		
+- Copy AMI to Different Account (Cross Account AMI copy)		
+- Copy AMI to Different Region		
+## 12. Placement Groups		
+- Cluster		
+- Spread (multiple AZ but within same REGION)
+- Partition
 ## Instance lifecycle
 <img src="images/Instance_Lifecycle.png">
