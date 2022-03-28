@@ -32,32 +32,41 @@
 - Dedicated Host		
 - Dedicated Instance		
 - Spot Instance
-## 9. Instance lifecycle states
-<img src="images/Instance_Lifecycle_states.png">
-
-## 10. Instance lifecycle
+## 9. Instance lifecycle
+- **EC2 Hibernate** You are charged for EC2 instance when instance is in STOPPING state preparing for Hibernate
 <img src="images/Instance_Lifecycle.png">
 
+## 10. Instance lifecycle states
+<img src="images/Instance_Lifecycle_states.png">
+
 ## 11. Dedicated host Vs instance
+- Dedicated Instances may share hardware with other instances from the **same AWS account** that are not Dedicated Instances.
+- Dedicated Instances are obviously **more Cost effective** (per Instance billing) compared Dedicated Host (per Host billing)
 <img src="images/dedicated_host_vs_instance.png">
 
-## 11.1 Dedicated host Vs instance
+- A host is a machine or VM that applications "run on" and **each HOST one can run N instances** of the application
 <img src="images/dedicated_host_vs_instance1.png">
 
-## 12. Terminate spot instance
+## 12. Spot instance
+- 
+- Terminating spot instance
 <img src="images/terminate_spot_instance.png">
 
 ## 13. Instance family		
-- M/T/R/X/D/H/I/G/P/F/C		
-- T2/T3 burstable		
-- T2/T3 unlimited Burst		
+- M/T/R/X/D/H/I/G/P/F/C
+- M/T: General Purpose Instances
+- C: Compute Optimized										
+- R/X: Memory Optimized									
+- D/H/I: Storage Optimized				
+- G/P/F: Accelerated Computing Instances
+- T2/T3 burstable/unlimited Burst		
 - An instance family has many instance types
 <img src="images/instance_families.png">
-
-### 13.1 Question
+								
+- Instance **Family support Encryption** but not all Instance TYPES in that family might support encryption
 <img src="images/instance_families_q1.png">
 
-### 13.2 Question
+- Choose the Instance which supports your **workload**
 <img src="images/instance_families_q2.png">
 
 ## 14. AMI		
@@ -84,8 +93,7 @@
 ## 18. Enhanced_networking
 <img src="images/Enhanced_networking.png">
 
-## 19. vCPU-1
+## 19. vCPU based ON DEMAND INSTANCE limit per Region
 <img src="images/vCPU-1.png">
 
-## 20. vCPU-2
 <img src="images/vCPU-2.png">
