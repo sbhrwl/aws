@@ -55,3 +55,39 @@
 - Partition
 ## Instance lifecycle
 <img src="images/Instance_Lifecycle.png">
+
+## dedicated_host_vs_instance
+<img src="images/dedicated_host_vs_instance.png">
+
+## dedicated_host_vs_instance1
+<img src="images/dedicated_host_vs_instance1.png">
+
+## Enhanced_networking
+<img src="images/Enhanced_networking.png">
+
+## eni_ena_efa
+<img src="images/eni_ena_efa.png">
+
+## instance_families
+<img src="images/instance_families.png">
+
+## instance_families_q1
+<img src="images/instance_families_q1.png">
+
+## instance_families_q2
+<img src="images/instance_families_q2.png">
+
+## Instance_Lifecycle
+<img src="images/Instance_Lifecycle.png">
+
+## Instance_Lifecycle_states
+<img src="images/Instance_Lifecycle_states.png">
+
+## terminate_spot_instance
+<img src="images/terminate_spot_instance.png">
+
+## vCPU-1
+<img src="images/vCPU-1.png">
+
+## vCPU-2
+<img src="images/vCPU-2.png">
