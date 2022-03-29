@@ -10,6 +10,10 @@
 - [EC2](1.Basics/1.Fundamentals/4.EC2/README.md)
 
 ### Use cases
+- [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
+- [Security](1.Basics/2.UseCases/2.Security/README.md)
+- [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
+- [Moving data to cloud](1.Basics/2.UseCases/4.MovingDataToCloud/README.md)
 
 ### Cloud formation
 
