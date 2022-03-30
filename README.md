@@ -18,6 +18,7 @@
 ### Cloud formation
 
 ### Projects
+- [Metering infra on cloud](1.Basics/3.Projects/MeteringInfraOnCloud/README.md)
 
 ## AI
 ### DataProcessing-Cloud
