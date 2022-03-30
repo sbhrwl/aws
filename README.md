@@ -19,7 +19,7 @@
 
 ### Projects
 - [Metering infra on cloud](1.Basics/3.Projects/MeteringInfraOnCloud/README.md)
-- [2 Tier web application](1.Basics/3.Projects/2TierWebApplication/README.md)
+- [2 Tier web application](1.Basics/3.Projects/2TierWebApp/README.md)
 
 ## AI
 ### DataProcessing-Cloud
