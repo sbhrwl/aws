@@ -1,4 +1,11 @@
 # [3 Tier web application](https://www.youtube.com/watch?v=B21XKotGZWs)
+- [Acceptance criteria](#acceptance-criteria)
+- [Requirements](#requirements)
+- [Application Tiers](#application-tiers)
+- [Security Design](#security-design)
+- [Privileges](#privileges)
+- [Logging](#logging)
+- [Monitoring](#monitoring)
 
 ## Acceptance criteria
 - [ ] 3 Tier web application to built in AWS
@@ -10,10 +17,10 @@
 
 ## Requirements
 1. Build a 3 tier web application on AWS										
-2. Use AWS components where possible (use Database as a service/ use logging or monitoring as a service/ use AWS provided identity store)										
+2. Use AWS components where possible (use Database as a service/ use logging or monitoring as a service/ use AWS provided identity store)
 3. Application should be accesible by other 3rd party APIs (from their vendors and partners). It could connect to 3rd party APIs to send and receive data from other sources.
-4. Every piece of architecture should be secure. Ex: Database connection should be encyrpted and connections should be made over SSL										
-5. End to End encryption, data moving from client's browser all the way upto the database inlcuding middle components to be encrypted										
+4. Every piece of architecture should be secure. Ex: Database connection should be encyrpted and connections should be made over SSL
+5. 5. End to End encryption, data moving from client's browser all the way upto the database inlcuding middle components to be encrypted
 6. Should support different priviledges for different users
 
 ## Application Tiers
