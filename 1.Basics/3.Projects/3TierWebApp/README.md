@@ -110,3 +110,91 @@
 - [ ] AuthZ - support users with multiple privileges
 
 ## Privileges
+### New user
+- User tries to access content of the website
+- The request is passed to API gateway
+  - API gateway invokes Lambda
+  - As this is a new user (no credentials), so Lambda is invoked with credentials
+- Lambda passes request to Lambda handler
+  - After Lambda handler processes the request, it will present user 2 options
+    - Register
+    - Log in
+<img src="images/6.png">
+
+### User Logs in with credentials to view content
+- User tries to access content of the website
+- The request comes with a signature (because the credentials are passed to the browser)
+  - Browser knows what keys to sign the request with
+  - Browser adds custom headers to add to the request so that API gateway could process the request
+  - With the Authenticated request, API gateway will invoke Lambda
+- Lambda will check Roles associated with the request and it will necessary resources with those credentials
+- Lamdba handler will provide user with requested information (ListItems)
+<img src="images/7.png">
+
+### User has modification privileges
+- User will now be allowed to modify records as well
+<img src="images/8.png">
+
+### User has ADMIN privileges
+- User will now be allowed to create new records, delete existing records as well
+<img src="images/9.png">
+
+### Summary
+- This is how application will allow different users (with different credentials) to access Website and enable them to perform different actions.
+- This can be achieved with IAM together with Cognito Identity Pools
+
+## Logging
+<img src="images/10.png">
+
+- Each of these component generate different logs
+- These logs can be collected and centrailised so that we could build a dashboard on top of it to gain insight on what is happening in our environment										
+### Cloudwatch offers a centrailised mecahnism to store all the logs.
+- We can create Cloudwatch log streams.
+- With Cloudwatch log streams, we can build a Dashboard
+### S3										
+- S3 Access Logs
+  - Create another S3 bucket for storing access logs, this information will be fed to Cloudwatch
+										
+### Cloudfront
+- Cloudfront Access Logs: This will enable us gain Insight about
+  - What are the hits coming for the website
+  - What are misses happening for the website
+  - This information will be fed to Cloudwatch
+										
+### Amazon API Gateway						
+- API Gateway enables us to collect different type of logs
+  - Latency logs: how soon or slow API gateway is responding
+  - Count of Requests: How many requests are coming in, How many are resulting in errors (404/malformed request)
+  - This information will be fed to Cloudwatch
+				
+### Lambda
+- Lambda offers 7 metrices to collect logs
+  - Invocation logs
+  - Invocation Errors/Success
+  - Duration: How long lambda functions are running: Helps us to decide if we have over or under provisioned resources in Lambda
+  - Throttled Invocations: To check if throttle limit is reached and accordingly scale up resources as needed.
+  - etc..
+									
+### RDS										
+- Offers 3 types of logs
+  - General logs: General information about the state of Database
+  - Slow Query logs
+  - Error logs: If something goes wrong in the Databse, it will be logged here
+
+### WAF										
+- Enable Logs for 
+  - Total Request coming in
+  - Allowed requests
+  - Blocked requests
+								
+### CloudTrail
+- Every AWS account SHOULD enable Cloudtrails logs. 
+- This enables us to watch logs of all the API activities happening in AWS account and this should be fed to Cloudwatch so that we could have an OPERATIONAL insight over AWS account
+										
+#### Now we have all the logs collected in Cloudwatch										
+
+## Monitoring
+- Based on the collected logs, we can now configure ALARMS
+- We can create our custom metric, for ex if there are many 404  from Cloudfront, send an alarm to notify about it
+- These alarms can notify Security team via Notifications built in SNS or use SLACK channel										
+<img src="images/11.png">
