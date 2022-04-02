@@ -22,6 +22,7 @@
 - [2 Tier web application](1.Basics/3.Projects/2TierWebApp/README.md)
 - [3 Tier web application](1.Basics/3.Projects/3TierWebApp/README.md)
 - [Invoke lambda from API](1.Basics/3.Projects/InvokeLambdaFromAPI/README.md)
+- [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
 
 ## AI
 ### DataProcessing-Cloud
