@@ -66,14 +66,13 @@
 ## 12. DaX
 - Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement — from milliseconds to microseconds — even at millions of requests per second. 
 - DAX does all the heavy lifting required to add in-memory acceleration to your DynamoDB tables, without requiring developers to manage cache invalidation, data population, or cluster management. 
-<img src="images/1.png" width=500>
+<img src="images/2.png" width=500>
 
 ## 13. Aurora Globa DB Vs DynamoDB Global Table
-- Amazon Aurora Global Database provides read access to a database in multiple regions											
-- Amazon Aurora Global Database offers failover to your read-only DBs and promote them to writable											
+- Amazon Aurora Global Database provides read access to a database in multiple regions									
+- Amazon Aurora Global Database offers failover to your read-only DBs and promote them to writable							
 - Amazon Aurora Global Database does not provide active-active configuration with bi-directional synchronization.											
-											
-- Amazon DynamoDB global tables provide a fully managed solution for deploying a multi-region, multi-master database											
+- Amazon DynamoDB global tables provide a fully managed solution for deploying a multi-region, multi-master database
 - Amazon DynamoDB global tables provides an active-active configuration where reads and writes can take place in multiple regions with full bi-directional synchronization											
 
 ## 14. Best Practices
@@ -82,7 +81,7 @@
 - Supports compressing of values											
 - Use pointer to S3 for larger objects (>400KB)											
 - If Data is queried based on date-time, use separate tables to query data based on Days, Weeks and Months											
-<img src="images/2.png" width=500>
+<img src="images/3.png" width=500>
 
 ## 15. DynamoDB with Kinesis
 - A company has a data analytics application that updates a real-time, foreign exchange dashboard and another separate application that archives data to Amazon Redshift. 
@@ -91,7 +90,7 @@
 - Upon checking, they found out that the DynamoDB table used by Kinesis does not have enough capacity to store the lease data. 
 - Which of the following is the most suitable solution to rectify this issue? 
 [ ] **Increase the write capacity assigned to the shard table. **
-<img src="images/3.png" width=500>
+<img src="images/4.png" width=500>
 
 ### Explanation
 - A new shard iterator is returned by every GetRecords request (as NextShardIterator which you then use in the next GetRecords request (as ShardIterator ). - Typically, this shard iterator does not expire before you use it. 
