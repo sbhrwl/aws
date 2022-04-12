@@ -81,7 +81,7 @@
 - As more events come in, Lambda routes them to available instances and creates new instances as needed. 
 - When the number of requests decreases, Lambda stops unused instances to free up the scaling capacity for other functions. 
 
-<img src="images/4.png" width=800>
+<img src="images/4.png" width=500>
  
 ## Migrating On Premise Linux API server to AWS and making it HA
 <img src="images/5.png" width=800>
