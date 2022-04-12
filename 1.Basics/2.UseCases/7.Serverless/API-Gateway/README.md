@@ -50,20 +50,20 @@
 ## 6. Client Certificates					
 - To ensure HTTP requests to your BE services are originating from API gateway, use Client certificates to VERIFY Requester'a Authenticity
 
-## API Gateway Security
-### 1. IAM Permission			
+# API Gateway Security
+## 1. IAM Permission			
 - For Users and Roles already in our AWS account			
 - Handles Authentication and Authorization			
 - Leverages Sig v4			
 
-### 2. Lambda Authorizer			
+## 2. Lambda Authorizer			
 - Use AWS Lambda to verify the 3rd party tokens passed in the request header			
 - Lambda must return an IAM Policy for the user			
 - Helps to use OAuth/SAML/3rd party type of Authentication			
 - Can cache result of Authentication			
 - Pay per Lambda invocation			
 
-### 3. Cognito User Pool (CUP)			
+## 3. Cognito User Pool (CUP)			
 - Cognito manages User life cycle of users in the user pool (backed by Facebook/Google)			
 - API Gateway verifies identity automatically from AWS Cognito			
 - Must implement Authorization in the backend			
