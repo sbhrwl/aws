@@ -14,6 +14,9 @@
 - [Security](1.Basics/2.UseCases/2.Security/README.md)
 - [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
 - [Moving data to cloud](1.Basics/2.UseCases/4.MovingDataToCloud/README.md)
+- Serverless
+  - [API Gateway](https://github.com/sbhrwl/aws/blob/main/1.Basics/2.UseCases/7.Serverless/API-Gateway/README.md)
+  - [Lambda](https://github.com/sbhrwl/aws/blob/main/1.Basics/2.UseCases/7.Serverless/Lambda/README.md)
 
 ### Cloud formation
 
