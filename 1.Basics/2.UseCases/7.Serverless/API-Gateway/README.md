@@ -34,7 +34,7 @@
 - We can also configure to handle burst, ex: 2000 request/second for few seconds		
 
 ### 4.1. Throttling: 429 Too Many Requests
-<img src="images/2.png" width=500>
+<img src="images/2.png" width=800>
 
 ## 5. Usage plan					
 - Usage Plan defines
