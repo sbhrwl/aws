@@ -22,9 +22,9 @@
 - Add Endpoint Group 
   - One endpoint group for US 
   - One endpoint group for India 
-- 6. Add EC2 instance (or LB) to endpoint group 
+- Add EC2 instance (or LB) to endpoint group 
 
-## AWS Global Accelerator vs CloudFront 
+## 6. AWS Global Accelerator vs CloudFront 
 - They both use the AWS global network and its edge locations around the world
 - Both services integrate with AWS Shield for DDoS protection. 
 ### CloudFront
@@ -35,37 +35,37 @@
 - Improves performance for a range of applications over TCP or UDP
 - Proxying packets at the edge to applications running in one or more AWS Regions.
 - Good fit for non-HTTP use cases, such as gaming (UDP), loT (MQTT), orVoice over IP
-- Good for HTTP use cases that require static IP addresses
-- Good for HTTP use cases that required deterministic. fast regional failover 
+- Good for HTTP use cases that require 
+  - Static IP addresses
+  - Deterministic fast regional failover 
 <img src="images/4.png" width=500>
 
-###
+## 7. Traffic traverses the AWS global network
 - A web application is deployed in multiple regions behind an ELB Application Load Balancer. 
 - You need deterministic routing to the closest region and automatic failover. 
-- Traffic should traverse the AWS global network for consistent performance."											
+- Traffic should traverse the AWS global network for consistent performance.										
 ### 
 - CORRECT: "Configure AWS Global Accelerator and configure the ALBS as targets" is the correct answer. 
 - INCORRECT: "Place an EC2 Proxy in front of the ALB and configure automatic (allover^ is incorrect. Placing an EC2 proxy in front of the ALB does not meet the requirements. This solution does not ensure deterministic routing the closest region and failover is happening within a region which does not protect against regional failure. Also, this introduces a potential bottleneck and lack of redundancy. 
 - INCORRECT: "Create a ROUGESS:Alias record for each ALB and configure a latency-based routing policy" is incorrect. A Route 53 Alias record for each ALB with latency-based routing does provide routing based on latency and failover. However, the traffic istWoltrayerke 1WRIVSolobist network. 
 - INCORRECT: "Use a Clendlfrandlitribution with multiple custom origins in each region and configure for high availability is incorrect. You can use  CloudFront with multiple custom origins and configure for HA. However, the traffic will not be traverse the **AWS global network**
-## Why GA
+## 8. Why GA
 - When the application usage grows, the number of IP addresses and endpoints that you need to manage also increase.											
 - AWS Global Accelerator allows you to scale your network up or down											
 - AWS Global Accelerator lets you associate regional resources, such as load balancers and EC2 instances, to two static IP addresses. 											
-iv. You only whitelist these addresses once in your client applications, firewalls, and DNS records.											
-											
-### Use cases											
+iv. You only whitelist these addresses once in your client applications, firewalls, and DNS records.																						
+## 9. Use cases											
 - With AWS Global Accelerator, you can 
   - add or remove endpoints in the AWS Regions, 
   - run blue/green deployment, and 
-  - A/B test without needing to update the IP addresses in your client applications."											
+  - A/B test without needing to update the IP addresses in your client applications.										
 - This is particularly useful for IoT, retail, media, automotive, and healthcare use cases in which client applications cannot be updated frequently.																
-### How does GA helps to reduce number of IP addresses? Use Endpoint group											
+## 10. How does GA helps to reduce number of IP addresses? Use Endpoint group											
 - If you have multiple resources in multiple regions, you can use AWS Global Accelerator to reduce the number of IP addresses. 											
 - By creating one endpoint group, you can add all of your EC2 instances in different regions in that group.											
 - The created accelerator would have two static IP addresses that you can use to create a security rule in your firewall device.											
 - Instead of regularly adding the Amazon EC2 IP addresses in your firewall, you can use the static IP addresses of AWS Global Accelerator to automate the process and eliminate this repetitive task.											
 											
-### GA and NLB											
+## 11. GA and NLB											
 - NLB is not suitable to route traffic to your ALBs across multiple Regions. 
 - You have to use AWS Global Accelerator instead.
