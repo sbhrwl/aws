@@ -34,7 +34,7 @@
 ### Global Accelerator
 - Improves performance for a range of applications over TCP or UDP
 - Proxying packets at the edge to applications running in one or more AWS Regions.
-- Good fit for non-HTTP use cases, such as gaming (UDP), loT (MQTT), orVoice over IP
+- Good fit for non-HTTP use cases, such as gaming (UDP), loT (MQTT), Voice over IP
 - Good for HTTP use cases that require 
   - Static IP addresses
   - Deterministic fast regional failover 
@@ -45,15 +45,14 @@
 - You need deterministic routing to the closest region and automatic failover. 
 - Traffic should traverse the AWS global network for consistent performance.										
 ### 
-- CORRECT: "Configure AWS Global Accelerator and configure the ALBS as targets" is the correct answer. 
-- INCORRECT: "Place an EC2 Proxy in front of the ALB and configure automatic (allover^ is incorrect. Placing an EC2 proxy in front of the ALB does not meet the requirements. This solution does not ensure deterministic routing the closest region and failover is happening within a region which does not protect against regional failure. Also, this introduces a potential bottleneck and lack of redundancy. 
-- INCORRECT: "Create a ROUGESS:Alias record for each ALB and configure a latency-based routing policy" is incorrect. A Route 53 Alias record for each ALB with latency-based routing does provide routing based on latency and failover. However, the traffic istWoltrayerke 1WRIVSolobist network. 
-- INCORRECT: "Use a Clendlfrandlitribution with multiple custom origins in each region and configure for high availability is incorrect. You can use  CloudFront with multiple custom origins and configure for HA. However, the traffic will not be traverse the **AWS global network**
+- CORRECT: Configure AWS Global Accelerator and configure the ALBS as targets" is the correct answer. 
+- INCORRECT: Place an EC2 Proxy in front of the ALB and configure automatic (fallover is incorrect. Placing an EC2 proxy in front of the ALB does not meet the requirements. This solution does not ensure deterministic routing the closest region and failover is happening within a region which does not protect against regional failure. Also, this introduces a potential bottleneck and lack of redundancy. 
+- INCORRECT: Use a Cloud front distribution with multiple custom origins in each region and configure for high availability is incorrect. You can use  CloudFront with multiple custom origins and configure for HA. However, the traffic will not be traverse the **AWS global network**
 ## 8. Why GA
 - When the application usage grows, the number of IP addresses and endpoints that you need to manage also increase.											
 - AWS Global Accelerator allows you to scale your network up or down											
 - AWS Global Accelerator lets you associate regional resources, such as load balancers and EC2 instances, to two static IP addresses. 											
-iv. You only whitelist these addresses once in your client applications, firewalls, and DNS records.																						
+- You only whitelist these addresses once in your client applications, firewalls, and DNS records.																						
 ## 9. Use cases											
 - With AWS Global Accelerator, you can 
   - add or remove endpoints in the AWS Regions, 
