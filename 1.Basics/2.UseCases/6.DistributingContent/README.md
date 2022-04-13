@@ -82,13 +82,17 @@ Block user to access content only if there are in blacklist of banned countries
 <img src="images/3.png" width=500>
 
 ## 12. Cloudfront Vs S3 Cross Region Replciation
-<img src="images/4.png" width=500>
+### CloudFront
+- Global Edge network
+- Files are cached for a TTL (maybe a day) • Great for static content that must be available everywhere 
+### S3 Cross Region Replication
+- Must be setup for each region you want replication to happen
+- Files are updated in near real-time • Read only
+- Great for dynamic content that needs to be available at low-latency in few regions 
 
-## CloudFront:
-• Global Edge network • Files are cached for a TTL (maybe a day) • Great for static content that must be available everywhere 
-• S3 Cross Region Replication: • Must be setup for each region you want replication to happen • Files are updated in near real-time • Read only • Great for dynamic content that needs to be available at low-latency in few regions 
+## 13. GlobalAccelerator
 
-## GlobalAccelerator:
+### Steps
 - 1. Launch an Instance in US 2. Launch an Instance in India 3. Create GLobal accelerator r 4. Add "listener (Port 80-HTTP traffic) 5. Add Endpoint Group 5.1. One endpoint group for US 5.2. One endpoint group for India 6. Add EC2 instance (or LB) to endpoint group 
 
 ## AWS Global Accelerator vs CloudFront 
