@@ -6,14 +6,14 @@
 
 ## 2. Origins		
 - S3 Bucket		
-- Distributing files		
-- Enhance Security with Cloudfront OAI		
-- Cloudfront as INGRESS to upload files to S3		
+  - Distributing files		
+  - Enhance Security with Cloudfront OAI		
+  - Cloudfront as INGRESS to upload files to S3		
 - Custome Origin (HTTP)		
-- ALB (must allow Public IP of Edge locations)		
-- EC2 (must allow Public IP of Edge locations)		
-- S3 website		
-d. Any HTTP endpoint 		
+  - ALB (must allow Public IP of Edge locations)		
+  - EC2 (must allow Public IP of Edge locations)		
+  - S3 website		
+  - Any HTTP endpoint 		
 - You can't set Lambda@Edge functions as part of your origin group in CloudFront		
 ## 3. Geo Restriction		
 - Whitelist		
