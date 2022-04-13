@@ -14,7 +14,9 @@
 - [Security](1.Basics/2.UseCases/2.Security/README.md)
 - [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
 - [Moving data to cloud](1.Basics/2.UseCases/4.MovingDataToCloud/README.md)
-- [Distributing content](1.Basics/2.UseCases/6.DistributingContent/README.md)
+- Distributing content
+  - [Cloudfront](1.Basics/2.UseCases/6.DistributingContent/Cloudfront.md)
+  - [Global accelerator](1.Basics/2.UseCases/6.DistributingContent/GlobalAccelerator.md)
 - Serverless
   - [API Gateway](1.Basics/2.UseCases/7.Serverless/API-Gateway/README.md)
   - [Lambda](1.Basics/2.UseCases/7.Serverless/Lambda/README.md)
