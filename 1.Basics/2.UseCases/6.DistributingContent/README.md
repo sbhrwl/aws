@@ -1,4 +1,4 @@
-# Distributing content
+# Cloudfront
 ## 1. Overview		
 - Caches content at Edge (216 edge locations)		
 - DDoS protection, integration with WAF		
