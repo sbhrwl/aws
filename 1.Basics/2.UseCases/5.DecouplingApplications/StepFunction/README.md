@@ -10,7 +10,7 @@
 - Step Functions frees your functions and containers from excess code, so your applications are faster to write, more resilient, and easier to maintain.										
 ## 2. Steps function Vs SWF										
 - SWF is a fully-managed state tracker and task coordinator service. 
-- SWF does not provide serverless orchestration to multiple AWS resources.								
+- **SWF does not provide serverless orchestration** to multiple AWS resources.								
 										
 ## 3. Serverless Workflows
 <img src="images/1.png" width=500>
