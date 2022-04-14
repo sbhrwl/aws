@@ -15,8 +15,8 @@
 - [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
 - Moving data to cloud
   - [Transferring Data On premise to AWS](1.Basics/2.UseCases/4.MovingDataToCloud/Snow/README.md)
-  - [](1.Basics/2.UseCases/4.MovingDataToCloud/Replication/README.md)
-  - [](1.Basics/2.UseCases/4.MovingDataToCloud/DataSync/README.md)
+  - [Replication of Data On premise to AWS](1.Basics/2.UseCases/4.MovingDataToCloud/Replication/README.md)
+  - [DataSync](1.Basics/2.UseCases/4.MovingDataToCloud/DataSync/README.md)
 - Decoupling applications
   - [SQS](1.Basics/2.UseCases/5.DecouplingApplications/SQS/README.md)
   - [SNS](1.Basics/2.UseCases/5.DecouplingApplications/SNS/README.md)
