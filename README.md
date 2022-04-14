@@ -15,11 +15,11 @@
 - [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
 - [Moving data to cloud](1.Basics/2.UseCases/4.MovingDataToCloud/README.md)
 - Decoupling applications
-  - [SNS](1.Basics/2.UseCases/5.DecouplingApplications/SNS/README.md))
-  - [SQS](1.Basics/2.UseCases/5.DecouplingApplications/SQS/README.md))
-  - [Kinesis](1.Basics/2.UseCases/5.DecouplingApplications/Kinesis/README.md))
-  - [SWF](1.Basics/2.UseCases/5.DecouplingApplications/SWF/README.md))
-  - [Step functions](1.Basics/2.UseCases/5.DecouplingApplications/StepFunction/README.md))
+  - [SNS](1.Basics/2.UseCases/5.DecouplingApplications/SNS/README.md)
+  - [SQS](1.Basics/2.UseCases/5.DecouplingApplications/SQS/README.md)
+  - [Kinesis](1.Basics/2.UseCases/5.DecouplingApplications/Kinesis/README.md)
+  - [SWF](1.Basics/2.UseCases/5.DecouplingApplications/SWF/README.md)
+  - [Step functions](1.Basics/2.UseCases/5.DecouplingApplications/StepFunction/README.md)
 - Distributing content
   - [Cloudfront](1.Basics/2.UseCases/6.DistributingContent/Cloudfront.md)
   - [Global accelerator](1.Basics/2.UseCases/6.DistributingContent/GlobalAccelerator.md)
