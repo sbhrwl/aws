@@ -53,6 +53,7 @@ Messages are processed in order by consumer
 
 ## 11. Ordering data in SQS
 - Group your messages and have equivalent number of Consumers (No. of consumers = No. of Groups)
+<img src=images/1.png>
 
 ## 12. Creating SQS FIFO queue
 <img src=images/2.png>
