@@ -13,6 +13,7 @@
 - [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
 - [Security](1.Basics/2.UseCases/2.Security/README.md)
 - [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
+  - [Cognito](1.Basics/2.UseCases/3.IdentityFederation/Cognito.md)
 - Moving data to cloud
   - [Transferring Data On premise to AWS](1.Basics/2.UseCases/4.MovingDataToCloud/Snow/README.md)
   - [Replication of Data On premise to AWS](1.Basics/2.UseCases/4.MovingDataToCloud/Replication/README.md)
