@@ -35,6 +35,15 @@
   - [API Gateway](1.Basics/2.UseCases/7.Serverless/API-Gateway/README.md)
   - [Lambda](1.Basics/2.UseCases/7.Serverless/Lambda/README.md)
   - [DynamoDB](1.Basics/2.UseCases/7.Serverless/DynamoDB/README.md)
+- Monitoring
+  - [Cloudwatch]()
+  - [Cloudtrail]()
+  - [Server access logs]()
+  - [S3 access logs-Cloudtrail]()
+  - [ELB access logs]()
+  - [VPC Flow logs]()
+  - [AWS X-Ray]()
+  - [AWS Inspector]()
 ### Cloud formation
 
 ### Projects
