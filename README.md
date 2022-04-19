@@ -38,8 +38,8 @@
 - Monitoring
   - [Cloudwatch](1.Basics/2.UseCases/8.Monitoring/Cloudwatch.md)
   - [Cloudtrail](1.Basics/2.UseCases/8.Monitoring/Cloudtrail.md)
-  - [Server access logs](1.Basics/2.UseCases/8.Monitoring/S3accessLogs.md)
-  - [S3 access logs-Cloudtrail](1.Basics/2.UseCases/8.Monitoring/ServerAccessLogs.md)
+  - [S3 access logs](1.Basics/2.UseCases/8.Monitoring/S3accessLogs.md)
+  - [Server access logs](1.Basics/2.UseCases/8.Monitoring/ServerAccessLogs.md)
   - [ELB access logs](1.Basics/2.UseCases/8.Monitoring/ELBaccessLogs.md)
   - [VPC Flow logs](1.Basics/2.UseCases/8.Monitoring/VPCflowLogs.md)
   - [AWS X-Ray]()
