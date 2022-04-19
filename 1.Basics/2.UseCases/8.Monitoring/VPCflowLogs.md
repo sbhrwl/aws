@@ -1,0 +1,11 @@
+#  VPC Flowlogs											
+- Captures information about IP traffic going into our VPC interfaces 											
+  - VPC flowlogs
+  - Subnet flowlogs
+  - ENI flowlogs			
+- Flow logs can be saved to S3 or Cloudwatch logs											
+- Query Flow logs using Athena											
+- Captures information from AWS managed services (ELB/RDS/ElasticCache/Redshift/Workspaces											
+- You can use VPC Flow Logs to capture detailed information about the traffic going to and from your Elastic Load Balancer. 
+  - Create a flow log for each network interface for your load balancer. 
+  - There is one network interface per load balancer subnet.
