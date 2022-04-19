@@ -1,20 +1,19 @@
 # IdentityFederation
 
-## Where are Users?											
-### In organisation					
-- LDAP					
-- AD					
-- Customer Identity broker					
-### On the Web					
-- Facebook					
-- Google					
-- Cognito User Pool (CUP)					
+## Where are Users											
+- **In organisation**
+  - LDAP					
+  - AD					
+  - Customer Identity broker					
+- **On the Web**
+  - Facebook					
+  - Google					
+  - Cognito User Pool (CUP)					
 
 ## Identity Federation											
 - Identity Federation is 
   - process of **authenticating users** via User Pool that you may or may not own (guest users) and then 
-  - **providing the needed permission** to access a resource or perform an operation										
-
+  - **providing the needed permission** to access a resource or perform an operation
 ## Identity Federation in AWS
 - Federation lets users outside of AWS to **assume temporary role** for accessing AWS resources.
 - These users assume **identity provided access role**
@@ -27,13 +26,14 @@
   6. Non-SAML with AWS Microsoft AD
 - Using federation, you don’t need to create IAM users (user management is outside of AWS)
 - **IAM and Cognito can be used for Identity federation**
+<img src="images/1.png" width=500>
 
 ## STS Assume Role									
 - Allows temporary, limited access to AWS resources	
 - Token is valid for 1 hour	
-### AssumeRole	
-- Within your account for enhance security	
-- For Cross Account Access- assume role in target account to perform actions there	
+- AssumeRole within your account for enhance security
+- For Cross Account Access **assume role in target account to perform actions there**
+### Options for assuming role
 1. **AssumeRole with SAML**	
   - Return credentials for user, who is logged in with SAML	
 2. **AssumeRole with WebIdentity**
@@ -42,21 +42,33 @@
 3. **GetSession Token**
   - GetSession token via MFA	
   - For AWS user or Root account user	
-
-4. **Using STS to Assume a Role**
+## STS and assume role
+- **Using STS to Assume a Role**
   - Define an IAM Role within your account or cross-account
   - Define which principals can access this IAM Role
   - Use AWS STS (Security Token Service) to retrieve credentials and impersonate the IAM Role you have access to (AssumeRole API)
   - Temporary credentials can be valid between 15 minutes to 1 hour
-5. **Assume Role with SAML2**
-  - SAML2 LDAP					
-	- To Integrate LDAP based Identity store with AWS					
-	- Provides access to AWS console and CLI					
-	- No need to create IAM users for the employees of the organisation					
-  - **SAML2 ADFS**
-	- To Integrate AD based Identity store with AWS					
-	- Provides access to AWS console and CLI					
-	- No need to create IAM users for the employees of the organisation					
+<img src="images/2.png" width=500>
+
+## SAML 2.0 Federation
+- To integrate Active Directory / ADFS with AWS (or any SAML 2.0)
+- Provides access to AWS Console or CL- (through temporary creds)
+- No need to create an IAM user for each of your employees
+### [API access to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
+<img src="images/3.png" width=500>
+
+### [Access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
+<img src="images/4.png" width=500>
+
+## SAML2 and assume role
+- SAML2 LDAP					
+  - To Integrate LDAP based Identity store with AWS					
+  - Provides access to AWS console and CLI					
+  - No need to create IAM users for the employees of the organisation					
+- **SAML2 ADFS**
+  - To Integrate AD based Identity store with AWS					
+  - Provides access to AWS console and CLI					
+  - No need to create IAM users for the employees of the organisation					
 
 ## Other types of Identity Federation
 - Via **Custome Identity Broker**
@@ -64,21 +76,19 @@
 - Via **Web Identity Broker**
   - Use Cognito instead
 - IAM and Cognito can be used for Identity federation											
-- Federation through SAML is OLD way of doing things, use Amazon SSO instead											
+- Federation through SAML is OLD way of doing things, use Amazon SSO instead										
+	
+## Question
+<img src="images/5.png" width=500>
 
-## SAML 2.0 Federation
-- To integrate Active Directory / ADFS with AWS (or any SAML 2.0)
-- Provides access to AWS Console or CL- (through temporary creds)
-- No need to create an IAM user for each of your employees
+<img src="images/6.png" width=500>
 
-## AWS Cognito
-### Goal
-- Provide direct access to AWS Resources from the Client Side (mobile, web app)
-### Example
-- Provide (temporary) access to write to S3 bucket using Facebook Login
-### Problem
-- We do not want to create IAM users for our app users
-### How
-- Log in to federated identity provider or **remain anonymous**
-  - Get temporary AWS credentials back from the Federated Identity Pool
-  - These credentials come with a pre-defined IAM policy stating their permissions
+## Question
+<img src="images/7.png" width=500>
+
+<img src="images/8.png" width=500>
+
+## Directory Services: AD connector together with IAM Roles
+<img src="images/9.png" width=500>
+
+<img src="images/10.png" width=500>
