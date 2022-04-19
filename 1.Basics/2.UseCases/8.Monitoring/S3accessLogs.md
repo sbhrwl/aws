@@ -1,11 +1,26 @@
-# S3 Access Logs
+# S3 access logs or Server access logs
 - CloudTrail logs provide you with detailed API tracking for Amazon S3 bucket-level and object-level operations, while 
 - Server access logs for Amazon S3 provide you visibility into object-level operations on your data in Amazon S3.
+- Server access logging provides detailed records for the requests that are made to a S3 bucket.
+- Server access logs are useful for many applications.
+- For example, access log information can be useful in security and access audits. 
+- It can also help you learn about your customer base and understand your Amazon S3 bill		
+- Information available in S3 access logs
+  - Remote IP
+  - Requester
+  - Operation
+  - Request-URI
+  - HTTP status
+  - Error Code
+  - Turn-Around Time etc
+## 1. How to enable S3 access logs?
+<img src="images/3.png" width=500>
+
 ## S3 Access Logs Vs Cloudtrail			
 ## 1. Cloudtrail and S3: Logging Operations										
 - CloudTrail logs provide you with detailed API tracking for Amazon S3 bucket-level and object-level operations, while 
 - Server access logs for Amazon S3 provide you visibility into object-level operations on your data in Amazon S3.									
-## 2. Cloudtrail and S3: Logging Events										
+## 2. Cloudtrail and S3 Logging Events										
 - Cloudtrail References Data events as well as Management events
 - S3 access logs: References management events"										
 										
