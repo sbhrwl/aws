@@ -11,7 +11,10 @@
 
 ### Use cases
 - [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
-- [Security](1.Basics/2.UseCases/2.Security/README.md)
+- Security
+  - [IAM](1.Basics/2.UseCases/2.Security/IAM.md)
+  - [DR](1.Basics/2.UseCases/2.Security/DR.md)
+  - [KMS](1.Basics/2.UseCases/2.Security/KMS.md)
 - [Identity federation](1.Basics/2.UseCases/3.IdentityFederation/README.md)
   - [ADconnector](1.Basics/2.UseCases/3.IdentityFederation/ADconnector.md)
   - [Cognito](1.Basics/2.UseCases/3.IdentityFederation/Cognito.md)
