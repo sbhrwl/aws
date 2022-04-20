@@ -1,43 +1,43 @@
 # ASG											
 ## 1. Launch Configuration		
--AMI + Instance Launch Type		
--EC2 User data		
+- AMI + Instance Launch Type		
+- EC2 User data		
 - EBS Volumes		
 - Security Group		
 - SSH Key Pair		
 ## 2. Capacity		
--Min Capacity		
--Max Capacity		
+- Min Capacity		
+- Max Capacity		
 - Desired Capacity		
 ## 3. Network/Subnet Information		
--Assign VPC		
--Assign Subnets		
+- Assign VPC		
+- Assign Subnets		
 ## 4. Load Balancer		
--Assign LB for the ASG		
--While setting up ASG, we configure ELB health checks in addition to EC2 health checks		
+- Assign LB for the ASG		
+- While setting up ASG, we configure ELB health checks in addition to EC2 health checks		
 ## 5. Cloudwatch Alarms		
--Alarm rules		
-a. Average CPU usage		
-b. No of requests on ELB per instance		
-c. Average Network In/Out		
--Custom Metrics		
-a. Send Custom Metric (PutMetricAPI) from EC2 to Cloudwatch		
+- Alarm rules		
+  - Average CPU usage		
+  - No of requests on ELB per instance		
+  - Average Network In/Out		
+- Custom Metrics		
+  - Send Custom Metric (PutMetricAPI) from EC2 to Cloudwatch		
 - EC2 Reboot Cloudwatch Alarm to reboot instance is recommended for instance Health check failures		
 ## 6. Scaling Policies		
--Target Tracking (ex: Track CPU or other metric)		
--Step Scaling (Utilises Cloudwatch Alarm to trigger scaling)		
+- Target Tracking (ex: Track CPU or other metric)		
+- Step Scaling (Utilises Cloudwatch Alarm to trigger scaling)		
 - Simple Scaling (Utilises Cloudwatch Alarm to trigger scaling)		
 - Scheduled Action		
-*Scaling Policies are also referred as Dynamic Scaling Policies		
+- Scaling Policies are also referred as Dynamic Scaling Policies		
 ## 7. Scale-In		
--AZ with Most Instances		
--If there are multiple AZ to choose from, choose AZ with oldest launch configuration		
+- AZ with Most Instances		
+- If there are multiple AZ to choose from, choose AZ with oldest launch configuration		
 ## 8. Life cycle Hooks		
--Ability to perform extra steps/actions before		
-a. instance goes to Service state		
-b. instance is terminated		
+- Ability to perform extra steps/actions before		
+  - instance goes to Service state		
+  - instance is terminated		
 ## 9. Cooldown					
--Default 300 seconds					
+- Default 300 seconds					
 
 ## 10. Step Scaling Vs Simple scaling											
 "An application is hosted in an Auto Scaling group of EC2 instances. 
@@ -50,8 +50,8 @@ Step Scaling Increase or decrease the current capacity of the group based on a s
 Simple Scaling Increase or decrease the current capacity of the group based on a single scaling adjustment, known as step adjustments, that vary based on the size of the alarm breach											
 											
 ## 11. How to Troubleshoot Auto Scaling related problems?											
--SUSPEND (and not Disable) the scaling process responsible for launching new instances											
--Place the EC2 instances that are experiencing issues on STAND BY state											
+- SUSPEND (and not Disable) the scaling process responsible for launching new instances											
+- Place the EC2 instances that are experiencing issues on STAND BY state											
 											
 ## 12. Target Tracking based ASG is CHEAPER compared to Scheduled Action ASG, If question mentions "COST" then focus on cheapest option											
 <img src="images/1.png">
@@ -69,8 +69,8 @@ Launch Templates enables us to set up an ASG with a mix of on-demand and spot in
 # EC2 Cloudwatch agent
 <img src="images/5.png">
 
--Take note that there is a multi-platform CloudWatch agent which can be installed on both Linux and Windows-based instances. 										
--You can use a single agent to collect both system metrics and log files from Amazon EC2 instances and on-premises servers. 										
+- Take note that there is a multi-platform CloudWatch agent which can be installed on both Linux and Windows-based instances. 										
+- You can use a single agent to collect both system metrics and log files from Amazon EC2 instances and on-premises servers. 										
 - This agent supports both Windows Server and Linux and enables you to select the metrics to be collected, including sub-resource metrics such as per-CPU core. 										
 - It is recommended that you use the new agent instead of the older monitoring scripts to collect metrics and logs.										
 
