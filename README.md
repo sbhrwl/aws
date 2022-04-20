@@ -8,6 +8,22 @@
 - [Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)
 - [Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)
 - [EC2](1.Basics/1.Fundamentals/4.EC2/README.md)
+- [VPC](1.Basics/1.Fundamentals/5.VPC/README.md)
+- [ASG](1.Basics/1.Fundamentals/6.ASG/README.md)
+- [ELB](1.Basics/1.Fundamentals/7.ELB/README.md)
+- [Route53](1.Basics/1.Fundamentals/8.Route53/README.md)
+- Storage
+  - [EBS](1.Basics/1.Fundamentals/9.Storage/EBS/README.md)
+  - [EFS](1.Basics/1.Fundamentals/9.Storage/EFS/README.md)
+  - [S3](1.Basics/1.Fundamentals/9.Storage/S3/README.md)
+  - [S3Advance](1.Basics/1.Fundamentals/9.Storage/S3Advance/README.md)
+- Databases
+  - [RDS](1.Basics/1.Fundamentals/10.Databases/RDS/README.md)
+  - [Aurora](1.Basics/1.Fundamentals/10.Databases/Aurora/README.md)
+  - [Elasticcache](1.Basics/1.Fundamentals/10.Databases/Elasticcache/README.md)
+- Hybrid
+  - [HybridConnections](1.Basics/1.Fundamentals/11.Hybrid/HybridConnections/README.md)
+  - [HybridStorage](1.Basics/1.Fundamentals/11.Hybrid/HybridStorage/README.md)
 
 ### Use cases
 - [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
