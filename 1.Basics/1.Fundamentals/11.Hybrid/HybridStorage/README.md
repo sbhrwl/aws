@@ -78,4 +78,5 @@ Tape data stored in Glacier
 
 # 1.File Gateway also offers cache mode (Volume gateway also has cache mode)		
 <img src="images/6.png">
+
 ## 2. Protocol and Storage Gateway		
