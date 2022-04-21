@@ -1,6 +1,6 @@
 # Data pre-processing
 
-## 1.DataWrangler
+## 1. DataWrangler
 - Data Wrangler provides an end-to-end solution to 
   - Import, 
   - Prepare, 
@@ -37,11 +37,11 @@
 - **Sagemaker Studio** -> Data Flow		
 <img src="images/1.png">
 
-## 2.FeatureStore
+## 2. FeatureStore
 - Amazon SageMaker Feature Store makes it easy 
   - for data scientists, machine learning engineers, and general practitioners 
   - to create, share, and manage features for machine learning (ML) development										
-- Feature Store is a centralized store for features and associated metadata so features can be easily discovered and reuse- 				
+- Feature Store is a centralized store for features and associated metadata so features can be easily discovered and reused 				
 - You can create an online or an offline stor- 
   - The Online Store is used for low latency real-time inference use cases, and 
   - The Offline Store is used for training and batch inferenc-   										
@@ -53,7 +53,7 @@
 - This mode requires a feature group to be stored in an online stor-  										
 										
 #### Offline										
--  In offline mode, large streams of data are fed to an offline store, which can be used for training and batch inferenc-  
+-  In offline mode, large streams of data are fed to an offline store, which can be used for training and batch inference  
 - This mode requires a feature group to be stored in an offline stor-  
 - The offline store uses your S3 bucket for storage and can also fetch data using Athena queries.										
 #### Online and Offline										
@@ -62,26 +62,26 @@
 ### Ingesting Data in Feature Store										
 #### Streaming 										
 -  A collection of records are pushed to Feature Store by calling a synchronous PutRecord API call. 
-- This API enables you to maintain the latest feature values in Feature Store and to push new feature values as soon an update is detecte- 									
+- This API enables you to maintain the latest feature values in Feature Store and to push new feature values as soon an update is detected									
 #### Ingest data in batches										
 - Author features using Amazon SageMaker Data Wrangler, 
 - Create feature groups in Feature Store and 
 - Ingest features in batches using a SageMaker Processing job with a notebook exported from Data Wrangler. 	
 - This mode allows for batch ingestion into the offline stor-  
 - It also supports ingestion into the online store if the feature group is configured for both online and offline use										
-## 4.DataProcessingJob
--  Amazon SageMaker spins up a Processing jo- 
+## 3. Data processing job
+-  Amazon SageMaker spins up a Processing job
 - Amazon SageMaker 
   - Copies your script, 
   - Copies your data from S3 and then 
   - Pulls a Processing Container. 
-- The Processing Container image can either be an Amazon SageMaker built-in image or a custom image that you provid- 					
+- The Processing Container image can either be an Amazon SageMaker built-in image or a custom image that you provide				
 <img src="images/3.png">
 
 ### Processing Job										
 -  The underlying infrastructure for a Processing job is fully managed by Amazon SageMaker. 
 - Cluster resources are provisioned for the duration of your job, and cleaned up when a job completes. 
-- The output of the Processing job is stored in the Amazon S3 bucket you specifie- 
+- The output of the Processing job is stored in the Amazon S3 bucket you specified
 ### Option for Processing Job										
 - Data Processing with Apache Spark										
 - Data Processing with scikit-learn										
