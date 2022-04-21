@@ -1,6 +1,6 @@
 # AWS
 - [Basics](#basics)
-- [AI](#ai)
+- [AI](2.AI/README.md)
 
 ## Basics
 ### Fundamentals
