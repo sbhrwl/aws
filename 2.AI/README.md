@@ -38,7 +38,7 @@
 <img src="images/1.png">
 
 ## 2.FeatureStore
--  Amazon SageMaker Feature Store makes it easy 
+- Amazon SageMaker Feature Store makes it easy 
   - for data scientists, machine learning engineers, and general practitioners 
   - to create, share, and manage features for machine learning (ML) development										
 - Feature Store is a centralized store for features and associated metadata so features can be easily discovered and reuse- 				
