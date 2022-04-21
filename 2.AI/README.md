@@ -1,4 +1,4 @@
-# AI
+# Data pre-processing
 
 ## 1.DataWrangler
 - Data Wrangler provides an end-to-end solution to 
@@ -69,7 +69,7 @@
 - Ingest features in batches using a SageMaker Processing job with a notebook exported from Data Wrangler. 	
 - This mode allows for batch ingestion into the offline stor-  
 - It also supports ingestion into the online store if the feature group is configured for both online and offline use										
-## 4.DataProcessingJob
+## 3.Data processing job
 -  Amazon SageMaker spins up a Processing jo- 
 - Amazon SageMaker 
   - Copies your script, 
