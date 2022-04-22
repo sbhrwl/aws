@@ -1,3 +1,13 @@
 # Sagemaker
-- [Data pre-processing](DataPreProcessing/README.md)
-
+- [Data pre-processing](Sagemaker/DataPreProcessing/README.md)
+- [Training](Sagemaker/Training/README.md)
+- [ModelSetup](Sagemaker/ModelSetup/README.md)
+- [ModelHosting](Sagemaker/ModelHosting/README.md)
+- [HyperParameterTuning](Sagemaker/HyperParameterTuning/README.md)
+- [Inference](Sagemaker/Inference/README.md)
+- [MonitorModel-Retraining](Sagemaker/MonitorModel-Retraining/README.md)
+- [ExternalClients-ModelInvokation](Sagemaker/ExternalClients-ModelInvokation/README.md)
+- [Monitoring](Sagemaker/Monitoring/README.md)
+- [SecuringAndProtectingData](Sagemaker/SecuringAndProtectingData/README.md)
+- [Miscellaneous](Sagemaker/Miscellaneous/README.md)
+- [Data pre-processing](Sagemaker/DataPreProcessing/README.md)
