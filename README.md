@@ -4,6 +4,9 @@
 
 ## Basics
 ### Fundamentals
+| Group 1 | Group 2 |
+| ------- | ------- |
+|<ul><li>[Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)</li><li>[Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)</li></ul>| <ul><li>[Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)</li><li>[EC2](1.Basics/1.Fundamentals/4.EC2/README.md)</li></ul> |
 - [Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)
 - [Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)
 - [Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)
