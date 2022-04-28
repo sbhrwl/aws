@@ -6,7 +6,7 @@
 ### Fundamentals
 | Group 1 | Group 2 |
 | ------- | ------- |
-|<ul><li>[Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)</li><li>[Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)</li></ul>| <ul><li>[Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)<ol><li>Section One</li><li>Section Two </li><li>Section Three </li></ol></li><li>[EC2](1.Basics/1.Fundamentals/4.EC2/README.md)</li></ul> |
+|<ul><li>[Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)</li><li>[Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)</li><li>[Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)</li><li>[EC2](1.Basics/1.Fundamentals/4.EC2/README.md)</li><li>[VPC](1.Basics/1.Fundamentals/5.VPC/README.md)</li><li>[ASG](1.Basics/1.Fundamentals/6.ASG/README.md)</li><li>[ELB](1.Basics/1.Fundamentals/7.ELB/README.md)</li><li>[Route53](1.Basics/1.Fundamentals/8.Route53/README.md)</li></ul> | <ul><li>Storage<ol><li>[EBS](1.Basics/1.Fundamentals/9.Storage/EBS/README.md)</li><li>[EFS](1.Basics/1.Fundamentals/9.Storage/EFS/README.md)</li><li>[S3](1.Basics/1.Fundamentals/9.Storage/S3/README.md)</li><li>[S3Advance](1.Basics/1.Fundamentals/9.Storage/S3Advance/README.md)</li></ol></li><li>Databases<ol><li>[RDS](1.Basics/1.Fundamentals/10.RDS/EBS/README.md)</li><li>[Aurora](1.Basics/1.Fundamentals/10.Databases/Aurora/README.md)</li><li>[Elasticcache](1.Basics/1.Fundamentals/10.Databases/Elasticcache/README.md)</li></ol></li></ul> |
 - [Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)
 - [Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)
 - [Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)
