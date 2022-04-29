@@ -64,4 +64,4 @@
 
 ### Set up TensorFlow Docker container and [use Sagemaker SDK to create a model on your local machine](https://aws.amazon.com/blogs/machine-learning/use-the-amazon-sagemaker-local-mode-to-train-on-your-notebook-instance/)
 - Pull the TensorFlow Docker container into a local machine and 
-- SageMaker Python SDK setup for code testing : Execute the pip install -U sagemaker command.
+- SageMaker Python SDK setup for code testing : Execute the `pip install -U sagemaker` command.
