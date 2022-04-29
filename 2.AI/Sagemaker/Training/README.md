@@ -68,14 +68,25 @@
 - Even if there is direct support for your environment or framework, you may want to add additional functionality or configure your container environment differently. 
 - You can extend the container to add libraries, modify settings, and install additional dependencies.
 - By extending a prebuilt image, you can leverage the included deep learning libraries and settings without having to create an image from scratch.
+#### Set up TensorFlow Docker container and [use Sagemaker SDK to create a model on your local machine](https://aws.amazon.com/blogs/machine-learning/use-the-amazon-sagemaker-local-mode-to-train-on-your-notebook-instance/)
+- Pull the TensorFlow Docker container into a local machine and 
+- SageMaker Python SDK setup for code testing
+  - Execute the `pip install -U sagemaker` command.
 
+### 5.3 Custom Container Images
+- Enables us to use our own Algorithms
+- Host your custom algorithms on SageMaker
+  - Use a runtime and language of your choice
+  - Build Containers that conform to SageMaker Specification 
+  - **Use your own custom algorithm and put the code together as a Docker image**
+- Train and Host on SageMaker 
 #### Configure Tensorflow Docker Training Container so that it could be run as executable by Amazon SageMaker
-Step 1: Add ENTRYPOINT instruction in a Dockerfile										
+##### Step 1: Add ENTRYPOINT instruction in a Dockerfile										
 - `ENTRYPOINT ["python", "custom-algorithm.py"]`
 - This will make Docker container to run as an executable										
 - `ENTRYPOINT` instruction starts the executable directly, not as a child of `/bin/sh`
 - This enables training container to receive signals like SIGTERM and SIGKILL from SageMaker APIs.										
-Step 2: Run the container for Model Training										
+##### Step 2: Run the container for Model Training										
 - `docker run your-docker-image-here train`
 - This will run the container for Model training										
 - Amazon SageMaker overrides any default CMD statement in a container by specifying the train argument after the image name. 										
@@ -89,16 +100,3 @@ Step 2: Run the container for Model Training
   - https://docs.aws.amazon.com/sagemaker/latest/dg/adapt-training-container.html										
   - https://docs.aws.amazon.com/sagemaker/latest/dg/amazon-sagemaker-toolkits.html										
   - https://github.com/aws/sagemaker-training-toolkit										
-
-#### Set up TensorFlow Docker container and [use Sagemaker SDK to create a model on your local machine](https://aws.amazon.com/blogs/machine-learning/use-the-amazon-sagemaker-local-mode-to-train-on-your-notebook-instance/)
-- Pull the TensorFlow Docker container into a local machine and 
-- SageMaker Python SDK setup for code testing
-  - Execute the `pip install -U sagemaker` command.
-
-### 5.3 Custom Container Images
-- Enables us to use our own Algorithms
-- Host your custom algorithms on SageMaker
-  - Use a runtime and language of your choice
-  - Build Containers that conform to SageMaker Specification 
-  - **Use your own custom algorithm and put the code together as a Docker image**
-- Train and Host on SageMaker 
