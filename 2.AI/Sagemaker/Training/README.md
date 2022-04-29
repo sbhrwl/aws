@@ -15,9 +15,9 @@
   - SageMaker SDK and 
   - Jupyter Notebook
   - Local Mode training
+    - Sagemaker notebook instance is a managed Jupyter Notebook Environment
     - Train a ML model on Sagemaker notebook instance										
-    - Make Predictions on the Trained Model on the Sagemaker notebook instance (local mode)										
-    - Sagemaker notebook instance is a managed Jupyter Notebook Environment			
+    - Make Predictions on the Trained Model on the Sagemaker notebook instance (local mode)													
 - **Apache Spark** with Sagemaker 
 <img src="images/2.png">
 
