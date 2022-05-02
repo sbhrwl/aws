@@ -107,3 +107,36 @@ Solution
   - JPEG
   - PNG
   - x-image
+## Train-Test Channels
+### Options to upload Training data to S3										
+1. Upload entire Dataset in a single file										
+2. Split dataset across several files in a folder										
+										
+### How to copy data from S3 to Training Instance										
+1. File Mode										
+- Copies entire dataset to Training Compute Instance Disk										
+- Training job copies data from S3 to Training Instance
+- Space needed = Entire data set + Final model artifacts
+2. Pipe Mode										
+- Streams data from S3 to Training Compute Instance Disk										
+- Training job streams data from S3 to Training Instance
+- Faster start time and Better throughput
+- Space needed = Final model artifacts
+### During Model Training, we indicate Train and Test dataset by using Training and Test Channels
+- Refer ["data_format_exploration.ipynb"](https://github.com/ChandraLingam/AmazonSageMakerCourse/blob/master/xgboost/DataFormats/data_format_exploration.ipynb) for 										
+  - How to write CSV file to SageMaker instance?										
+  - How to write to S3?										
+  - How to download from S3?										
+  - How to create RecordIO format?										
+### [Pipe Mode](https://tutorialsdojo.com/amazon-sagemaker/)
+- In Pipe mode training job stream data directly form S3 (it is not copying data to training instance)
+- SGM algorithms works best when we use "protobuf recordIO" data format for training
+- When using  "protobuf recordIO" data format for training, we can take advantages of "Pipe mode"
+<img src="images/10.png">
+
+#### Advantages of Pipe mode										
+- Shorter start up times, as data is being streamed instead of being downloaded to training instances
+- Higher I/O Throughput due to High performing streaming agent										
+- Virtually limitless data processing capacity										
+<img src="images/11.png">
+
