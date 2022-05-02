@@ -154,3 +154,167 @@ Solution
 <img src="images/12.png">
 
 
+## Train/Fit the Model
+1. Train
+<img src="images/13.png">
+
+2. What happens during Fit process?
+- Training Instance is launched										
+- Algorithm Container Image is downloaded from ECR										
+- Container Image is deployed to the Training Instance										
+<img src="images/14.png">
+
+- Model fits and calculates RMSE for each Tree
+<img src="images/15.png">
+
+3. Verify Training Job on console
+<img src="images/16.png">
+
+## [Security with Network Isolation](https://docs.aws.amazon.com/sagemaker/latest/dg/mkt-algo-model-internet-free.html)
+- SageMaker training and deployed inference containers are internet-enabled by default.
+- This allows containers to access external services and resources on the public internet as part of your training and inference workloads
+- If you enable network isolation, the containers can't make any outbound network calls, even to other AWS services such as Amazon S3.
+- SageMaker still performs download and upload operations against Amazon S3 using your SageMaker execution role in isolation from the training or inference container
+- Network isolation is not supported by the following managed Amazon SageMaker containers as they require access to Amazon S3
+  - Chainer
+  - PyTorch
+  - Scikit-learn
+  - Amazon SageMaker Reinforcement Learning
+<img src="images/17.png">
+
+### Inter-Container traffic encryption										
+- When performing distributed training, you can further protect data that is transmitted between instances. 
+- Use Inter-Container Traffic Encryption to comply with regulatory requirements.
+- Enabling inter-container traffic encryption can increase training time, especially if you are using distributed deep learning algorithms.
+										
+- Enabling inter-container traffic encryption doesn't affect training jobs with a single compute instance.
+- However, for training jobs with several compute instances, the effect on training time depends on the amount of communication between compute instances. 
+- For affected algorithms, adding this additional level of security also increases cost. 
+- The training time for most SageMaker built-in algorithms, such as XGBoost, DeepAR, and linear learner, typically aren't affected.
+
+## [Algorithm Registry Path and Version Tag](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html)
+- For the Training Image and Inference Image Registry Path column, use the :1 version tag to ensure that you are using a stable version of the algorithm. 
+- You can reliably host a model trained using an image with the :1 tag on an inference image that has the :1 tag. 
+- Using the **:latest** tag in the registry path provides you with the most up-to-date version of the algorithm, but might cause problems with backward compatibility. 
+- Avoid using the :latest tag for production purposes
+- [Get Image Registry path example](https://docs.google.com/spreadsheets/d/1JoDU8_DzRTr0l6vADyqkqLlFqgSh9ciw/edit#gid=1732384361)
+- Version Tag in Registry Path for Production systems ":1"										
+<img src="images/18.png">
+
+## Trained Model Deserialization										
+- Amazon Sagemaker models are stored in **model.tar.gz** format
+- When model.tar.gz is untarred, it contains model_algo-1, which is a serialized Apache MXNet object
+### Example										
+- Use the following to load the k-means model into memory and view it:										
+```
+"import mxnet as mx
+print(mx.ndarray.load('model_algo-1'))
+```
+## Distributed Training
+### 1. Data parallelism										
+- In this strategy of distributed training:
+  - Training dataset is split up across multiple processing nodes (such as AWS ML Instances), and 
+  - Each processing node contains a replica of the model.
+- Each node 
+  - Receives different batches of training data, 
+  - Performs a forward and backward pass, and 
+  - Shares weight updates with the other nodes for synchronization before moving on to the next batch and ultimately another epoch
+### 2. Model parallelism										
+- In this strategy of distributed training, the Model is partitioned across multiple processing nodes (such as AWS ML Instances)
+- The model might be complex and have a large number of hidden layers and weights, making it unable to fit in the memory of a single node. 
+- Each node carries a subset of the model, through which the data flows and the transformations are shared and compiled.
+- The efficiency of model parallelism, in terms of GPU utilization and training time, is heavily dependent on 
+  - How the Model is partitioned and 
+  - The Execution Schedule used to perform forward and backward passes
+### 3. Pipeline Execution Schedule (Pipelining										
+- During model training, the Pipeline Execution Schedule determines the order in which
+  - Computations (micro-batches) are made and 
+  - Data is processed across devices
+- Pipelining is a technique 
+  - To achieve true parallelization in model parallelism and 
+  - Overcome the performance loss due to sequential computation by having the GPUs compute simultaneously on different data samples.
+										
+### Which Is “Better”: Data Parallel or Model Parallel?										
+- If your Model can fit into memory, you can use Data parallel training, and you should, as training is faster. 
+- However, this isn’t always possible, and so for Large models, you must use Model parallel training"																	
+### [Data Parallelism- S3DataDistributionType](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3DataSource.html)
+- If you want Amazon SageMaker to replicate the entire dataset on each ML compute instance that is launched for model training, specify 
+**S3DataDistributionType** as **FullyReplicated**
+- If you want Amazon SageMaker to replicate a subset of data on each ML compute instance that is launched for model training, specify 
+**S3DataDistributionType** as **ShardedByS3Key**
+
+## Managed Spot Training										
+- Managed Spot Training uses Amazon EC2 Spot instance to run training jobs instead of on-demand instances.
+- Metrics and logs generated during training runs are available in CloudWatch.										
+- Amazon SageMaker Automatic Model Tuning, also known as hyperparameter tuning, can use managed spot training																
+### Stopping Condition										
+- During Model Training, you can specify :
+  - Which Training jobs use spot instances and 
+  - a Stopping Condition that specifies how long SageMaker waits for a job to run using Amazon EC2 Spot instances. 
+- *If Stopping consition is not satisfied, then training job will continue with On Demand/Reserved Instances
+										
+### Checkpoints										
+- Spot instances can be interrupted, causing jobs to take longer to start or finish. 
+- You can configure your managed spot training job to use checkpoints.								
+- SageMaker copies checkpoint data from a local path to Amazon S3. 
+- When the job is restarted, SageMaker copies the data from Amazon S3 back into the local path. 
+- The training job can then resume from the last checkpoint instead of restarting
+## Validating Models
+### 1. Offline testing										
+- Use historical (not live) data to send requests to the model for inferences										
+- Options for offline model evaluation include:										
+  - Validating using a holdout set
+  - k-fold validation
+										
+### 2. Online testing with live data										
+- SageMaker supports A/B testing for models in production by using production variants. 
+- Production variants are models that use the same inference code and are deployed on the same SageMaker endpoint
+- You configure the production variants so that a small portion of the live traffic goes to the model that you want to validate.
+- For example, you might choose to send 10% of the traffic to a model variant for evaluation. After you are satisfied with the model's performance, you can route 100% traffic to the updated model			
+
+## Training questions
+1. Once training dataset is ready, what would be the next steps?										
+- Shuffle the dataset
+- Do splits for training set, validation set and test set.										
+										
+2. How would you use GPUs for both training and inference?										
+- Select the Sagemaker built-in Algorithm that supports GPUs for both training and inference
+- Choose the correct instance type that supprts GPU										
+										
+3. [Which method can be used to get the training job status?](https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-train-model.html)
+- describe_training_job										
+										
+4. [Image Rotation problem](https://stats.stackexchange.com/questions/239076/about-cnn-kernels-and-scale-rotation-invariance)
+- You are working on a computer vision application (using Convolutional Neural Networks) to recognize an endangered species of tigers. 
+- 70% of the incorrectly classified images from the CNN were in a 90-degrees counter-clockwise rotated state. 
+
+5. What corrective action you will take to address this issue?										
+- CNN needs to be retrained with more images that are in a 90-degrees counter-clockwise rotated state										
+- Adding more hidden layers or hyperparameter tuning will not help, they are just meant to throw you off										
+										
+5. [Training with CSV files](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html)
+- For those SageMaker supervised learning algorithms which require the training data to be in CSV format, 
+  - the target variable should be in the first column and 
+  - it should not have a header record										
+										
+6. [Algorithms with Tensorflow support]
+- {XGBoost on Tensorflow](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html)
+  - The XGBoost algorithm can be used as a built-in algorithm or as a framework such as TensorFlow.										
+- [Neo Supports Image Classification](https://docs.aws.amazon.com/sagemaker/latest/dg/neo.html)
+  - Neo currently supports image classification models exported as frozen graphs from TensorFlow, MXNet, or PyTorch, and XGBoost models										
+										
+7. [SageMaker algorithms that support incremental training](https://docs.aws.amazon.com/sagemaker/latest/dg/incremental-training.html)
+- Object Detection Algorithm, 
+- Image Classification Algorithm, and 
+- Semantic Segmentation Algorithm										
+										
+8. Network isolation is not supported by the following managed Amazon SageMaker containers as they require access to Amazon S3										
+- Chainer
+- PyTorch
+- Scikit-learn
+- Amazon SageMaker Reinforcement Learning										
+										
+9. Frameworks supporting EI (~Frameworks that supports Image Classification)										
+- MxNet 
+- Tensorflow 
+- PyTorch										
