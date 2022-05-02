@@ -100,3 +100,4 @@
   - https://docs.aws.amazon.com/sagemaker/latest/dg/adapt-training-container.html										
   - https://docs.aws.amazon.com/sagemaker/latest/dg/amazon-sagemaker-toolkits.html										
   - https://github.com/aws/sagemaker-training-toolkit										
+# [More on Training](Training_more.md)
