@@ -140,3 +140,14 @@ Solution
 - Virtually limitless data processing capacity										
 <img src="images/11.png">
 
+## [Lifecycle configuration](https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-lifecycle-config.html)
+- A Machine Learning Specialist is working on a project using a Conda environment hosted on a SageMaker notebook instance. To save on cost, the Specialist manually stops the instance when he’s no longer using it. However, whenever the instance is restarted, the Specialist finds himself reinstalling the necessary external libraries for his project.
+- Which method must be done to automate the installation of libraries										
+### Solution
+- Amazon SageMaker provides you the ability to manually install additional libraries on your notebook instances. 
+- However, once your notebook instance is terminated, these additional customizations are removed as well, requiring that you manually add them again when you restart your notebook instances.
+- With the Lifecycle configuration feature in Amazon SageMaker, you can automate these customizations to be applied at different phases of the lifecycle of an instance. 
+- For example, you can write a script to install a list of libraries and, using the Lifecycle configuration feature, configure the scripts to automatically execute every time your notebook instance is started. 
+- Similarly, you can choose to automatically run the script only once when the notebook instance is created.
+- Hence, Use a lifecycle configuration script to bootstrap the package installation.
+- [more](https://aws.amazon.com/blogs/machine-learning/customize-your-amazon-sagemaker-notebook-instances-with-lifecycle-configurations-and-the-option-to-disable-internet-access/)
