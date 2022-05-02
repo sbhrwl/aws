@@ -151,3 +151,6 @@ Solution
 - Similarly, you can choose to automatically run the script only once when the notebook instance is created.
 - Hence, Use a lifecycle configuration script to bootstrap the package installation.
 - [more](https://aws.amazon.com/blogs/machine-learning/customize-your-amazon-sagemaker-notebook-instances-with-lifecycle-configurations-and-the-option-to-disable-internet-access/)
+<img src="images/12.png">
+
+
