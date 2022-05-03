@@ -164,12 +164,13 @@ Specify
 <img src="images/26.png">
 
 - Now we are sending 650 rows in each call to the endpoint to make predictions
-<img src="images/27.png">
 
 ## Submitting Predictions to Kaggle
 - Perform Inverse Transform
-<img src="images/28.png">
+<img src="images/27.png">
 
 - Create CSV for predicted values
+<img src="images/28.png">
+
 - Submit results to Kaggle
 <img src="images/29.png">
