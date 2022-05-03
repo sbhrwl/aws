@@ -125,4 +125,52 @@ Specify
 <img src="images/19.png">
 
 ## Connect to an existing endpoint for making predictions
+### Step 1: Acquire Endpoint
+- How Calls to an EndPoint are authenticated? (Endpoint Security)							
+- We can accquire existing endpoint instance by using method RealTimePredictor by specifying EndpointName
+- The role used to launch Jupiter Notebook instance should have all the needed permissions. 
+- This role is authenticated by SageMaker sdk.
+<img src="images/20.png">
 
+### Step 2: Specify what kind of Request and Response will be served by the predictor						
+- Request will be sent in CSV format
+<img src="images/21.png">
+
+- We will be parsing the reponse back manually
+<img src="images/22.png">
+
+### Step 3: Pass values to the predict method
+- Values can be passed to predict method as an array
+<img src="images/23.png">
+
+- Send first 2 observations to the predict method										
+<img src="images/24.png">
+
+- Predict method will 
+  - Use serializer (csv_serializer) to convert array values to CSV format and 
+  - Forwards the request to the endpoint
+### Step 4: Output from predict method
+- predict method returns back BYTE array of predicted values (As we sent 2 Observations, we got 2 predicted values)
+<img src="images/25.png">
+
+#### How to send multiple observations in a call effectively?
+- In step 3, we made a Call to the Endpoint via Internet.										
+- Suppose, we have lot of observations for which we need to predict the Outcome				
+##### Approach 1: Send all the observations together and make one call to the endpoint
+- Drawback: Payload will become too large and may encounter errors									
+##### Approach 2: Split the observations into smaller sets and make multiple calls to the endpoint		
+- Drawback: This will involve too many roundtrips
+- Approach 2 can be improved by sending reasonable size of subset (using array_split method of numpy) to the endpoint
+<img src="images/26.png">
+
+- Now we are sending 650 rows in each call to the endpoint to make predictions
+<img src="images/27.png">
+
+## Submitting Predictions to Kaggle
+- 1. Perform Inverse Transform
+<img src="images/28.png">
+
+- 2. Create CSV for predicted values
+
+- 3. Submit results to Kaggle
+<img src="images/29.png">
