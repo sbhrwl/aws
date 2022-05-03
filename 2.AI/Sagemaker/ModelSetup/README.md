@@ -167,10 +167,9 @@ Specify
 <img src="images/27.png">
 
 ## Submitting Predictions to Kaggle
-- 1. Perform Inverse Transform
+- Perform Inverse Transform
 <img src="images/28.png">
 
-- 2. Create CSV for predicted values
-
-- 3. Submit results to Kaggle
+- Create CSV for predicted values
+- Submit results to Kaggle
 <img src="images/29.png">
