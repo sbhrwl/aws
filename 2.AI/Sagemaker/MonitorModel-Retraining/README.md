@@ -46,7 +46,7 @@ At the time of deployment the model performance was upto the mark. Post deployme
 ### 
 - This is an example of model deterioration because the training data has aged. 
 - The solution is to retrain the model using the historical data along with the data for the last 6 months"										
-
+<img src="images/6.png">
 
 - Incremental Training with last 6 months of data will not improve performance of the Model										
 
@@ -62,7 +62,7 @@ At the time of deployment the model performance was upto the mark. Post deployme
 - Monitor Model Quality - Monitor drift in model quality metrics, such as accuracy										
 - Monitor Bias Drift for Models in Production - Monitor bias in you model's predictions										
 - Monitor Feature Attribution Drift for Models in Production - Monitor drift in feature attribution										
-<img src="images/6.png">
+<img src="images/7.png">
 
 ## How Model Monitoring works?										
 - Enable the endpoint to capture data from incoming requests to a trained ML model and the resulting model predictions										
@@ -71,7 +71,7 @@ At the time of deployment the model performance was upto the mark. Post deployme
   - Real-time predictions from your model are compared to the constraints, and are reported as violations if they are outside the constrained values."										
 - Create a monitoring schedule specifying what data to collect, how often to collect it, how to analyze it, and which reports to produce.										
 - Inspect the reports, which compare the latest data with the baseline, and watch for any violations reported and for metrics and notifications from Amazon CloudWatch.										
-<img src="images/7.png">
+<img src="images/8.png">
 
 ## Incremental Training for Computer Vision problems										
 - Over time, you might find that a model generates inference that are not as good as they were in the past. 
@@ -94,7 +94,7 @@ At the time of deployment the model performance was upto the mark. Post deployme
 - The loss function evaluates model output given the labels; 
 - During the backward pass, weights are updated to minimize the loss. 
 - To do so, the gradients of the loss with respect to the weights are computed, and each weight receives a different update."										
-<img src="images/8.png">
+<img src="images/9.png">
 
 - After a few iterations, certain weights are typically more impactful than others; 
 - The goal of pruning is to remove the useless ones without significantly reducing model accuracy
@@ -105,6 +105,5 @@ At the time of deployment the model performance was upto the mark. Post deployme
 - This helps “slow-learning” nodes to learn more by inhibiting them to depend on “smart” nodes, making the model as a whole, robust. 
 - The nodes to be disabled are updated at each iteration, which in return, changes the architecture of the model. 
 - Model Prunning trims the connection between nodes
-<img src="images/9.png">
 - [Optimizing the cost of training AWS DeepRacer reinforcement learning models](https://aws.amazon.com/blogs/machine-learning/optimizing-the-cost-of-training-aws-deepracer-reinforcement-learning-models/)
 
