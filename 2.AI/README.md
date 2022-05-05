@@ -10,4 +10,3 @@
 - [Monitoring](Sagemaker/Monitoring/README.md)
 - [SecuringAndProtectingData](Sagemaker/SecuringAndProtectingData/README.md)
 - [Miscellaneous](Sagemaker/Miscellaneous/README.md)
-- [Data pre-processing](Sagemaker/DataPreProcessing/README.md)
