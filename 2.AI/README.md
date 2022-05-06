@@ -10,3 +10,6 @@
 - [Monitoring](Sagemaker/Monitoring/README.md)
 - [SecuringAndProtectingData](Sagemaker/SecuringAndProtectingData/README.md)
 - [Miscellaneous](Sagemaker/Miscellaneous/README.md)
+
+# [AWS ML and AI](https://tutorialsdojo.com/aws-certified-machine-learning-specialty-exam-study-path/)
+<img src="AWS_ml_ai.png">
