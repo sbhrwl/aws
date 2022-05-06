@@ -1,4 +1,4 @@
-# AWS
+# Fundamentals
 - [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
 - [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
 - [Global Infrastructure](1.Fundamentals/3.GlobalInfra/README.md)
