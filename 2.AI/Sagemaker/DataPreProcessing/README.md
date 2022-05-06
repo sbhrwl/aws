@@ -1,6 +1,6 @@
 # Data pre-processing
 
-## 1. DataWrangler
+## 1. Data Wrangler
 - Data Wrangler provides an end-to-end solution to 
   - Import, 
   - Prepare, 
@@ -37,7 +37,7 @@
 - **Sagemaker Studio** -> Data Flow		
 <img src="images/1.png">
 
-## 2. FeatureStore
+## 2. Feature Store
 - Amazon SageMaker Feature Store makes it easy 
   - for data scientists, machine learning engineers, and general practitioners 
   - to create, share, and manage features for machine learning (ML) development										
@@ -69,7 +69,7 @@
 - Ingest features in batches using a SageMaker Processing job with a notebook exported from Data Wrangler. 	
 - This mode allows for batch ingestion into the offline stor-  
 - It also supports ingestion into the online store if the feature group is configured for both online and offline use										
-## 3. DataProcessingJob
+## 3. Data processing job
 -  Amazon SageMaker spins up a Processing jo- 
 - Amazon SageMaker 
   - Copies your script, 
