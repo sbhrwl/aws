@@ -9,7 +9,7 @@
 - [Data engineering](DataProcessing/DataEngineering/README.md)
 
 # [AWS ML and AI](https://tutorialsdojo.com/aws-certified-machine-learning-specialty-exam-study-path/)
-<img src="AWS_ml_ai.png">
+<img src="ML-AI/images/AWS_ml_ai.png">
 
 # Sagemaker
 - [Data pre-processing](Sagemaker/DataPreProcessing/README.md)
