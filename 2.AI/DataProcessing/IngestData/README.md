@@ -161,8 +161,6 @@ outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB multiplied by the
 <img src="images/15.png">
 
 #### KCL for Streaming Data to EMR for processing
-<img src="images/16.png">
-
 <img src="images/6.png">
 
 ### Data Pipeline with Amazon RDS
@@ -170,6 +168,8 @@ outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB multiplied by the
 - The data on this database will be used for training a model in Amazon SageMaker. 
 - The Specialist intends to design an end-to-end solution to automate his workflow.
 - How can the Specialist implement the solution?
+<img src="images/16.png">
+
 img src="images/17.png">
 
 ### Data Pipeline with Amazon DynamoDB										
