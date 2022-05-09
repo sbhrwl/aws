@@ -170,7 +170,7 @@ outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB multiplied by the
 - How can the Specialist implement the solution?
 <img src="images/16.png">
 
-img src="images/17.png">
+<img src="images/17.png">
 
 ### Data Pipeline with Amazon DynamoDB										
 - Data Pipeline regularly copies the full contents of a DynamoDB table as JSON into an S3.
