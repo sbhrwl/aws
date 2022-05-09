@@ -65,19 +65,53 @@
   - Daily/Monthly reports
 <img src="images/5.png">
 
-- Sending data via KCL to EMR for Batch Processing
+- Sending data via KCL to **EMR for Batch Processing**
 <img src="images/6.png">
 
+### Services offered by Kinesis
 <img src="images/7.png">
 
 <img src="images/8.png">
 
+#### Kinesis Data Streams										
+- Helps to build custome REAL TIME applications
+- Enables to analyse collected data using
+  - Kinesis Data Analytics
+  - Spark on EMR
+  - Custome code on EC2 instances
+  - Lambda functions										
 <img src="images/9.png">
 
+#### Kinesis Data Firehose										
+- Enables us to load data into AWS data sources (S3/RedShift/ElasticSearch/Splunk)
+- This helps us to analyse streaming data via BI tools			
+- Firehose is the easiest option to capture and process data streams
 <img src="images/10.png">
 
+#### Kinesis Data Analytics										
+- Enables us to execute queries on Data Streams and Firehose using SQL and 
+- Send the processed output to the destination (Databases/File system etc), can be Kinesis Firehose as well.
+- Amazon Kinesis Data Analytics enables us to quickly author and run powerful SQL code against streaming sources to 
+  - Perform time-series analytics, 
+  - Feed real-time dashboards, and 
+  - Create real-time metrics.
 <img src="images/11.png">
 
+##### Anamoly Detection for Streaming Data with RCF function										
+- The Amazon Kinesis Data Analytics RANDOM_CUT_FOREST function detects anomalies in your data stream. 
+- A record is an anomaly if it is distant from other records."										
+										
+##### HotSpots function										
+- HotSpots Detection can be used by Kinesis Data Anlaytics,  
+- HOTSPOTS function just detects relatively dense regions in your data (NOT ANAMOLIES)
+
+#### Kinesis Video Streams										
+- Enables to securely stream videos from Camera equipped devices (CCTV cameras at home/Factory/Public places) to AWS										
+- This video can then be used for 										
+  - Video Playback										
+  - Security Monitoring										
+  - Face Recognition										
+  - Machine Learning										
 <img src="images/12.png">
 
 <img src="images/13.png">
