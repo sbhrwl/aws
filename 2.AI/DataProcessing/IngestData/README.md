@@ -114,14 +114,68 @@
   - Machine Learning										
 <img src="images/12.png">
 
+### Ingesting Streaming Data- Question
+#### 1. Kinesis- PutRecord API
+- [Kinesis Data Streams PutRecord API](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html) uses name of the stream, a partition key and the data blob whereas 
+- [Kinesis Data Firehose PutRecord API](https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutRecord.html) uses the name of the delivery stream and the data record
+#### 2. Configuring Shards										
+- Shard is the base throughput unit of an Amazon Kinesis data stream. 
+- One shard provides a capacity of 
+  - 1 MB/sec data input and 
+  - 2 MB/sec data output"										
+- One shard can support up to 1000 PUT records per second. 
+- You will specify the number of shards needed when you create a data stream"										
 <img src="images/13.png">
 
+```
+number_of_shards = max (incoming_write_bandwidth_in_KB/1000, outgoing_read_bandwidth_in_KB/2000)										
+"where
+incoming_write_bandwidth_in_KB = average_data_size_in_KB multiplied by the number_of_records_per_seconds. = 500 * 2 = 1000
+outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB multiplied by the number_of_consumers = 1000 * 7 = 7000"										
+"So, number_of_shards = max(1000/1000, 7000/2000) = max(1, 3.5) = 4
+
+4 shards are needed to address this use-case"										
+```
+
+### Buffering in Kinesis Firehose										
+- We can configure the buffer size and buffer interval while creating your delivery stream
 <img src="images/14.png">
 
+- Buffer size is in MBs and ranges from 1MB to 128MB for Amazon S3 destination and 1MB to 100MB for Amazon Elasticsearch Service destination. 
+- Buffer interval is in seconds and ranges from 60 seconds to 900 seconds. 
+- Please note that in circumstances where data delivery to destination is falling behind data writing to a delivery stream, Firehose raises buffer size dynamically to catch up and make sure that all data is delivered to the destination.
+
+### KCL for Building Record Processing Application for data coming from IoT devices
+- A Data Scientist has been asked to create a pipeline for training machine learning models. 
+- The data will be collected from different IoT devices and needs to be read and processed by a custom record-processing application.
+- How can the Data Scientist process the data with the least amount of development effort?
+- KCL helps you consume and process data from a Kinesis data stream by taking care of many of the complex tasks associated with distributed computing. 
+- These include 
+  - Load balancing across multiple consumer application instances, 
+  - Responding to consumer application instance failures, 
+  - Checkpointing processed records, and reacting to resharding. 
+- The KCL takes care of all of these subtasks so that you can focus your efforts on writing your custom record-processing logic.
+- The KCL is different from the Kinesis Data Streams APIs that are available in the AWS SDKs. 
+- The Kinesis Data Streams APIs help you manage many aspects of Kinesis Data Streams, including creating streams, resharding, and putting and getting records. 
+- The KCL provides a layer of abstraction around all these subtasks, specifically so that you can focus on your consumer application’s custom data processing logic.
 <img src="images/15.png">
 
+#### KCL for Streaming Data to EMR for processing
 <img src="images/16.png">
 
-<img src="images/17.png">
+### Data Pipeline with Amazon RDS
+- A Machine Learning Specialist was given access to a SQL Server hosted on Amazon RDS. 
+- The data on this database will be used for training a model in Amazon SageMaker. 
+- The Specialist intends to design an end-to-end solution to automate his workflow.
+- How can the Specialist implement the solution?
+img src="images/17.png">
 
 <img src="images/18.png">
+
+### Data Pipeline with Amazon DynamoDB										
+- Data Pipeline regularly copies the full contents of a DynamoDB table as JSON into an S3.
+- Exported JSON files are converted to comma-separated value (CSV) format to use as a data source for Amazon SageMaker.
+- Amazon SageMaker renews the model artifact and updates the endpoint.
+- The converted CSV is available for ad hoc queries with Amazon Athena.
+- Data Pipeline controls this flow and repeats the cycle based on the schedule defined by customer requirements.
+- Data Pipeline can be intergerated with Amazon Redshift as well
