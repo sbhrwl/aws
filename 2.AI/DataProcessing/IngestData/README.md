@@ -163,14 +163,14 @@ outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB multiplied by the
 #### KCL for Streaming Data to EMR for processing
 <img src="images/16.png">
 
+<img src="images/6.png">
+
 ### Data Pipeline with Amazon RDS
 - A Machine Learning Specialist was given access to a SQL Server hosted on Amazon RDS. 
 - The data on this database will be used for training a model in Amazon SageMaker. 
 - The Specialist intends to design an end-to-end solution to automate his workflow.
 - How can the Specialist implement the solution?
 img src="images/17.png">
-
-<img src="images/18.png">
 
 ### Data Pipeline with Amazon DynamoDB										
 - Data Pipeline regularly copies the full contents of a DynamoDB table as JSON into an S3.
@@ -179,3 +179,4 @@ img src="images/17.png">
 - The converted CSV is available for ad hoc queries with Amazon Athena.
 - Data Pipeline controls this flow and repeats the cycle based on the schedule defined by customer requirements.
 - Data Pipeline can be intergerated with Amazon Redshift as well
+<img src="images/18.png">
