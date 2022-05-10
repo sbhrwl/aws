@@ -1,5 +1,5 @@
 # Data transformations
-## Datalake and S3
+## 1.  Datalake and S3
 - With a data lake built on Amazon S3, you can use native AWS services to run 
   - Big data analytics, 
   - Machine learning (ML), 
@@ -15,7 +15,7 @@
 ### Data Transformations	
 - Collect data in Native format in datalake (S3)
 - Transform data in data lake for analytics and downstream use cases
-## AWS Glue
+## 2. AWS Glue
 - Managed Spark Environment
 - Glue ETL provides an easy option to automatically generate ETL scripts and run the script as a scheduled job.
 - Glue ETL provisions required Spark infrastructure to run the job and automatically terminates the environment after the job is completed.
@@ -55,7 +55,7 @@
 
 - **The Glue generated ETL script can be used to load data on AWS EMR managed HIVE or SPARK table**
 
-## EMR
+## 3. EMR
 - Amazon EMR: Big data distributed processing			
 - Managed Hadoop Environment
 - Amazon EMR is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark, on AWS to
@@ -102,3 +102,16 @@
   - Kinesis Firehose is not meant to be used for batch processing use cases and it cannot write data in RecorIO-Protobuf format. 
   - Apache Spark (running on the EMR cluster in this use-case) can write the output in RecorIO-Protobuf format.
   - The Glue generated ETL script can be used to load data on AWS EMR managed HIVE or SPARK table										
+## 4. Firehose
+<img src="images/7.png">
+
+<img src="images/7.png">
+
+## 5. Data pipeline
+<img src="images/7.png">
+
+<img src="images/7.png">
+## 6. Step function
+<img src="images/7.png">
+
+<img src="images/7.png">
