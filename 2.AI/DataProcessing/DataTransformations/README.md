@@ -103,15 +103,74 @@
   - Apache Spark (running on the EMR cluster in this use-case) can write the output in RecorIO-Protobuf format.
   - The Glue generated ETL script can be used to load data on AWS EMR managed HIVE or SPARK table										
 ## 4. Firehose
-<img src="images/7.png">
+```
+- Firehose can transform STREAMING JSON to Parquet but cannot transform STREAMING CSV to Parquet
+- Create a streaming ETL job in AWS Glue to convert data from CSV to Apache Parquet"									
+```
+### 1. Firehose can transform incoming JSON data DIRECTLY to Parquet format
+- A media company needs to ingest and store a continuous stream of social media data. 
+- The source data is in JSON format. 
+- The company does not want to manage the underlying infrastructure and it wants the data to be immediately available for ad-hoc analysis. 
+- The solution must be cost efficient and scalable. 
+- As an ML specialist, what is your recommendation:"										
+- Kinesis Firehose can transform data to Parquet format and store it on S3 without provisioning any servers. 
+- Also this transformed data can be read into an Athena Table via a Glue Crawler and then the underlying data is readily available for ad-hoc analysis.  
+<img src="images/8.png">
 
-<img src="images/7.png">
+- Although Glue ETL Job can transform the source data to Parquet format, it is best suited for batch ETL use cases and it’s not meant to process streaming data. 
+- EMR cluster is not an option as the company does not want to manage the underlying infrastructure.		
+<img src="images/9.png">
+
+### 2. Kinesis Data Stream and Kinesis Data Analytics cannot directly consume the incoming video data: Use Kinesis Video Streams to Ingest Video Streaming Data	
+- The traffic monitoring authorities at a city want to monitor the traffic at busy intersections and take corrective action at the earliest. 
+- An ML solutions company has developed a Proof-of-Concept for processing this video data and now it wants to productionalize it to cover all city intersections. 
+- What is the recommended solution stack with the LEAST amount of development effort and ongoing maintenance?
+<img src="images/10.png">
 
 ## 5. Data pipeline
-<img src="images/7.png">
+- AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premises data sources, at specified intervals.
+- With AWS Data Pipeline, you can regularly access your data where it’s stored, transform and process it at scale, and efficiently transfer the results to AWS services such as Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR.
+- AWS Data Pipeline helps you easily create complex data processing workloads that are fault tolerant, repeatable, and highly available.
+- You don’t have to worry about ensuring resource availability, managing inter-task dependencies, retrying transient failures or timeouts in individual tasks, or creating a failure notification system.
+### 1. Data Pipeline: Transformation options										
+- Option1: We can use Amazon EMR cluster and AWS Data Pipeline as main transformation pipeline
+- Option 2: We can use Glue ETL and AWS Data pipeline as an alternative transformation pipeline		
+- Create an ETL job using AWS Glue to transform data and deliver the results into an Amazon S3 bucket
+- This option will require no management as compared to EMR										
+### 2. Migrate DWH (Redshift) to Data lake (S3)										
+- A financial services company wants to migrate its data architecture from a data warehouse to a data lake. 
+- It wants to use a solution that takes the least amount of time and needs no infrastructure management. 
+- What options would you recommend to transfer the data from AWS Redshift to S3 (Select two)?"								
+<img src="images/11.png">
 
-<img src="images/7.png">
+### 3. Training a model based on data stored in RDS, DynamoDB and Redshift->S3										
+- Use AWS Data Pipeline to copy the data from RDS/SQL Server to an S3 bucket. 
+- Provide the S3 endpoint within the SageMaker notebook.
+<img src="images/12.png">
+
+### 4. Model Training utilising Data Pipeline										
+- With Data pipeline we can read data from 
+  - AWS RDS DBs
+  - Dynamo DB
+  - Redshift data ware house
+- and then copy data to S3. This data in S3 can be used for Model Training
+
 ## 6. Step function
-<img src="images/7.png">
+- Step Functions: Serverless Orchestration
+- AWS Step Functions provides serverless orchestration for modern applications.										
+- Orchestration centrally manages a workflow by breaking it into multiple steps, adding flow logic, and tracking the inputs and outputs between the steps.
 
-<img src="images/7.png">
+### States of Step functions										
+- As your applications execute, Step Functions maintains application state, tracking exactly which workflow step your application is in, and stores an event log of data that is passed between application components.
+- That means that if networks fail or components hang, your application can pick up right where it left off.
+- Step Functions have different useful states that can be used in implementing the solution such as the 
+  - Task State, 
+  - Wait State, and 
+  - Fail State
+<img src="images/13.png">
+
+### Advantages of Step Functions										
+- Application development is faster and more intuitive with Step Functions, because you can define and manage the workflow of your application independently from its business logic.
+- Making changes to one does not affect the other.
+  - You can easily update and modify workflows in one place, without having to struggle with managing, monitoring and maintaining multiple point-to-point integrations
+- Step Functions frees your functions and containers from excess code, so your applications are faster to write, more resilient, and easier to maintain.
