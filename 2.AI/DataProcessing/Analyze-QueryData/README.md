@@ -58,7 +58,7 @@
 - This SQL is a continuous running query										
   - Monitors streaming data										
   - Sends the results to the configured destination
-img src="images/5.png">
+<img src="images/5.png">
 
 ### RANDOM_CUT_FOREST function
 - Use Amazon Kinesis Data Streams to stream transaction data and Amazon Kinesis Data Analytics RANDOM_CUT_FOREST function to detect anomalies.								
