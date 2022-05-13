@@ -42,6 +42,24 @@
 - When it’s time to run a particular activity on your on-premise resources, for example, executing a DB stored procedure or a database dump, AWS Data Pipeline will issue the appropriate command to the Task Runner. 
 - In order to ensure that your pipeline activities are highly available, you can optionally assign multiple Task Runners to poll for a given job. 
 - This way, if one Task Runner becomes unavailable, the others will simply pick up its work.
+### Data Pipeline with Amazon RDS
+- A Machine Learning Specialist was given access to a SQL Server hosted on Amazon RDS. 
+- The data on this database will be used for training a model in Amazon SageMaker. 
+- The Specialist intends to design an end-to-end solution to automate his workflow.
+- How can the Specialist implement the solution?
+<img src="images/16.png">
+
+<img src="images/17.png">
+
+### Data Pipeline with Amazon DynamoDB										
+- Data Pipeline regularly copies the full contents of a DynamoDB table as JSON into an S3.
+- Exported JSON files are converted to comma-separated value (CSV) format to use as a data source for Amazon SageMaker.
+- Amazon SageMaker renews the model artifact and updates the endpoint.
+- The converted CSV is available for ad hoc queries with Amazon Athena.
+- Data Pipeline controls this flow and repeats the cycle based on the schedule defined by customer requirements.
+- Data Pipeline can be intergerated with Amazon Redshift as well
+<img src="images/18.png">
+
 ## 8. Streaming Data
 - is generated Continuously
 - has smaller Payloads
@@ -162,21 +180,3 @@ outgoing_read_bandwidth_in_KB = incoming_write_bandwidth_in_KB multiplied by the
 
 #### KCL for Streaming Data to EMR for processing
 <img src="images/6.png">
-
-### Data Pipeline with Amazon RDS
-- A Machine Learning Specialist was given access to a SQL Server hosted on Amazon RDS. 
-- The data on this database will be used for training a model in Amazon SageMaker. 
-- The Specialist intends to design an end-to-end solution to automate his workflow.
-- How can the Specialist implement the solution?
-<img src="images/16.png">
-
-<img src="images/17.png">
-
-### Data Pipeline with Amazon DynamoDB										
-- Data Pipeline regularly copies the full contents of a DynamoDB table as JSON into an S3.
-- Exported JSON files are converted to comma-separated value (CSV) format to use as a data source for Amazon SageMaker.
-- Amazon SageMaker renews the model artifact and updates the endpoint.
-- The converted CSV is available for ad hoc queries with Amazon Athena.
-- Data Pipeline controls this flow and repeats the cycle based on the schedule defined by customer requirements.
-- Data Pipeline can be intergerated with Amazon Redshift as well
-<img src="images/18.png">
