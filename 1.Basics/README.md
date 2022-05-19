@@ -21,6 +21,8 @@
   - Distribute traffic between On premise servers and AWS Web servers deployed on EC2
   - Configure a NAT gateway for each AZ with an Elastic IP,   
 - [Route53](1.Fundamentals/8.Route53/README.md)
+  - TTL, Registrar, Routing Policies (Routing based on location)
+  - Alias records, Failovers, Supported DNS Record Types, DNSSEC
 - Storage
   - [EBS](1.Fundamentals/9.Storage/EBS/README.md)
   - [EFS](1.Fundamentals/9.Storage/EFS/README.md)
