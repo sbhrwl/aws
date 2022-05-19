@@ -135,7 +135,7 @@
   - If you receive a capacity error when launching an instance in a placement group that already has running instances, stop and start all of the instances in the placement group, and try the launch again. 
   - Restarting the instances may migrate them to hardware that has capacity for all the requested instances.
 
-- **Enhanced_networking**
+- **Enhanced networking**
   - Enhanced Networking offers HIGH PPS													
   - While Deploying a HPC on a cluster make sure that you 
     - Use Placement Groups and 
@@ -144,7 +144,7 @@
     - SR-IOV provides DIRECT access to network adapters, higher PPS and lower latency"													
 <img src="images/Enhanced_networking.png">
 
-- **vCPU** based ON DEMAND INSTANCE limit per Region
+- **vCPU** based `ON DEMAND INSTANCE limit per Region`
 <img src="images/vCPU-1.png">
 
 <img src="images/vCPU-2.png">
