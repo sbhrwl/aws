@@ -199,45 +199,34 @@ Solution: Create a VPC endpoint service and grant permissions to specific servic
 <img src="images/27.png">
 
 ## Connection Between VPCs
-VPC Peering										
--  Private Connection between 2 VPCs (routing via AWS network): Opens a Network connection between participating VPCs										
--  VPC peering can be done between INTER REGION, CROSS ACCOUNTs as well										
--  Create Peering Connection										
--  Must Update Route Table in both VPCs										
-"-  VPC peering Considerations:
-  -  CIDR should not overlap
-  -  No Transitive routing
-  -  No Edge To Edge Routing via Gateway or Private connections"										
-https://docs.aws.amazon.com/vpc/latest/peering/invalid-peering-configurations.html										
+### [VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/invalid-peering-configurations.html)
+- Private Connection between 2 VPCs (routing via AWS network): Opens a Network connection between participating VPCs					
+- VPC peering can be done between INTER REGION, CROSS ACCOUNTs as well										
+- Create Peering Connection										
+- Must Update Route Table in both VPCs										
+- VPC peering Considerations:
+  - CIDR should not overlap
+  - No Transitive routing
+  - No Edge To Edge Routing via Gateway or Private connections"										
 
-## Connection Between VPCs
-AWS Resource Access Manager											
--  AWS Resource Access Manager (RAM) is a service that enables you to easily and securely share AWS resources with any AWS account or within your AWS Organization. 											
--  You can share AWS Transit Gateways, Subnets, AWS License Manager configurations, and Amazon Route 53 Resolver rules resources with RAM											
--  If you have multiple AWS accounts, you can create resources centrally and use AWS RAM to share those resources with other accounts.											
-											
-Sharing VPC resources together with VPC Peering and RAM											
-"-  If the resources are in different regions, you will generally need to Share the resource subnet from the source region to the destination region using VPC Peering
--  Than use RAM to share the subnet with the child account in the same region"											
-											
-1. RAM not an option for sharing APIs											
-RAM lets you share resources that are provisioned and managed in other AWS services. However, APIs are not shareable resources with AWS RAM.											
+### AWS Resource Access Manager											
+- AWS Resource Access Manager (RAM) is a service that enables you to easily and securely share AWS resources with any AWS account or within your AWS Organization. 											
+- You can share AWS Transit Gateways, Subnets, AWS License Manager configurations, and Amazon Route 53 Resolver rules resources with RAM											
+- If you have multiple AWS accounts, you can create resources centrally and use AWS RAM to share those resources with other accounts.
+#### Sharing VPC resources together with VPC Peering and RAM											
+- If the resources are in different regions, you will generally need to Share the resource subnet from the source region to the destination region using VPC Peering
+- Than use RAM to share the subnet with the child account in the same region
+- RAM not an option for sharing APIs											
+- RAM lets you share resources that are provisioned and managed in other AWS services. However, APIs are not shareable resources with AWS RAM.
 <img src="images/28.png">
 
-2. VPC Sharing ~ Sharing via RAM				
+- VPC Sharing ~ Sharing via RAM				
 <img src="images/29.png">
 
 <img src="images/30.png">
 
-# Summary
-Summary											
-											
-1. Exposing Services to Customer VPC privately											
-Expose an Endpoint, VPC private link is also exposing an Endpoint											
-											
-2. Sharing VPC components/resources with another VPC 											
-Use VPC peering											
-											
-3. Sharing VPC components/resources with another VPC when the resources are in another Region and we are using AWS Organisation											
-Use RAM or RAM and VPC peering 											
-*RAM not an option for sharing APIs											
+# Summary										
+1. Exposing Services to Customer VPC privately, `Expose an Endpoint, VPC private link is also exposing an Endpoint`
+2. Sharing VPC components/resources with another VPC, `Use VPC peering`
+3. Sharing VPC components/resources with another VPC when the resources are in another Region and we are using AWS Organisation `Use RAM or RAM and VPC peering`
+4. RAM not an option for sharing APIs	
