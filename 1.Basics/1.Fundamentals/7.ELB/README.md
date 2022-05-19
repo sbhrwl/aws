@@ -77,7 +77,7 @@
 - Configure a NAT gateway for each AZ with an Elastic IP										
 - Do not get misled to use NLB/GA because of "2 IPs to be whitelisted", as in this case EC2 want to connect to Internet
 
-## 11.ALB- Authentication via CUP		
+## 11. ALB- Authentication via CUP		
 <img src="images/2.png">
 
 ## 12. NLB-BYOIP - Static IP											
