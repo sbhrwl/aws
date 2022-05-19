@@ -62,23 +62,23 @@ Simple Scaling Increase or decrease the current capacity of the group based on a
 ## 14. Adding HA for API running on EC2, move it to API gateway and use Lambda to handle backend
 <img src="images/3.png">
 
-# Launch Templates											
-Launch Templates enables us to set up an ASG with a mix of on-demand and spot instances across multiple instance type											
+## 15. Launch Templates											
+- Launch Templates enables us to set up an ASG with a mix of on-demand and spot instances across multiple instance type					
 <img src="images/4.png">
 
-# EC2 Cloudwatch agent
+## 16. EC2 Cloudwatch agent
 <img src="images/5.png">
 
-- Take note that there is a multi-platform CloudWatch agent which can be installed on both Linux and Windows-based instances. 										
-- You can use a single agent to collect both system metrics and log files from Amazon EC2 instances and on-premises servers. 										
-- This agent supports both Windows Server and Linux and enables you to select the metrics to be collected, including sub-resource metrics such as per-CPU core. 										
-- It is recommended that you use the new agent instead of the older monitoring scripts to collect metrics and logs.										
+- Take note that there is a multi-platform CloudWatch agent which can be installed on both Linux and Windows-based instances.				
+- You can use a single agent to collect both system metrics and log files from Amazon EC2 instances and on-premises servers. 
+- This agent supports both Windows Server and Linux and enables you to select the metrics to be collected, including sub-resource metrics such as per-CPU core.
+- It is recommended that you use the new agent instead of the older monitoring scripts to collect metrics and logs.				
 
-# ELB Health Check for ASG
+## 17. ELB Health Check for ASG
 <img src="images/6.png">
 
-# ASG-SNS and Instance State Change Events
-<img src="images/7.png">
-
-# If adding an instance to an ASG would result in EXCEEDING MAX Capacity of the ASG, the request will FAIL
+### If adding an instance to an ASG would result in EXCEEDING MAX Capacity of the ASG, the request will FAIL
 <img src="images/8.png">
+
+## 18. ASG-SNS and Instance State Change Events
+<img src="images/7.png">
