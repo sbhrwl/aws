@@ -9,8 +9,7 @@
   - Subnet, Internet Gateway, Route Table, NAT, DNS Resolution, NACL, Adding Internet Gateway to Main Route table of VPC
   - VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
   - VPC- IPv4 and IPv6 adressing (Dual Stack mode), Attaching IPv6 CIDRs to a subnet, Ephemerel Ports
-  - Connection Between VPCs (VPC Endpoint, VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
-  - Endpoint Policy (VPC endpoint Policy for S3)
+  - Connection Between VPCs (VPC Endpoint (Endpoint Policy (VPC endpoint Policy for S3)), VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
 - [ASG](1.Fundamentals/6.ASG/README.md)
   - Step Scaling Vs Simple scaling, HA setup, Launch Templates
   - EC2 Cloudwatch agent, ELB Health Check for ASG, ASG-SNS and Instance State Change Events
@@ -71,8 +70,3 @@
 - [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
 
 # Cloud formation
-
-# Fundamentals
-| Group 1 | Group 2 |
-| ------- | ------- |
-|<ul><li>[Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)</li><li>[Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)</li><li>[Global Infrastructure](1.Basics/1.Fundamentals/3.GlobalInfra/README.md)</li><li>[EC2](1.Basics/1.Fundamentals/4.EC2/README.md)</li><li>[VPC](1.Basics/1.Fundamentals/5.VPC/README.md)</li><li>[ASG](1.Basics/1.Fundamentals/6.ASG/README.md)</li><li>[ELB](1.Basics/1.Fundamentals/7.ELB/README.md)</li><li>[Route53](1.Basics/1.Fundamentals/8.Route53/README.md)</li></ul> | <ul><li>Storage<ul><li>[EBS](1.Basics/1.Fundamentals/9.Storage/EBS/README.md)</li><li>[EFS](1.Basics/1.Fundamentals/9.Storage/EFS/README.md)</li><li>[S3](1.Basics/1.Fundamentals/9.Storage/S3/README.md)</li><li>[S3Advance](1.Basics/1.Fundamentals/9.Storage/S3Advance/README.md)</li></ul></li><li>Databases<ul><li>[RDS](1.Basics/1.Fundamentals/10.RDS/README.md)</li><li>[Aurora](1.Basics/1.Fundamentals/10.Databases/Aurora/README.md)</li><li>[Elasticcache](1.Basics/1.Fundamentals/10.Databases/Elasticcache/README.md)</li></ul></li><li>Hybrid<ul><li>[HybridConnections](1.Basics/1.Fundamentals/11.Hybrid/HybridConnections/README.md)</li><li>[HybridStorage](1.Basics/1.Fundamentals/11.Hybrid/HybridStorage/README.md)</li></ul> |
