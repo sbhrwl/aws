@@ -42,14 +42,14 @@
   - Instances in a peered VPC.
   - AWS resources that are addressable by IP address and port.
   - On-premises resources linked to AWS through Direct Connect or a VPN connection									
-## 6. NLB-Routing	
+## 5. NLB-Routing	
 - After the load balancer receives a connection request, it selects a target from the target group for the default rule. 
 - It attempts to open a TCP connection to the selected target on the port specified in the listener configuration.
 								
-## 7. Encryption in Transit										
+## 6. Encryption in Transit										
 - NLB with TCP listener, then TERMINATE SSL on EC2 instances										
 - ALB with an HTTPS listener, install SSL certificates on ALB as well as on EC2 instances	
-## 8. NLB-BYOIP - Static IP											
+## 7. NLB-BYOIP - Static IP											
 - A company has developed public APIs hosted in Amazon EC2 instances behind an Elastic Load Balancer. 
 - The APIs will be used by various clients from their respective on-premises data centers. 
 - A Solutions Architect received a report that the web service clients can only access trusted IP addresses whitelisted on their firewalls.
@@ -62,39 +62,39 @@
 - The above option works within ONE REGION, use GA when we need to whitelist IPs across multiple regions				
 <img src="images/3.png">
 
-## 9. ONLY ALB supports path-based routing and host-based routing									
+## 8. ONLY ALB supports path-based routing and host-based routing									
 1. Stickiness setting is at Target group level (not at Load balancer)										
 2. Cross Zone Load Balancing										
 3. SNI										
 4. Connection Draining/Deregistration Delay										
-"5. Perfect Forward Secrecy: 
+5. **Perfect Forward Secrecy**
 - Provides additional safeguard against the evesdropping of encrypted data through the use of unique random session key
 - This is supported by ELBs and Cloudfront
   - **Cloudfront offers ""Field Level Encryption"", this adds EXTRA Level of ENCRYPTION at Cloudfront EDGE Locations"		
 <img src="images/1.png">
 
-## 10. ALB- Authentication via CUP		
+## 9. ALB- Authentication via CUP		
 <img src="images/2.png">
 
-## 11. ALB - Weighted Routing
+## 10. ALB - Weighted Routing
 - Application Load Balancers support Weighted Target Groups routing. 										
 - With this feature, you will be able to do weighted routing of the traffic forwarded by a rule to multiple target groups
 - This enables various use cases like blue-green, canary and hybrid deployments without the need for multiple load balancers
 - It even enables zero-downtime migration between on-premises and cloud or between different compute types like EC2 and Lambda.	
 <img src="images/4.png">
 
-## 12. Choose wisely, for below case Route 53 is a better choice				
+## 11. Choose wisely, for below case Route 53 is a better choice				
 <img src="images/5.png">
 
-## 13. How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate?
+## 12. How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate?
 - Improve Read scaling: Add Aurora Read replicas
 - Cache content: Use Cloudfront in front of ALB									
-## 14. How to distribute traffic between On premise servers and AWS Web servers deployed on EC2?		
+## 13. How to distribute traffic between On premise servers and AWS Web servers deployed on EC2?		
 - Provision a DX connection between On premise and AWS										
 - Create a Target Group on ALB										
 - Use IP address based targets for the EC2 instances and On premise Servers	
 
-## 15. Configure a NAT gateway for each AZ with an Elastic IP
+## 14. Configure a NAT gateway for each AZ with an Elastic IP
 - NLB One STATIC IP per AZ										
 - GA Supports 2 ANYCAST IP Globally										
 - Your EC2 wants to access an application on Internet. 
