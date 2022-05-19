@@ -3,7 +3,14 @@
 - [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
 - [Global Infrastructure](1.Fundamentals/3.GlobalInfra/README.md)
 - [EC2](1.Fundamentals/4.EC2/README.md)
+  - Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
+  - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU based ON DEMAND INSTANCE limit per Region)
 - [VPC](1.Fundamentals/5.VPC/README.md)
+  - Subnet, Internet Gateway, Route Table, NAT, DNS Resolution, NACL, Adding Internet Gateway to Main Route table of VPC
+  - VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
+  - VPC- IPv4 and IPv6 adressing (Dual Stack mode), Attaching IPv6 CIDRs to a subnet, Ephemerel Ports
+  - Connection Between VPCs (VPC Endpoint, VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
+  - Endpoint Policy (VPC endpoint Policy for S3)
 - [ASG](1.Fundamentals/6.ASG/README.md)
 - [ELB](1.Fundamentals/7.ELB/README.md)
 - [Route53](1.Fundamentals/8.Route53/README.md)
