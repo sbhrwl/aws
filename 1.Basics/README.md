@@ -14,6 +14,12 @@
   - Step Scaling Vs Simple scaling, HA setup, Launch Templates
   - EC2 Cloudwatch agent, ELB Health Check for ASG, ASG-SNS and Instance State Change Events
 - [ELB](1.Fundamentals/7.ELB/README.md)
+  - NLB, ALB, CLB, ELB Health checks
+  - NLB-Routing, Encryption in Transit, NLB-BYOIP - Static IP
+  - ONLY ALB supports path-based routing and host-based routing, ALB- Authentication via CUP, ALB - Weighted Routing
+  - How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate
+  - Distribute traffic between On premise servers and AWS Web servers deployed on EC2
+  - Configure a NAT gateway for each AZ with an Elastic IP,   
 - [Route53](1.Fundamentals/8.Route53/README.md)
 - Storage
   - [EBS](1.Fundamentals/9.Storage/EBS/README.md)
