@@ -190,6 +190,7 @@ d. VPC endpoint Policies
 - Create a NLB in VPC exposing the resources (EC2 insatnce)										
 - Setup Private link by creating Interface endpoint in Customer that wants to consume our resources (Service hosted on EC2)
 <img src="images/26.png">
+
 ## 3. VPC Classic Link	
 -  Enables to link EC2 classic instance to our VPC	
 
