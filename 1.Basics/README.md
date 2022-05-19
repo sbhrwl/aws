@@ -12,6 +12,8 @@
   - Connection Between VPCs (VPC Endpoint, VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
   - Endpoint Policy (VPC endpoint Policy for S3)
 - [ASG](1.Fundamentals/6.ASG/README.md)
+  - Step Scaling Vs Simple scaling, HA setup, Launch Templates
+  - EC2 Cloudwatch agent, ELB Health Check for ASG, ASG-SNS and Instance State Change Events
 - [ELB](1.Fundamentals/7.ELB/README.md)
 - [Route53](1.Fundamentals/8.Route53/README.md)
 - Storage
