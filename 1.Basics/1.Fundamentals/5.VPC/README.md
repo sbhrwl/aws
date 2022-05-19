@@ -180,21 +180,21 @@ This Creates an ENI in Customer VPC as we created an Interface endpoint"
 ## Differences
 <img src="images/25.png">
 
-## 1. Use Case: How to Transmit data to 1000s of SERVICE consumers in different VPC accounts												
-An organization in the health industry needs to create an application that will transmit protected health data to thousands of service consumers in different AWS accounts. The application servers run on EC2 instances in private VPC subnets. The routing for the application must be fault tolerant.												
-												
-Solution: Create a VPC endpoint service and grant permissions to specific service consumers to create a connection												
-												
-2. How to prevent customer VPC to access our underlying EC2 instances?												
--  Create a NLB in VPC exposing the resources (EC2 insatnce)												
--  Setup Private link by creating Interface endpoint in Customer that wants to consume our resources (Service hosted on EC2)												
+## 1. How to Transmit data to 1000s of SERVICE consumers in different VPC accounts
+- An organization in the health industry needs to create an application that will transmit protected health data to thousands of service consumers in different AWS accounts. 
+- The application servers run on EC2 instances in private VPC subnets. The routing for the application must be fault tolerant.
+### Solution
+- Create a VPC endpoint service and grant permissions to specific service consumers to create a connection
+### 2. How to prevent customer VPC to access our underlying EC2 instances?
+- Create a NLB in VPC exposing the resources (EC2 insatnce)										
+- Setup Private link by creating Interface endpoint in Customer that wants to consume our resources (Service hosted on EC2)
 <img src="images/26.png">
 
 # Endpoint Policy
--  When you create a VPC endpoint, you can attach an endpoint policy to controls access to the service (for ex: S3) to which you are connecting.											
--  You can modify the endpoint policy attached to your endpoint and add or remove the route tables used by the endpoint.											
--   An endpoint policy does not override or replace IAM user policies or service-specific policies (such as S3 bucket policies).											
--   It is a separate policy for controlling access from the endpoint to the specified service.											
+- When you create a VPC endpoint, you can attach an endpoint policy to controls access to the service (for ex: S3) to which you are connecting.	
+- You can modify the endpoint policy attached to your endpoint and add or remove the route tables used by the endpoint.
+- An endpoint policy does not override or replace IAM user policies or service-specific policies (such as S3 bucket policies).
+- It is a separate policy for controlling access from the endpoint to the specified service.											
 ## VPC endpoint Policy for S3 
 <img src="images/27.png">
 
@@ -213,9 +213,9 @@ Solution: Create a VPC endpoint service and grant permissions to specific servic
 - AWS Resource Access Manager (RAM) is a service that enables you to easily and securely share AWS resources with any AWS account or within your AWS Organization. 											
 - You can share AWS Transit Gateways, Subnets, AWS License Manager configurations, and Amazon Route 53 Resolver rules resources with RAM											
 - If you have multiple AWS accounts, you can create resources centrally and use AWS RAM to share those resources with other accounts.
-#### Sharing VPC resources together with VPC Peering and RAM											
-- If the resources are in different regions, you will generally need to Share the resource subnet from the source region to the destination region using VPC Peering
-- Than use RAM to share the subnet with the child account in the same region
+### Sharing VPC resources together with VPC Peering and RAM											
+- If the resources are in different regions, you will generally need to Share the resource subnet from the source region to the destination region using `VPC Peering`
+- Than use `RAM` to share the subnet with the child account in the same region
 - RAM not an option for sharing APIs											
 - RAM lets you share resources that are provisioned and managed in other AWS services. However, APIs are not shareable resources with AWS RAM.
 <img src="images/28.png">
