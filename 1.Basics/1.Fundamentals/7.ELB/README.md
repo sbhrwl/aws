@@ -41,7 +41,7 @@
 - ALB health check will fail											
 - As ALB health check failed, ALB will remove the EC2 instance											
 - ASG will not provision new EC2 because health checks have been successful											
-### 1. Routing and IP Addresses										
+### Routing and IP Addresses										
 #### Case 1: If you specify targets using an instance ID, traffic is routed to instances using the primary private IP address specified in the primary network interface for the instance.										
 - The load balancer rewrites the destination IP address from the data packet before forwarding it to the target instance.														
 #### Case 2: If you specify targets using IP addresses, you can route traffic to an instance using any private IP address from one or more network interfaces. 										
@@ -49,38 +49,38 @@
 - Note that each network interface can have its security group. 
 - The load balancer rewrites the destination IP address before forwarding it to the target.
 										
-### 2. Registering IP addresses as Targets			
+### Registering IP addresses as Targets			
 - With ALB and NLB IP addresses can be used to register:										
   - Instances in a peered VPC.
   - AWS resources that are addressable by IP address and port.
   - On-premises resources linked to AWS through Direct Connect or a VPN connectio
 										
-### 3. NLB-Routing	
+## 6. NLB-Routing	
 - After the load balancer receives a connection request, it selects a target from the target group for the default rule. 
 - It attempts to open a TCP connection to the selected target on the port specified in the listener configuration.
-#### 4. How to distribute traffic between On premise servers and AWS Web servers deployed on EC2?		
+## 7. How to distribute traffic between On premise servers and AWS Web servers deployed on EC2?		
 - Provision a DX connection between On premise and AWS										
 - Create a Target Group on ALB										
 - Use IP address based targets for the EC2 instances and On premise Servers										
-#### 5. Encryption in Transit										
+## 8. Encryption in Transit										
 - NLB with TCP listener, then TERMINATE SSL on EC2 instances										
 - ALB with an HTTPS listener, install SSL certificates on ALB as well as on EC2 instances	
-#### 6. How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate?
+## 9. How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate?
 - Improve Read scaling: Add Aurora Read replicas
 - Cache content: Use Cloudfront in front of ALB									
-#### 7. Question
+## 10. Configure a NAT gateway for each AZ with an Elastic IP
 - NLB One STATIC IP per AZ										
 - GA Supports 2 ANYCAST IP Globally										
 - Your EC2 wants to access an application on Internet. 
 - This application on Internet allows 2 IPs to be whitelisted per customer, what shall we do?							
 #### Solution
-- Configure a NAT gateway for eac AZ with an Elastic IP										
+- Configure a NAT gateway for each AZ with an Elastic IP										
 - Do not get misled to use NLB/GA because of "2 IPs to be whitelisted", as in this case EC2 want to connect to Internet
 
-## 8.ALB- Authentication via CUP		
+## 11.ALB- Authentication via CUP		
 <img src="images/2.png">
 
-## 9. NLB-BYOIP - Static IP											
+## 12. NLB-BYOIP - Static IP											
 - A company has developed public APIs hosted in Amazon EC2 instances behind an Elastic Load Balancer. 
 - The APIs will be used by various clients from their respective on-premises data centers. 
 - A Solutions Architect received a report that the web service clients can only access trusted IP addresses whitelisted on their firewalls.
@@ -93,12 +93,12 @@
 - The above option works within ONE REGION, use GA when we need to whitelist IPs across multiple regions				
 <img src="images/3.png">
 
-## 10. ALB - Weighted Routing
+## 13. ALB - Weighted Routing
 - Application Load Balancers support Weighted Target Groups routing. 										
 - With this feature, you will be able to do weighted routing of the traffic forwarded by a rule to multiple target groups
 - This enables various use cases like blue-green, canary and hybrid deployments without the need for multiple load balancers
 - It even enables zero-downtime migration between on-premises and cloud or between different compute types like EC2 and Lambda.	
 <img src="images/4.png">
 
-## 11. Choose wisely, for below case Route 53 is a better choice				
+## 14. Choose wisely, for below case Route 53 is a better choice				
 <img src="images/5.png">
