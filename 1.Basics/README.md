@@ -4,7 +4,7 @@
 - [Global Infrastructure](1.Fundamentals/3.GlobalInfra/README.md)
 - [EC2](1.Fundamentals/4.EC2/README.md)
   - Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
-  - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU based ON DEMAND INSTANCE limit per Region)
+  - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU-based "ON DEMAND INSTANCE limit per Region")
 - [VPC](1.Fundamentals/5.VPC/README.md)
   - Subnet, Internet Gateway, Route Table, NAT, DNS Resolution, NACL, Adding Internet Gateway to Main Route table of VPC
   - VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
