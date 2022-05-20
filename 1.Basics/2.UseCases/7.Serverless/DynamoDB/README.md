@@ -43,13 +43,18 @@
 ## 8. Transactions			
 - Coordinated Insert, Update and Delete across Multiple tables			
 - Include upto 10 unique items or upto 4MB of data			
-## 9. DaX Cluster			
+## 9. DaX
+- Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement — from milliseconds to microseconds — even at millions of requests per second. 
+- DAX does all the heavy lifting required to add in-memory acceleration to your DynamoDB tables, without requiring developers to manage cache invalidation, data population, or cluster management. 
+<img src="images/2.png" width=500>
+
+## 10. DaX Cluster			
 - DaX Caches the Most Frequent Read values, MICRO second latency			
 - DaX Offloads heavy reads on "Hot Keys" from DynamoDB itself, hence prevent PrivisionedThroughputExceeded exception			
 - WRITES Go through DaX to DynamoDB			
 - Default 5 min TTL			
 - 10 Nodes in a cluster			
-## 10. DynamoDB Streams			
+## 11. DynamoDB Streams			
 - Changes (CUD) in DynamoDB end up in DynamoDB streams			
 - Lambda can read DynamoDB streams and 
   - React to changes in real time
@@ -58,15 +63,10 @@
   - Insert into another table"			
 - Helps in Implementing CRR			
 - 24 hour Data retention			
-## 11. Global Table			
+## 12. Global Table			
 - Serves the purpose of CRR			
 - Must enable DynamoDB streams			
 - Solves Low Latency DR problems			
-
-## 12. DaX
-- Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement — from milliseconds to microseconds — even at millions of requests per second. 
-- DAX does all the heavy lifting required to add in-memory acceleration to your DynamoDB tables, without requiring developers to manage cache invalidation, data population, or cluster management. 
-<img src="images/2.png" width=500>
 
 ## 13. Aurora Globa DB Vs DynamoDB Global Table
 - Amazon Aurora Global Database provides read access to a database in multiple regions									
