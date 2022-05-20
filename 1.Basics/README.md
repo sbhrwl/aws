@@ -25,6 +25,8 @@
   - Alias records, Failovers, Supported DNS Record Types, DNSSEC
 - Storage
   - [EBS](1.Fundamentals/9.Storage/EBS/README.md)
+    - Volume Types, Snapshots, Data Lifecycle Manager, Encryption
+    - RAID, Instance Store, EC2 Status Checks on EBS, EBS Optimized Instances
   - [EFS](1.Fundamentals/9.Storage/EFS/README.md)
   - [S3](1.Fundamentals/9.Storage/S3/README.md)
   - [S3Advance](1.Fundamentals/9.Storage/S3Advance/README.md)
