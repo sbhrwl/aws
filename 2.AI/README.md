@@ -23,3 +23,6 @@
 - [Monitoring](Sagemaker/Monitoring/README.md)
 - [Securing and protecting data](Sagemaker/SecuringAndProtectingData/README.md)
 - [Miscellaneous](Sagemaker/Miscellaneous/README.md)
+
+# [Built in Algorithms](https://drive.google.com/drive/u/0/folders/1iJ4J7KBOFmeW7rRrUfkfM9RbiTvmMb6z)
+# [AI services](https://drive.google.com/drive/u/0/folders/15etGsuFjOW7SFv7REbuydbhQxP8LmrtI)
