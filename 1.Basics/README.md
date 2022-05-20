@@ -56,6 +56,9 @@
     - MultiAZ-DR-HA
     - RDS In Transit Encryption, Enhanced Monitoring, RDS Event subscription
   - [Aurora](1.Fundamentals/10.Databases/Aurora/README.md)
+    - Aurora Security, DR, Read Replicas, Read Scaling with Multi AZ deployment, MultiAZ Or ReadReplica
+    - Aurora Cluster Endpoints (Writer Endpoint, Reader Endpoint, Custom Endpoint)
+    - Failovers with Aurora, Aurora Serverless,	Enhanced Monitoring, Aurora Global DB, Inter Region DR, Aurora Globa DB Vs DynamoDB Global Table
   - [Elasticcache](1.Fundamentals/10.Databases/Elasticcache/README.md)
 - Hybrid
   - [HybridConnections](1.Fundamentals/11.Hybrid/HybridConnections/README.md)
