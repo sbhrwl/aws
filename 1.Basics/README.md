@@ -63,10 +63,13 @@
     - DB Cache, Session store, Write Through, Security
     - Redis(Remote Dictionary Server), Memcached
 - Hybrid
-  - [HybridConnections](1.Fundamentals/11.Hybrid/HybridConnections/README.md)
+  - [Hybrid Connections](1.Fundamentals/11.Hybrid/HybridConnections/README.md)
     - Client VPN, Site to Site VPN, VPN Cloud Hub
     - On premise to AWS[Direct Connect, Direct Connect Gateway, Transit Gateway, Transit Gateway + DX  Gateway]
-  - [HybridStorage](1.Fundamentals/11.Hybrid/HybridStorage/README.md)
+  - [Hybrid Storage](1.Fundamentals/11.Hybrid/HybridStorage/README.md)
+  - FsX for Windows, Integrate with Microsoft AD
+  - FsX for Lustre, Integration with S3, Hot Storage
+  - Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
 
 # Use cases
 - [Design principals](2.UseCases/1.DesignPrincipals/README.md)
