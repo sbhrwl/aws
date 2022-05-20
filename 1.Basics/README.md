@@ -137,6 +137,9 @@
   - [VPC Flow logs](2.UseCases/8.Monitoring/VPCflowLogs.md)
   - [AWS X-Ray]()
   - [AWS Inspector]()
+- [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
+- [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
+- [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
 # Projects
 - [Metering infra on cloud](3.Projects/MeteringInfraOnCloud/README.md)
 - [2 Tier web application](3.Projects/2TierWebApp/README.md)
@@ -145,5 +148,7 @@
 - [Invoke lambda from API](3.Projects/InvokeLambdaFromAPI/README.md)
   - Lambda code, API gateway setup
 - [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
+- [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
+- [API-Kinesis-S3](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 
-# Cloud formation
+# [Cloud formation](https://drive.google.com/drive/u/0/folders/1C3kwfmSzod-cVkPJirf983xjtaJSfrwB)
