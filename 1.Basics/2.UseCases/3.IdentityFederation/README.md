@@ -1,4 +1,4 @@
-# IdentityFederation
+# Identity Federation
 
 ## Where are Users											
 - **In organisation**
