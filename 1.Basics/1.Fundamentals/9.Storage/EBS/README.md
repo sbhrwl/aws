@@ -10,6 +10,8 @@
 - IO1-SDD (Databases)		
 - ST1-HDD (DWH)		
 - SC1-HDD
+<img src="images/12.png">
+
 ### Remember
 - st1 and sc1 are also referred as MAGNETIC Volumes		
 - Volume Characteristics		
