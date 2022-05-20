@@ -28,6 +28,10 @@
     - Volume Types, Snapshots, Data Lifecycle Manager, Encryption
     - RAID, Instance Store, EC2 Status Checks on EBS, EBS Optimized Instances
   - [EFS](1.Fundamentals/9.Storage/EFS/README.md)
+    - Lifecycle/Storage Tiers, Performance and Throughput mode, EFS configuration, Attach VPC, AZ, Subnets and Security groups
+    - How to configure EFS  which will hold HOME directory for users?, EFS with EC2, EFS is Highly available, EBS is not
+    - When OBJECT based storage is needed, opt for S3. S3 is best for High Performance OBJECT based storage needs
+    - EFS offers File System Interface, S3 doesnot, POSIX permissions, EFS Big Data Workloads
   - [S3](1.Fundamentals/9.Storage/S3/README.md)
   - [S3Advance](1.Fundamentals/9.Storage/S3Advance/README.md)
 - Databases
