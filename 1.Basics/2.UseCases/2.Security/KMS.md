@@ -31,5 +31,5 @@ Most of the time we are using symmetric keys
 - Encrypting Snapshots (EBS or EBS backed RDS instance)		
 - Copying Snapshots across Accounts		
 ## Keys are different from credentials (don't confuse)											
-- "Store the credentials in AWS Key Management Service and use environment variables in the function code pointing to KMS" is incorrect. 
+- Store the credentials in AWS Key Management Service and use environment variables in the function code pointing to KMS is incorrect. 
 - You cannot store credentials in KMS, **it is used for creating and managing encryption keys**
