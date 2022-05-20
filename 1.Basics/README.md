@@ -1,7 +1,10 @@
 # Fundamentals
 - [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
 - [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
+  - Deployment models (Public cloud, Private cloud)
+  - Service models (Infrastructure As A Service, Platform As A Service, Software As A Service)
 - [Global Infrastructure](1.Fundamentals/3.GlobalInfra/README.md)
+  - Regions, Availability zones (Placement group), Edge locations (Cloudfront infra)
 - [EC2](1.Fundamentals/4.EC2/README.md)
   - Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
   - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU-based "ON DEMAND INSTANCE limit per Region")
