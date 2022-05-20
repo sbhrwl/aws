@@ -17,17 +17,15 @@
 - Volume Characteristics
 <img src="images/11.png">		
 
-<img src="images/2.png">
-
 - GP and PIOPS can be used as BOOT VOLUMES										
 - MOST COST EFFECTIVE: SC1 and then ST1
-<img src="images/3.png">
+<img src="images/2.png">
 
 - Cheapest option 
   - If question mentions "COST" then focus on cheapest option						
-    <img src="images/4.png">
+    <img src="images/3.png">
 	
-    <img src="images/5.png">
+    <img src="images/4.png">
 
 ## 3.Snapshots		
 - Incremental and can be automated using Data Lifecycle Manager		
@@ -40,25 +38,23 @@
 - Uses keys from KMS (AES-256)			
 - Encrypt an Unencrypted Volume (using copy)			
 - EBS Encrypted volumes and Snapshots			
-<img src="images/6.png">
-
 - Data IN TRANSIT is also ENCRYPTED											
-<img src="images/7.png">
+<img src="images/5.png">
 
 - All attached EBS volumes must share the same encryption state” is incorrect. 
   - You can have encrypted and non-encrypted EBS volumes on a single instance.
-<img src="images/8.png">
+<img src="images/6.png">
 
 - Sharing Snapshot Encrypted with CMK											
   - When an EBS volume is encrypted with a custom key you must share the custom key with the other account
   - You also need to modify the permissions on the snapshot to share it with the PROD account
   - The Other account must copy the snapshot before they can then create volumes from the snapshot
   - Note that you cannot share encrypted volumes created using a default CMK key and you cannot change the CMK key that is used to encrypt a volume
-<img src="images/9.png">
+<img src="images/7.png">
 
 - Enable Encryption as Default For Region
   - You can configure your AWS account to enforce the encryption of the new EBS volumes and snapshot copies that you create
-<img src="images/10.png">
+<img src="images/8.png">
 
   - Encryption by default has no effect on existing EBS volumes or snapshots.										
   - The following are important considerations in EBS encryption:
@@ -91,7 +87,7 @@
 - If the instance does not recovers, ASG will mark it for TERMINATION, Terminate it and will launch a replacement Instance
 - Insufficient data: "Status Checks" are still IN PROGRESS
 - EC2 status check: Impaired											
-<img src="images/11.png">
+<img src="images/9.png">
 
 - If while restarting a stopped EC2 instance changes to a TERMINATED state immediately, then below could be possible reasons
   - You have reached your EBS volume LIMIT											
@@ -102,4 +98,4 @@
 ## 9. EBS Optimized Instances											
 - EBS Optimized Instances can be used with ALL EBS volume types											
 - While configuring EC2 Instance at "Storage" option, select the appropriate EBS optimized instance type, which appears with the added **EBS-Optimized** in the instance size description and configure needed IOPS											
-<img src="images/12.png">
+<img src="images/10.png">
