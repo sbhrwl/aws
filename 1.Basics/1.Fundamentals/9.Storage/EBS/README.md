@@ -14,7 +14,9 @@
 
 ### Remember
 - st1 and sc1 are also referred as MAGNETIC Volumes		
-- Volume Characteristics		
+- Volume Characteristics
+<img src="images/11.png">		
+
 <img src="images/2.png">
 
 - GP and PIOPS can be used as BOOT VOLUMES										
