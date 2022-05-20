@@ -49,6 +49,12 @@
     - S3-Select
 - Databases
   - [RDS](1.Fundamentals/10.Databases/RDS/README.md)
+    - DB Subnet Group, RDS Backups (Automated Backups, DB snapshots), DR, RDS Encryption, RDS Security, RDS Enhanced Monitoring
+    - Read Replicas, Read Replica and Encryption keys, create an encrypted cross-region Read Replica, HA Read Replica
+      - When would Amazon RDS automatically perform a failover to the standby replica
+      - Security Patching, Offloading Reads, Cost Effectivenes of Offloading Read Options
+    - MultiAZ-DR-HA
+    - RDS In Transit Encryption, Enhanced Monitoring, RDS Event subscription
   - [Aurora](1.Fundamentals/10.Databases/Aurora/README.md)
   - [Elasticcache](1.Fundamentals/10.Databases/Elasticcache/README.md)
 - Hybrid
