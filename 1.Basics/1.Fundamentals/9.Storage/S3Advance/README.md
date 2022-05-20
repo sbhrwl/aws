@@ -61,31 +61,26 @@ c. SQS queue"
 - S3 One Zone Infrequent Access (IA)					
 - S3 Intelligent Tiering					
 ## 2. Glacier					
--  Glacier
-a. Expedited: 1-5 Minutes
-b. Standard: 3-5 Hours
-c. Bulk: 5-12 Hours
+- Glacier
+  - Expedited: 1-5 Minutes
+  - Standard: 3-5 Hours
+  - Bulk: 5-12 Hours
+  - **Minimum Storage duration 90 days**
+- Glacier Deep Archive
+  - Standard: 12 Hours
+  - Bulk: 48 Hours
+  - **Minimum Storage duration 180 days**
+  - **To access Objects in Glacier first "Initiate Restore"**
 
-Minimum Storage duration 90 days"					
--  Glacier Deep Archive
-a. Standard: 12 Hours
-b. Bulk: 48 Hours
-
-Minimum Storage duration 180 days"					
-** To access Objects in Glacier first "Initiate Restore"					
-
-## 3. LifeCycle Rules											
+## 3. Life cycle rules											
 - Rules can be created for a certain prefix											
-- Rules can be created for certain Objects											
-											
--  Objects must be stored at least 30 days in the current storage class before you can transition them to STANDARD_IA or ONEZONE_IA
-- Amazon S3 does not transition objects that are smaller than 128 KB to the STANDARD_IA or ONEZONE_IA storage classes because it's not cost effective"											
-											
-## 4. Company needs to store data for 5 years. It requires Immediate and HA access to the files but files  will be accessed Infrequently											
-Use S3 IA and not S3 One Zone IA because S3 IAN has availability of 99.9% whereas S3 One Zone IA has 99.5%											
-											
-## 5. If HA is not written explicitly in question then choose One Zone IA as it is more Cost effective											
-- S3 One Zone-IA stores data in a single AZ and costs 20% less than S3 Standard-IA. 											
+- Rules can be created for certain Objects
+- Objects must be stored at least 30 days in the current storage class before you can transition them to STANDARD_IA or ONEZONE_IA
+- Amazon S3 does not transition objects that are smaller than 128 KB to the STANDARD_IA or ONEZONE_IA storage classes because it's not cost effective								
+## 4. Company needs to store data for 5 years. It requires Immediate and HA access to the files but files  will be accessed Infrequently
+- Use S3 IA and not S3 One Zone IA because S3 IAN has availability of 99.9% whereas S3 One Zone IA has 99.5%																	
+## 5. If HA is not written explicitly in question then choose One Zone IA as it is more Cost effective				
+- S3 One Zone-IA stores data in a single AZ and costs 20% less than S3 Standard-IA. 			
 - S3 One Zone-IA is ideal for customers who want a lower-cost option for infrequently accessed and re-creatable data but do not require the availability and resilience of S3 Standard or S3 Standard-IA.											
 - The minimum storage duration is 30 days before you can transition objects from S3 Standard to S3 One Zone-IA		
 <img src="images/2.png">
@@ -104,23 +99,24 @@ Use S3 IA and not S3 One Zone IA because S3 IAN has availability of 99.9% wherea
 ## 2. Provisioned capacity					
 - Ensures that your retrieval capacity for expedited retrievals is available when you need it.					
 - Each unit of capacity provides that at least three expedited retrievals can be performed every five minutes and provides up to 150 MB/s of retrieval throughput.					
-- You should purchase provisioned retrieval capacity if your workload requires highly reliable and predictable access to a subset of your data in minutes.					
+- You should purchase provisioned retrieval capacity if your workload requires highly reliable and predictable access to a subset of your data in minutes
 - Without provisioned capacity Expedited retrievals are accepted, except for rare situations of unusually high demand. 					
-- However, if you require access to Expedited retrievals under all circumstances, you must purchase provisioned retrieval capacity.					
+- However, if you require access to Expedited retrievals under all circumstances, you must purchase provisioned retrieval capacity.	
 <img src="images/4.png">
 
 <img src="images/5.png">
 
 # S3 Performance
-## 1. Baseline Performance			
+## 1. Baseline Performance
 - Baseline: 3500 PUTand 5500 GET requests per second per prefix in a bucket			
 -  KMS might limit performance, 
 limits of KMS:
 Based on region it varies from 5.5k, 10k or 30k requests per second"			
 ## 2. Upload			
 - Multipart Upload: Uses Parallel Uploads (Object size > 5GB)			
-- S3 Transfer Acceleration: Transfer/Upload file via PUBLIC INTERNET to Edge Location, Edge Location will upload file S3 bucket via PRIVATE and FAST AWS internal Network			
-## 3. Download			
+- **S3 Transfer Acceleration**
+  - Transfer/Upload file via PUBLIC INTERNET to Edge Location, Edge Location will upload file S3 bucket via PRIVATE and FAST AWS internal Network	
+## 3. Download
 - Byte Range Fetch and Parallel Requests: Improves Parallelized GETS by requesting specific BYTE RANGES			
 -  S3 Select / Galicier Select:
 Retrieve LESS data by using SQL (SERVER SIDE FILTERING)"			
@@ -133,20 +129,20 @@ Retrieve LESS data by using SQL (SERVER SIDE FILTERING)"
 ## 5. Multipart Upload TOGETHER WITH S3 transfer acceleration: Great Booster for performance		
 <img src="images/6.png">
 
-# S3 Transfer Acceleration Vs Global Accelerator										
-S3TA is for uploading files to S3 bucket										
-GA is for improving performance of Applications (HTTP/HTTPS/TCP/UDP										
+## S3 Transfer Acceleration Vs Global Accelerator										
+- S3TA is for uploading files to S3 bucket										
+- GA is for improving performance of Applications (HTTP/HTTPS/TCP/UDP										
 										
-Question										
-"At the end of the financial year, there are thousands of data being uploaded to the central S3 bucket which is in ap-southeast-2 (Sydney) region and a lot of employees are starting to complain about the slow upload times. You were instructed by the CTO to resolve this issue as soon as possible to avoid any delays in processing their global end of financial year (EOFY) reports.   
-
-Which feature in Amazon S3 enables fast, easy, and secure transfer of your files over long distances between your client and your Amazon S3 bucket?"										
-										
+### Question										
+- At the end of the financial year, there are thousands of data being uploaded to the central S3 bucket which is in ap-southeast-2 (Sydney) region and a lot of employees are starting to complain about the slow upload times. 
+- You were instructed by the CTO to resolve this issue as soon as possible to avoid any delays in processing their global end of financial year (EOFY) reports.   
+- Which feature in Amazon S3 enables fast, easy, and secure transfer of your files over long distances between your client and your Amazon S3 bucket?
+#### Solution										
 - Customers who have either web or mobile applications with widespread users or applications hosted far away from their S3 bucket can experience long and variable upload and download speeds over the Internet. 										
 - S3 Transfer Acceleration (S3TA) reduces the variability in Internet routing, congestion and speeds that can affect transfers, and logically shortens the distance to S3 for remote applications.										
-- S3 TA improves transfer performance by routing traffic through Amazon CloudFront’s globally distributed Edge Locations and over AWS backbone networks, and by using network protocol optimizations.										
-										
-AWS Global Accelerator is incorrect because GA is primarily used to optimize the path from your users to your applications which improves the performance of your TCP and UDP traffic. Using Amazon S3 Transfer Acceleration is a more suitable service for this scenario										
+- S3 TA improves transfer performance by routing traffic through Amazon CloudFront’s globally distributed Edge Locations and over AWS backbone networks, and by using network protocol optimizations.
+- AWS Global Accelerator is incorrect because GA is primarily used to optimize the path from your users to your applications which improves the performance of your TCP and UDP traffic. 
+- **Using Amazon S3 Transfer Acceleration is a more suitable service for this scenario**
 
 ## 1. Byte Range Fetch											
 "Byte Range Fetching a header is primarily used to retrieve an object in parts
@@ -172,7 +168,7 @@ It is also useful where network connectivity is poor and you need to react to fa
 -  Using the Range HTTP header in a GET Object request, you can fetch a byte-range from an object, transferring only the specified portion. 
 - You can use concurrent connections to Amazon S3 to fetch different byte ranges from within the same object. 
 - This helps you achieve higher aggregate throughput versus a single whole-object request. 
-- Fetching smaller ranges of a large object also allows your application to improve retry times when requests are interrupted."											
+- Fetching smaller ranges of a large object also allows your application to improve retry times when requests are interrupted.
 
 # S3-Select
 ## 1. S3 Select operation is based on Bucket name and Object's key		
