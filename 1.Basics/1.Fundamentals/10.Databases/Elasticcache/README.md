@@ -3,11 +3,11 @@
 - Write scaling using Sharding		
 - Read Scaling using Read replicas		
 - DR/Failover with Multi AZ capability		
--  AWS manages 
-a. OS maintenance/Patching
-b. Monitoring
-c. Failure Recovery
-d. Backups"		
+- AWS manages 
+  - OS maintenance/Patching
+  - Monitoring
+  - Failure Recovery
+  - Backups
 ## 2. DB Cache		
 - Caches Data from RDS DBs		
 - Offloads read from RDS DB		
@@ -25,7 +25,7 @@ d. Backups"
 - REDIS AUTH: Enables us to set Extra level of security for our cache by setting "PASSWORD/TOKEN" when creating REDIS Cluster				
 - Memcached supports SASL based authentication				
 ## 6. Redis		
-- Redis (Remote Dictionary Server), is a fast, open-source, in-memory key-value data store for use as a database, cache, message broker, and queue.		
+- Redis (Remote Dictionary Server), is a fast, open-source, in-memory key-value data store for use as a database, cache, message broker, and queue.	
 - Multi AZ with auto fail-over		
 - Read Replicas for read scaling and HA		
 - Data durability using AOF persistence		
