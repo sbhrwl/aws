@@ -37,6 +37,8 @@
 ## 4. Data Lifecycle Manager		
 - Define Snapshot Lifecycle policy to create snapshots		
 ## 5. Encryption			
+<img src="images/14.png">
+
 - Uses keys from KMS (AES-256)			
 - Encrypt an Unencrypted Volume (using copy)			
 - EBS Encrypted volumes and Snapshots			
