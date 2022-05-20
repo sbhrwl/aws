@@ -14,6 +14,8 @@
 
 ### Remember
 - st1 and sc1 are also referred as MAGNETIC Volumes		
+<img src="images/13.png">
+
 - Volume Characteristics
 <img src="images/11.png">		
 
