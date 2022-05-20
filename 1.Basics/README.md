@@ -64,6 +64,8 @@
     - Redis(Remote Dictionary Server), Memcached
 - Hybrid
   - [HybridConnections](1.Fundamentals/11.Hybrid/HybridConnections/README.md)
+    - Client VPN, Site to Site VPN, VPN Cloud Hub
+    - On premise to AWS[Direct Connect, Direct Connect Gateway, Transit Gateway, Transit Gateway + DX  Gateway]
   - [HybridStorage](1.Fundamentals/11.Hybrid/HybridStorage/README.md)
 
 # Use cases
