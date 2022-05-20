@@ -68,14 +68,15 @@ Entire dataset is On premise, scheduled backups to S3
 - Tape Gateway will connect to S3		
 - Tape Gateway supports iSCSI protocol		
 Tape Gateway can move your virtual tapes archived DIRECTLY in Amazon S3 Glacier or Amazon S3 Glacier Deep Archive storage class, enabling you to further reduce the monthly cost to store long-term data in the cloud by up to 75%.		
-### VTL, Virtual Tape Library 
+### VTL
+- Virtual Tape Library 
 Tape data stored in S3
 ### Archived Taped
 Tape data stored in Glacier
-## 4. Hardware Appliance		
--  Can be ordered from amazon.com"		
+## 4. Storage gateway Hardware Appliance		
+-  Can be ordered from amazon.com		
 - Helpful for NFS backups for small datacenter		
 <img src="images/5.png">
 
-## Protocol and Storage Gateway		
+## Protocol and Storage Gateway	options	
 <img src="images/7.png">
