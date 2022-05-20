@@ -141,7 +141,9 @@
 - [Metering infra on cloud](3.Projects/MeteringInfraOnCloud/README.md)
 - [2 Tier web application](3.Projects/2TierWebApp/README.md)
 - [3 Tier web application](3.Projects/3TierWebApp/README.md)
+  - APP tiers, Security Design, Privileges, Logging, Monitoring
 - [Invoke lambda from API](3.Projects/InvokeLambdaFromAPI/README.md)
+  - Lambda code, API gateway setup
 - [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
 
 # Cloud formation
