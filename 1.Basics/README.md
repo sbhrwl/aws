@@ -1,4 +1,9 @@
-# Fundamentals
+# Basics
+- [Fundamentals](#fundamentals)
+- [Use cases](#use-cases)
+- [Projects](#projects)
+- [Cloud formation](#cloud-formation)
+## Fundamentals
 - [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
 - [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
   - Deployment models (Public cloud, Private cloud)
@@ -74,7 +79,7 @@
   - FsX for Lustre, Integration with S3, Hot Storage
   - Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
 
-# Use cases
+## Use cases
 - [Design principals](2.UseCases/1.DesignPrincipals/README.md)
   - Design Principals, Design Concepts, Security Principals, Shared Controls
 - Security
