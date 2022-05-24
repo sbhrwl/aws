@@ -1,0 +1,11 @@
+# Projects
+- [What time is it?](StatelessWebApp/README.md)
+- [Metering infra on cloud](MeteringInfraOnCloud/README.md)
+- [2 Tier web application](2TierWebApp/README.md)
+- [3 Tier web application](3TierWebApp/README.md)
+  - APP tiers, Security Design, Privileges, Logging, Monitoring
+- [Invoke lambda from API](InvokeLambdaFromAPI/README.md)
+  - Lambda code, API gateway setup
+- [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
+- [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
+- [API-Kinesis-S3](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
