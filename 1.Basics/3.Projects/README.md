@@ -17,6 +17,7 @@
 - [Micro Services architecture](MicroServicesArchitecture/README.md)
 - [Distributing paid content](DistributingPaidContent/README.md)
 - [SoftwareUpdatesOffloading](SoftwareUpdatesOffloading/README.md)
+- [Big Data Ingestion Pipeline](BigDataIngestionPipeline/README.md)
 ## 3Tier-Architecture
 <img src="3Tier-Architecture.png">
 
