@@ -103,6 +103,7 @@
     - Transferring Large Data [Site To Site VPN, Direct Connect, Snowball, Secured On going Replications]
     - Replication with DataSync, Data Migration Service (DMS)
   - [DataSync](2.UseCases/4.MovingDataToCloud/DataSync/README.md)
+  - [Data pipeline](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md)
 - Decoupling applications
   - [SQS](2.UseCases/5.DecouplingApplications/SQS/README.md)
   - [SNS](2.UseCases/5.DecouplingApplications/SNS/README.md)
