@@ -1,4 +1,4 @@
-# Choosing the Right Database
+# [Choosing the Right Database](StorageOptions.pdf)
 We have a lot of managed databases on AWS to choose from
 - Questions to choose the right database based on your architecture:
 - Read-heavy, write-heavy, or balanced workload? Throughput needs? Will it change, does it need to scale or fluctuate during the day?
