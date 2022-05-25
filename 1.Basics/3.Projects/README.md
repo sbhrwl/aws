@@ -16,6 +16,7 @@
   - [API-Kinesis-S3](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 - [Micro Services architecture](MicroServicesArchitecture/README.md)
 - [Distributing paid content](DistributingPaidContent/README.md)
+- [SoftwareUpdatesOffloading](SoftwareUpdatesOffloading/README.md)
 ## 3Tier-Architecture
 <img src="3Tier-Architecture.png">
 
