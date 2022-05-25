@@ -17,3 +17,6 @@
 - [Micro Services architecture](MicroServicesArchitecture/README.md)
 ## 3Tier-Architecture
 <img src="3Tier-Architecture.png">
+
+## Instantiating Apps Quickly
+<img src="InstantiatingAppsQuickly.png">
