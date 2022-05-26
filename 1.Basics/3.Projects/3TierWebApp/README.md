@@ -37,7 +37,9 @@
   - Will work as frontend for our APIs
   - Enables us to offer Staging, we can have dev/test/prod version of APIs all running in the same set up but named with different stages. This will help us in early release of our offerings
   - Offers throttling, for ex we can offere first 100 requests to the Application for free and start charging afterwards
-  - Offers Multiple Security Options, a. Resource based policy b. IAM based policy										
+  - Offers Multiple Security Options, 
+    - Resource based policy 
+    - IAM based policy										
 - Lambda
   - Serves as Compute Engine/Application tier backend
   - As our application constantly grow and there are more requests coming in API gateway will forward the request to Lambda
