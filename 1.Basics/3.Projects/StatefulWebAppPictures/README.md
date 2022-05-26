@@ -18,6 +18,5 @@
 <img src="images/5.png">
 
 ## Summary
-- Aurora Database to have easy Multi-AZ and Read
-- Replicas
-- Storing data in EBS (single instance application) • Vs Storing data in EFS (distributed application)
+- Aurora Database to have easy Multi-AZ and Read Replicas
+- Storing data in EBS (**single instance application**) Vs Storing data in EFS (**distributed application**)
