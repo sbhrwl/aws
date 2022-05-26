@@ -20,7 +20,7 @@
 2. Use AWS components where possible (use Database as a service/ use logging or monitoring as a service/ use AWS provided identity store)
 3. Application should be accesible by other 3rd party APIs (from their vendors and partners). It could connect to 3rd party APIs to send and receive data from other sources.
 4. Every piece of architecture should be secure. Ex: Database connection should be encyrpted and connections should be made over SSL
-5. 5. End to End encryption, data moving from client's browser all the way upto the database inlcuding middle components to be encrypted
+5. End to End encryption, data moving from client's browser all the way upto the database inlcuding middle components to be encrypted
 6. Should support different priviledges for different users
 
 ## Application Tiers
@@ -103,7 +103,7 @@
 <img src="images/4.png">
 
 ### Additional checks
-- Custom Certificate at Cloudfromt for my Domain name
+- Custom Certificate at Cloudfront for my Domain name
 - Client Certificate at API Gateway to connect to Lambda
 - API gateway is also connected to Cognito Identity Pool
 <img src="images/5.png">
