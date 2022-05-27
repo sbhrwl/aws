@@ -6,7 +6,7 @@
 - [Discover data](DataProcessing/DiscoverData/README.md)
 - [Data transformations](DataProcessing/DataTransformations/README.md)
 - [Analyze-Query data](DataProcessing/Analyze-QueryData/README.md)
-- [Data engineering](DataProcessing/DataEngineering/README.md)
+- [Data engineering]([DataProcessing/DataEngineering/README.md](https://github.com/sbhrwl/machine_learning/blob/main/docs/DataEngineering/README.md))
 
 # [AWS ML and AI](https://tutorialsdojo.com/aws-certified-machine-learning-specialty-exam-study-path/)
 <img src="ML-AI/images/AWS_ml_ai.png">
