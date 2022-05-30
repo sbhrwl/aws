@@ -42,6 +42,7 @@
   - If NLB, the bastion hosts can live in the private subnet directly
 - Note: Can’t use ALB as the ALB is layer 7 (HTTP protocol)
 <img src="HA-BastionHost.png">
+
 ## HPC
 - The cloud is the perfect place to perform HPC
 - You can create a very high number of resources in no time
