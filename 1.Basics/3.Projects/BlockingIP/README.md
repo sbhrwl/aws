@@ -7,3 +7,9 @@
 
 ## With an NLB
 <img src="images/3.png">
+
+## With ALB + WAF
+<img src="images/4.png">
+
+## With ALB, CloudFront WAF
+<img src="images/5.png">
