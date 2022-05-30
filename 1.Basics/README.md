@@ -1,7 +1,6 @@
 # Basics
 - [Fundamentals](#fundamentals)
 - [Use cases](#use-cases)
-- [Projects](3.Projects/README.md)
 - [Cloud formation](https://drive.google.com/drive/u/0/folders/1C3kwfmSzod-cVkPJirf983xjtaJSfrwB)
 ## Fundamentals
 - [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
