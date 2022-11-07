@@ -16,7 +16,7 @@
 - [Offloading software updates](SoftwareUpdatesOffloading/README.md)
 - [Big Data Ingestion Pipeline](BigDataIngestionPipeline/README.md)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
-- [Tech companies architecture]([tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android))
+- [Tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android)
 ## 3Tier-Architecture
 <img src="3Tier-Architecture.png">
 
