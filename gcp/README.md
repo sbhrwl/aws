@@ -21,9 +21,27 @@
   - [AI Services](#ai-services)
   - [Bigdata suite](#bigdata-suite)
 
+## Infrastructure
+## Basic layers
+- Layer 1 or Base layer
+  - Security
+- Layer 2
+  - Compute 
+  - Storage
+  - Networking
+- Layer 3
+  - Exposed services: Big data and ML products
+<img src="images/infrastructure.png">
+
 ## Compute
+### Data points in an image
+<img src="images/data_points.png">
+
 ### Pre trained AI blocks
 <img src="images/pre_trained_ai_blocks.png">
+
+### Evolution of hardware
+<img src="images/evolution_of_hardware.png">
 
 ### TPUs 
 <img src="images/tpu.png">
