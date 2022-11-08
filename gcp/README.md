@@ -1,6 +1,10 @@
 # GCP Infrastructure
+- [Infrastructure](#infrastructure)
+  - [Basic layers](#basic-layers)
 - [Compute](#compute)
+  - [Data points in an image](#data-points-in-an-image)
   - [Pre trained AI blocks](#pre-trained-ai-blocks)
+  - [Evolution of hardware](#evolution-of-hardware)
   - [TPUs](#tpus)
 - [Storage](#storage)
   - [Resource hierarchy](#resource-hierarchy)
@@ -22,7 +26,7 @@
   - [Bigdata suite](#bigdata-suite)
 
 ## Infrastructure
-## Basic layers
+### Basic layers
 - Layer 1 or Base layer
   - Security
 - Layer 2
@@ -41,6 +45,7 @@
 <img src="images/pre_trained_ai_blocks.png">
 
 ### Evolution of hardware
+- It has platued
 <img src="images/evolution_of_hardware.png">
 
 ### TPUs 
