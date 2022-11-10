@@ -1,0 +1,16 @@
+# Storage
+- [EBS](EBS/README.md)
+  - Volume Types, Snapshots, Data Lifecycle Manager, Encryption
+  - RAID, Instance Store, EC2 Status Checks on EBS, EBS Optimized Instances
+- [EFS](EFS/README.md)
+  - Lifecycle/Storage Tiers, Performance and Throughput mode, EFS configuration, Attach VPC, AZ, Subnets and Security groups
+  - How to configure EFS  which will hold HOME directory for users?, EFS with EC2, EFS is Highly available, EBS is not
+  - When OBJECT based storage is needed, opt for S3. S3 is best for High Performance OBJECT based storage needs
+  - EFS offers File System Interface, S3 doesnot, POSIX permissions, EFS Big Data Workloads
+- [S3](S3/README.md)
+  - Versioning, CORS, Consistency Model, S3 Vs EFS, What is the correct indication that an object was successfully stored when you put objects in Amazon S3?
+  - S3 Encryption[SSE-S3, SSE-KMS, SSE-C, Client Side Encryption, Encryption In transit, Cloud HSM, KMS with CloudHSM, Envelope Encryption]
+  - S3 Security[User Based IAM Policies, Resource based ACL, Bucket Policy, Other(User Security, Logging and Audit, VPC Endpoint Policy), ACLs]
+  - EC2 to Read S3
+  - S3 with Cloudfront (Verisoning)
+- [S3Advance](S3Advance/README.md)
