@@ -14,3 +14,11 @@
   - EC2 to Read S3
   - S3 with Cloudfront (Verisoning)
 - [S3Advance](S3Advance/README.md)
+  - MFA-DELETE, Server/S3 Access Logs, S3 Replication
+  - S3 Pre Signed URLS, CRR, Object Lock/Vault lock, S3 Event notification
+  - S3 Storage Classes[Standard, Glacier, Glacier Deep Archive], Life cycle Rules
+  - S3 Retrievals[Expedited retrievals, Provisioned capacity]
+  - S3 Performance[Baseline Performance, Upload(Multipart Upload, **S3 Transfer Acceleration**), Download, Options for Upload(Pre signed URLs, Multi part upload, S3TA, GA)]
+  - S3 Transfer Acceleration Vs Global Accelerator
+  - Byte Range Fetch, S3 Parallel Requests, S3 Parallel request and Byte Range Fetches to DOWNLOAD LARGE Object
+  - S3-Select
