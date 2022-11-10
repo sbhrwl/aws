@@ -79,69 +79,69 @@
   - Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
 
 ## Use cases
-- [Design principals](2.UseCases/1.DesignPrincipals/README.md)
-  - Design Principals, Design Concepts, Security Principals, Shared Controls
-- Security
-  - [IAM](2.UseCases/2.Security/IAM.md)
-    - Authentication and Authorization, Roles Vs Resource based policies, Permisssion Boundary, IAM Federation
-    - Root Account, IAM Query API, IAM-ACM
-  - [DR](2.UseCases/2.Security/DR.md)
-  - [KMS](2.UseCases/2.Security/KMS.md)
-    - Customer Master Key, Key Policies, You cannot store credentials in KMS
-- [Identity federation](2.UseCases/3.IdentityFederation/README.md)
-  - STS Assume Role (AssumeRole with SAML, AssumeRole with WebIdentity, GetSession Token)
-  - SAML 2.0 Federation (API access to AWS, Access the AWS Management Console)
-  - SAML2 LDAP, SAML2 ADFS
-  - [ADconnector](2.UseCases/3.IdentityFederation/ADconnector.md)
-  - [Cognito](2.UseCases/3.IdentityFederation/Cognito.md)
-    - Cognito User Pool, Cognito Sync->AppSync,Cognito Identity Pool/Federation
-- Moving data to cloud
-  - [Transferring Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Snow/README.md)
-    - Snowball, Snowball Edge, Snow Mobile, Snowball To Glacier
-  - [Replication of Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Replication/README.md)
-    - Transferring Large Data [Site To Site VPN, Direct Connect, Snowball, Secured On going Replications]
-    - Replication with DataSync, Data Migration Service (DMS)
-  - [DataSync](2.UseCases/4.MovingDataToCloud/DataSync/README.md)
-  - [Data pipeline](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md)
-- Decoupling applications
-  - [SQS](2.UseCases/5.DecouplingApplications/SQS/README.md)
-  - [SNS](2.UseCases/5.DecouplingApplications/SNS/README.md)
-  - [Kinesis](2.UseCases/5.DecouplingApplications/Kinesis/README.md)
-  - [SWF](2.UseCases/5.DecouplingApplications/SWF/README.md)
-  - [Step functions](2.UseCases/5.DecouplingApplications/StepFunction/README.md)
-    - Serverless Orchestration
-- Distributing content
-  - [Cloudfront](2.UseCases/6.DistributingContent/Cloudfront.md)
-    - Origins [S3 Bucket, Custome Origin (HTTP)], Geo Restriction (WAF offers Geo Match condition)
-    - HTTPS Support, How long can an Object stay in the cache?, Origin Failover
-    - Cloudfront Signed URL/Cloudfront Signed Cookies, Cloudfront Signed URL Vs S3 Pre Signed URL
-    - Cloudfront Vs S3 Cross Region Replciation
-  - [Global accelerator](2.UseCases/6.DistributingContent/GlobalAccelerator.md)
-    - AWS Global Accelerator vs CloudFront, Traffic traverses the AWS global network, Why GA, GA and NLB
-- Serverless
-  - [API Gateway](2.UseCases/7.Serverless/API-Gateway/README.md)
-    - Endpoints [Edge Optimized (Default), Regional, Private], Throttling
-    - API Gateway Security [IAM Permission, Lambda Authorizer, Cognito User Pool]
-    - API Gateway with Lambda
-    - Migrating On Premise Linux API server to AWS and making it HA
-  - [Lambda](2.UseCases/7.Serverless/Lambda/README.md)
-    - Limits [Execution Limits, Deployment Limits], Lambda Metrices that Cloudwatch can track
-    - Lambda@Edge (Global lambda)
-  - [DynamoDB](2.UseCases/7.Serverless/DynamoDB/README.md)
-    - Provisioned Throughput, Capacity Planning, On Demand Capacity
-    - DynamoDB Accelerator (DAX), DaX Cluster, DynamoDB Streams, Global Table
-    - Aurora Globa DB Vs DynamoDB Global Table
-- Monitoring
-  - [Cloudwatch](2.UseCases/8.Monitoring/Cloudwatch.md)
-  - [Cloudtrail](2.UseCases/8.Monitoring/Cloudtrail.md)
-    - Object Level Logging, Encryption and Cloudtrail,Cloudtrail in all Regions
-  - [S3 or Server access logs](2.UseCases/8.Monitoring/S3accessLogs.md)
-    - S3 Access Logs Vs Cloudtrail [Logging Operations, Logging Events (Data events, Management events)]
-  - [ELB access logs](2.UseCases/8.Monitoring/ELBaccessLogs.md)
-    - Capture information about HTTP requests, Analysing logs with EMR/Hadoop
-  - [VPC Flow logs](2.UseCases/8.Monitoring/VPCflowLogs.md)
-  - [AWS X-Ray]()
-  - [AWS Inspector]()
-- [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
-- [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
-- [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
+### [Design principals](2.UseCases/1.DesignPrincipals/README.md)
+- Design Principals, Design Concepts, Security Principals, Shared Controls
+### Security
+- [IAM](2.UseCases/2.Security/IAM.md)
+  - Authentication and Authorization, Roles Vs Resource based policies, Permisssion Boundary, IAM Federation
+  - Root Account, IAM Query API, IAM-ACM
+- [DR](2.UseCases/2.Security/DR.md)
+- [KMS](2.UseCases/2.Security/KMS.md)
+  - Customer Master Key, Key Policies, You cannot store credentials in KMS
+### [Identity federation](2.UseCases/3.IdentityFederation/README.md)
+- STS Assume Role (AssumeRole with SAML, AssumeRole with WebIdentity, GetSession Token)
+- SAML 2.0 Federation (API access to AWS, Access the AWS Management Console)
+- SAML2 LDAP, SAML2 ADFS
+- [ADconnector](2.UseCases/3.IdentityFederation/ADconnector.md)
+- [Cognito](2.UseCases/3.IdentityFederation/Cognito.md)
+  - Cognito User Pool, Cognito Sync->AppSync,Cognito Identity Pool/Federation
+### Moving data to cloud
+- [Transferring Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Snow/README.md)
+  - Snowball, Snowball Edge, Snow Mobile, Snowball To Glacier
+- [Replication of Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Replication/README.md)
+  - Transferring Large Data [Site To Site VPN, Direct Connect, Snowball, Secured On going Replications]
+  - Replication with DataSync, Data Migration Service (DMS)
+- [DataSync](2.UseCases/4.MovingDataToCloud/DataSync/README.md)
+- [Data pipeline](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md)
+### Decoupling applications
+- [SQS](2.UseCases/5.DecouplingApplications/SQS/README.md)
+- [SNS](2.UseCases/5.DecouplingApplications/SNS/README.md)
+- [Kinesis](2.UseCases/5.DecouplingApplications/Kinesis/README.md)
+- [SWF](2.UseCases/5.DecouplingApplications/SWF/README.md)
+- [Step functions](2.UseCases/5.DecouplingApplications/StepFunction/README.md)
+  - Serverless Orchestration
+### Distributing content
+- [Cloudfront](2.UseCases/6.DistributingContent/Cloudfront.md)
+  - Origins [S3 Bucket, Custome Origin (HTTP)], Geo Restriction (WAF offers Geo Match condition)
+  - HTTPS Support, How long can an Object stay in the cache?, Origin Failover
+  - Cloudfront Signed URL/Cloudfront Signed Cookies, Cloudfront Signed URL Vs S3 Pre Signed URL
+  - Cloudfront Vs S3 Cross Region Replciation
+- [Global accelerator](2.UseCases/6.DistributingContent/GlobalAccelerator.md)
+  - AWS Global Accelerator vs CloudFront, Traffic traverses the AWS global network, Why GA, GA and NLB
+### Serverless
+- [API Gateway](2.UseCases/7.Serverless/API-Gateway/README.md)
+  - Endpoints [Edge Optimized (Default), Regional, Private], Throttling
+  - API Gateway Security [IAM Permission, Lambda Authorizer, Cognito User Pool]
+  - API Gateway with Lambda
+  - Migrating On Premise Linux API server to AWS and making it HA
+- [Lambda](2.UseCases/7.Serverless/Lambda/README.md)
+  - Limits [Execution Limits, Deployment Limits], Lambda Metrices that Cloudwatch can track
+  - Lambda@Edge (Global lambda)
+- [DynamoDB](2.UseCases/7.Serverless/DynamoDB/README.md)
+  - Provisioned Throughput, Capacity Planning, On Demand Capacity
+  - DynamoDB Accelerator (DAX), DaX Cluster, DynamoDB Streams, Global Table
+  - Aurora Globa DB Vs DynamoDB Global Table
+### Monitoring
+- [Cloudwatch](2.UseCases/8.Monitoring/Cloudwatch.md)
+- [Cloudtrail](2.UseCases/8.Monitoring/Cloudtrail.md)
+  - Object Level Logging, Encryption and Cloudtrail,Cloudtrail in all Regions
+- [S3 or Server access logs](2.UseCases/8.Monitoring/S3accessLogs.md)
+  - S3 Access Logs Vs Cloudtrail [Logging Operations, Logging Events (Data events, Management events)]
+- [ELB access logs](2.UseCases/8.Monitoring/ELBaccessLogs.md)
+  - Capture information about HTTP requests, Analysing logs with EMR/Hadoop
+- [VPC Flow logs](2.UseCases/8.Monitoring/VPCflowLogs.md)
+- [AWS X-Ray]()
+- [AWS Inspector]()
+### [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
+### [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
+### [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
