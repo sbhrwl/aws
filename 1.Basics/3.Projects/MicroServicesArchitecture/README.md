@@ -1,4 +1,9 @@
 # Micro Services architecture
+- [Overview](#verview)
+- [Micro Services Environment](#micro-services-environment)
+- [Benefits](#benefits)
+- [Challenges with micro services](#challenges-with-micro-services)
+## Overview
 - We want to switch to a micro service architecture
 - Many services interact with each other directly using a REST API
 - Each architecture for each micro service may vary in form and shape
@@ -12,7 +17,7 @@
 - Synchronous patterns: API Gateway, Load Balancers
 - Asynchronous patterns: SQS, Kinesis, SNS, Lambda triggers (S3)
 
-## Challenges with micro-services:
+## Challenges with micro services
 - Repeated overhead for creating each new microservice,
 - Issues with optimizing server density/utilization
 - Complexity of running multiple versions of multiple microservices simultaneously
