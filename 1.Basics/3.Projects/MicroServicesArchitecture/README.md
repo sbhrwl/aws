@@ -10,11 +10,12 @@
 - We want a micro-service architecture so we can have a leaner development lifecycle for each service
 <img src="images/microservice.png">
 
+<img src="https://github.com/sbhrwl/system_design/blob/main/projects/DataProcessing/images/layers_and_technology.png">
+
+## Benefits
 ## Micro Services Environment
 <img src="images/1.png">
 
-<img src="https://github.com/sbhrwl/system_design/blob/main/projects/DataProcessing/images/data_layers.png">
-## Benefits
 - You are free to design each micro-service the way you want
 - Synchronous patterns: API Gateway, Load Balancers
 - Asynchronous patterns: SQS, Kinesis, SNS, Lambda triggers (S3)
