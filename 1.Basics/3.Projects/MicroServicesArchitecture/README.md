@@ -8,6 +8,7 @@
 - Many services interact with each other directly using a REST API
 - Each architecture for each micro service may vary in form and shape
 - We want a micro-service architecture so we can have a leaner development lifecycle for each service
+<img src="images/microservice.png">
 
 ## Micro Services Environment
 <img src="images/1.png">
