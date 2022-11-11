@@ -13,6 +13,7 @@
 ## Micro Services Environment
 <img src="images/1.png">
 
+<img src="https://github.com/sbhrwl/system_design/blob/main/projects/DataProcessing/images/data_layers.png">
 ## Benefits
 - You are free to design each micro-service the way you want
 - Synchronous patterns: API Gateway, Load Balancers
