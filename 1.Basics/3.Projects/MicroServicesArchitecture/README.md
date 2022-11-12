@@ -32,6 +32,7 @@
 
 ## Challenges with micro services
 - **Debugging** becomes more challenging with microservices. With an application consisting of multiple microservices and with each microservice having its own set of logs, tracing the source of the problem can be difficult.
+  - [Prometheus can help](https://github.com/sbhrwl/system_design/blob/main/docs/Middleware/prometheus/README.md)
 - While unit testing may be easier with microservices, **integration testing is not**. 
   - The components are distributed, and developers can’t test an entire system from their individual machines.
 - Issues with optimizing server density/utilization
