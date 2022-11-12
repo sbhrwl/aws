@@ -1,7 +1,7 @@
 # Micro Services architecture
 - [Overview](#verview)
-- [Micro Services Environment](#micro-services-environment)
 - [Benefits](#benefits)
+- [Micro Services Environment](#micro-services-environment)
 - [Challenges with micro services](#challenges-with-micro-services)
 ## Overview
 - Each microservice has its **own data model and manages its own data**.
