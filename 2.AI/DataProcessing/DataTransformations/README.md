@@ -1,4 +1,10 @@
 # Data transformations
+- Datalake and S3
+- AWS Glue
+- EMR
+- Firehose
+- Data pipeline
+- Step function
 ## 1.  Datalake and S3
 - With a data lake built on Amazon S3, you can use native AWS services to run 
   - Big data analytics, 
@@ -16,7 +22,7 @@
 - Collect data in Native format in datalake (S3)
 - Transform data in data lake for analytics and downstream use cases
 ## 2. AWS Glue
-- Managed Spark Environment
+- **Managed Spark Environment**
 - Glue ETL provides an easy option to automatically generate ETL scripts and run the script as a scheduled job.
 - Glue ETL provisions required Spark infrastructure to run the job and automatically terminates the environment after the job is completed.
 - Glue ETL is best suited for batch ETL use cases and it’s not meant to process streaming data, except Glue ETL job
