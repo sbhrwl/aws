@@ -55,7 +55,7 @@
 
 - **The Glue generated ETL script can be used to load data on AWS EMR managed HIVE or SPARK table**
 
-## 3. EMR
+## 3. [EMR](https://aws.amazon.com/emr/)
 - Amazon EMR: Big data distributed processing			
 - Managed Hadoop Environment
 - Amazon EMR is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark, on AWS to
