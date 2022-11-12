@@ -5,9 +5,9 @@
 - [Challenges with micro services](#challenges-with-micro-services)
 ## Overview
 - We want to switch to a micro service architecture
-- Many services interact with each other directly using a REST API
+- **Many services interact with each other directly using a REST API**
 - Each architecture for each micro service may vary in form and shape
-- We want a micro-service architecture so we can have a leaner development lifecycle for each service
+- We want a micro-service architecture so we can have a **leaner development lifecycle** for each service
 <img src="images/microservice.png">
 
 <img src="https://github.com/sbhrwl/system_design/blob/main/projects/DataProcessing/images/layers_and_technology.png">
