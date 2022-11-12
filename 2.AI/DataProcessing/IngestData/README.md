@@ -9,10 +9,10 @@
     - Storage mobile
   - DMS
   - Data Pipeline
-    - Task Runner Package for On Premise
+    - [Task Runner Package for On Premise](#task-runner-package-for-on-premise)
     - Data Pipeline with Amazon Services
-      - AWS RDS
-      - AWS Dynamo DB 
+      - [AWS RDS](#data-pipeline-with-amazon-rds)
+      - [AWS Dynamo DB](#data-pipeline-with-amazon-Dynamodb)
         - ML Use case
 - Streaming data with AWS services
   - Kinesis
@@ -53,7 +53,7 @@
   - It only supports the JDBC database, Amazon RDS, and Amazon Redshift.
 - AWS Data Pipeline is more suitable for running scheduled tasks.										
 - If you need to replicate a database and also want to **load on-going changes**, use AWS DMS										
-### Data Pipeline: Task Runner Package for On Premise										
+### Task Runner Package for On Premise
 - To enable running activities using on-premise resources, AWS Data Pipeline supplies a Task Runner package that can be installed on your on-premise hosts. 
 - This package continuously polls the AWS Data Pipeline service for work to perform. 
 - When it’s time to run a particular activity on your on-premise resources, for example, executing a DB stored procedure or a database dump, AWS Data Pipeline will issue the appropriate command to the Task Runner. 
@@ -68,7 +68,7 @@
 
 <img src="images/17.png">
 
-### Data Pipeline with Amazon DynamoDB										
+### Data Pipeline with Amazon DynamoDB
 - Data Pipeline regularly copies the full contents of a DynamoDB table as JSON into an S3.
 - Exported JSON files are converted to comma-separated value (CSV) format to use as a data source for Amazon SageMaker.
 - Amazon SageMaker renews the model artifact and updates the endpoint.
