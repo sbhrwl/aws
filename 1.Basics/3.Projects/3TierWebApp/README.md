@@ -1,4 +1,6 @@
 # [3 Tier web application](https://www.youtube.com/watch?v=B21XKotGZWs)
+<img src="https://github.com/sbhrwl/aws/blob/main/1.Basics/3.Projects/3Tier-Architecture.png">
+
 - [Acceptance criteria](#acceptance-criteria)
 - [Requirements](#requirements)
 - [Application Tiers](#application-tiers)
