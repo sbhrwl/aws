@@ -1,5 +1,7 @@
 # Projects
 - [Big Data Ingestion Pipeline, Data lake, Hybrid cloud architectures, Streaming data Processing, Caching Strategies, High Availability architectural designs and Containerisation with EKS]()
+- [3 Tier-Architecture](3TierWebApp/README.md)
+  - APP tiers, Security Design, Privileges, Logging, Monitoring
 - [Stateless Web App- What time is it?](StatelessWebApp/README.md)
 - [Stateful Web App- MyClothes.com](StatefulWebApp/README.md)
 - [Stateful Web App- MyWordPress.com](StatefulWebAppPictures/README.md)
@@ -21,11 +23,7 @@
 - [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
 - [Tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android)
-## 3Tier-Architecture
-<img src="3Tier-Architecture.png">
-
-- [3 Tier web application](3TierWebApp/README.md)
-  - APP tiers, Security Design, Privileges, Logging, Monitoring
+## 
 - [2 Tier web application](2TierWebApp/README.md)
 
 ## Instantiating Apps Quickly
