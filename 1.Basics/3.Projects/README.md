@@ -3,19 +3,19 @@
 - [Stateless Web App- What time is it?](StatelessWebApp/README.md)
 - [Stateful Web App- MyClothes.com](StatefulWebApp/README.md)
 - [Stateful Web App- MyWordPress.com](StatefulWebAppPictures/README.md)
-- [Metering infra on cloud](MeteringInfraOnCloud/README.md)
-- [Invoke lambda from API](InvokeLambdaFromAPI/README.md)
-  - Lambda code, API gateway setup
-- [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 - Serverless Architectures
   - [Mobile application- MyTodoList](MyTodoList/README.md)
   - [Serverless hosted website- MyBlog.com](MyBlog/README.md)
   - [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
   - [API-Kinesis-S3](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
+  - [Invoke lambda from API](InvokeLambdaFromAPI/README.md)
+    - Lambda code, API gateway setup
 - [Micro Services architecture](MicroServicesArchitecture/README.md)
 - [Distributing paid content](DistributingPaidContent/README.md)
 - [Offloading software updates](SoftwareUpdatesOffloading/README.md)
 - [Big Data Ingestion Pipeline](BigDataIngestionPipeline/README.md)
+- [Metering infra on cloud](MeteringInfraOnCloud/README.md)
+- [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
 - [Tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android)
 ## 3Tier-Architecture
