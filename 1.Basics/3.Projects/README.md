@@ -14,6 +14,9 @@
 - [Distributing paid content](DistributingPaidContent/README.md)
 - [Offloading software updates](SoftwareUpdatesOffloading/README.md)
 - [Big Data Ingestion Pipeline](BigDataIngestionPipeline/README.md)
+- [Event driven architectures](EventDrivenArchitectures/README.md)
+- [Caching Strategies](CachingStrategies/README.md)
+- [Blocking an IP address](BlockingIP/README.md)
 - [Metering infra on cloud](MeteringInfraOnCloud/README.md)
 - [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
@@ -28,9 +31,6 @@
 ## Instantiating Apps Quickly
 <img src="InstantiatingAppsQuickly.png">
 
-- [Event driven architectures](EventDrivenArchitectures/README.md)
-- [Caching Strategies](CachingStrategies/README.md)
-- [Blocking an IP address](BlockingIP/README.md)
 ## Creating a highly available EC2 instance with ASG + EBS
 <img src="HA-EC2.png">
 
