@@ -27,7 +27,7 @@
     - ML
 11. Extensible: Same code to be used for similar use case
 
-## Security Principals
+## [Security Principals](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
 1. Identity federation (principle of least privilege)
 2. Automate security best practice
 3. Keep people away from data (direct access or manual processing of data)
