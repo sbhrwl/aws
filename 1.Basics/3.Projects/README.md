@@ -23,8 +23,6 @@
 - [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
 - [Tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android)
-## 
-- [2 Tier web application](2TierWebApp/README.md)
 
 ## Instantiating Apps Quickly
 <img src="InstantiatingAppsQuickly.png">
