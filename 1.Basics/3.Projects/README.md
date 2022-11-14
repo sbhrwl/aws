@@ -5,6 +5,7 @@
   - [Serverless architectures](#serverless-architectures)
 - [High Availability architectural designs](#high-availability-architectural-designs)
 - [Event driven architectures and Data analytics](#event-driven-architectures-and-data-analytics)
+- [Moving data to cloud](#moving-data-to-cloud)
 - [Other use cases](#other-use-cases)
   - [HPC](#hpc)
 ## [Micro services architecture](MicroServicesArchitecture/README.md)
@@ -51,6 +52,17 @@
 - [Metering infra on cloud](MeteringInfraOnCloud/README.md)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
 - [Tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android)
+
+## Moving data to cloud
+- [Transferring Data On premise to AWS](https://github.com/sbhrwl/aws/blob/main/1.Basics/2.UseCases/4.MovingDataToCloud/Snow/README.md)
+  - Snowball, Snowball Edge, Snow Mobile, Snowball To Glacier
+- [Replication of Data On premise to AWS](https://github.com/sbhrwl/aws/blob/main/1.Basics/2.UseCases/4.MovingDataToCloud/Replication/README.md)
+  - Transferring Large Data [Site To Site VPN, Direct Connect, Snowball, Secured On going Replications]
+  - Replication with DataSync, Data Migration Service (DMS)
+- [DataSync](https://github.com/sbhrwl/aws/blob/main/1.Basics/2.UseCases/4.MovingDataToCloud/DataSync/README.md)
+- [Data pipeline](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md)
+  - [Data Pipeline with Amazon RDS](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md#data-pipeline-with-amazon-rds)  
+  - [Data Pipeline with Amazon DynamoDB](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md#data-pipeline-with-amazon-dynamodb)
 
 ## Other use cases
 - [Offloading software updates](SoftwareUpdatesOffloading/README.md)
