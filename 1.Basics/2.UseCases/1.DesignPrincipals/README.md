@@ -1,9 +1,17 @@
-# Design Principals
+# First things first
+- [Design principals](#design-principals)
+- [Design concepts](#design-concepts)
+- [Security principals](#security-principals)
+- [Shared controls](#shared-controls)
+## Design principals
 1. **Operation Excellence**: Ability to run and monitor system to provide business value, and to continually improve supporting processes and procedures
 2. **Security**: Protect information/data, systems and assets while delivering business value (risk assessment and mitigation strategies)
 3. **Reliability**: Ability of a system to recover from infrastructure or service disruptions
 4. **Performance Efficiency**: Ability to use compute resources efficiently (monitoring performance)
 5. **Cost optimization**: Ability to avoid or eliminate unneeded cost or suboptimal resources
+
+## Design evolution
+<img src="images/evolution.jpg">
 
 ## [Design Concepts](https://www.youtube.com/watch?v=SqcXvc3ZmRU)
 1. Vertical scaling
@@ -27,7 +35,7 @@
     - ML
 11. Extensible: Same code to be used for similar use case
 
-## [Security Principals](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
+## [Security principals](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
 1. Identity federation (principle of least privilege)
 2. Automate security best practice
 3. Keep people away from data (direct access or manual processing of data)
@@ -36,7 +44,7 @@
 6. Protect data in transit and at rest
 7. Prepare for security events
 
-## Shared Controls
+## Shared controls
 - Shared Controls are controls which apply to both the infrastructure layer and customer layers, but in completely separate contexts or perspectives. 
 - In a shared control, AWS provides the requirements for the infrastructure and the custosmer must provide their own control implernentation  with in their use of AWS services
 <img src="images/shared_responsibility.png" width=800>
