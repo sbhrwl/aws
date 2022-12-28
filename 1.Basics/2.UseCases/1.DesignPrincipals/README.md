@@ -3,6 +3,7 @@
 - [Design concepts](#design-concepts)
 - [Security principals](#security-principals)
 - [Shared controls](#shared-controls)
+- [Data structure and algorithms](𝐃𝐚𝐭𝐚S𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞A𝐧𝐝A𝐥𝐠𝐨𝐫𝐢𝐭𝐡𝐦.pdf)
 ## Design principals
 1. **Operation Excellence**: Ability to run and monitor system to provide business value, and to continually improve supporting processes and procedures
 2. **Security**: Protect information/data, systems and assets while delivering business value (risk assessment and mitigation strategies)
