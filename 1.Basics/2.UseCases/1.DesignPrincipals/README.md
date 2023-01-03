@@ -1,5 +1,7 @@
 # First things first
 - [Design principals](#design-principals)
+- [Design evolution](#design-evolution)
+  - [Distributed monolith](#distributed-monolith)
 - [Design concepts](#design-concepts)
 - [Security principals](#security-principals)
 - [Shared controls](#shared-controls)
@@ -13,6 +15,9 @@
 
 ## Design evolution
 <img src="images/evolution.jpg">
+
+### Distributed monolith
+<img src="images/distributed_monolith.jpg">
 
 ## [Design Concepts](https://www.youtube.com/watch?v=SqcXvc3ZmRU)
 1. Vertical scaling
