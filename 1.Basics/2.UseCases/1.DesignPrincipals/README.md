@@ -2,6 +2,7 @@
 - [Design principals](#design-principals)
 - [Design evolution](#design-evolution)
   - [Distributed monolith](#distributed-monolith)
+  - [Architectural patterns](#architectural-patterns)
 - [Design concepts](#design-concepts)
 - [Security principals](#security-principals)
 - [Shared controls](#shared-controls)
@@ -18,6 +19,9 @@
 
 ### Distributed monolith
 <img src="images/distributed_monolith.jpg">
+
+### Architectural patterns
+<img src="images/architectural_patterns.jpg">
 
 ## [Design Concepts](https://www.youtube.com/watch?v=SqcXvc3ZmRU)
 1. Vertical scaling
