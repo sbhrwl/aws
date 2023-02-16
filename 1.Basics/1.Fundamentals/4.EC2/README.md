@@ -2,7 +2,7 @@
 
 ## 1. Connect to EC2		
 - Windows SSH		
-- Linux		
+- Linux	(putty/mobaxterm)
 - EC2 Instance Connect		
 - Session Manager		
 ## 2. Security Group		
