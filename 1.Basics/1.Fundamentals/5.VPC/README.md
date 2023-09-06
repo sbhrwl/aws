@@ -20,7 +20,7 @@
 -  enableDNSsupport					
 -  enableDNShostname					
 -  Custom DNS domain name in Private Zone hosted in Route 53					
-*Private Route 53 hosted zone enables us to create records that points to external websites (Google) and make them accessible from our VPC					
+   - **Private Route 53 hosted zone** enables us to create records that points to external websites (Google) and make them accessible from our VPC					
 ## 6. NACL					
 -  Default NACL: All Inbound Allowed					
 -  Default NACL: All Outbound Allowed					
