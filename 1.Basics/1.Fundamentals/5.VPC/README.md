@@ -152,7 +152,6 @@ Hence, the correct answer is: Set up a new IPv4 subnet with a larger CIDR range.
 
 - If DB is installed on EC2, then replicate database to the other AZ as well											
 - You need one public subnet in each AZ where the ELB is defined and the private subnets are located ELB nodes have public IPs and route traffic to the private IP addresses of the EC2 instances.
-<img src="images/24.png">
 
 # Connection Between VPCs												
 ## 1. VPC Endpoint					
@@ -166,6 +165,8 @@ Hence, the correct answer is: Set up a new IPv4 subnet with a larger CIDR range.
   - Provisions ENI as an entry point		
   - Must attach ENI to Security Group		
   - Most AWS services		
+<img src="images/24.png">
+
 ### Endpoint Policy
 - When you create a VPC endpoint, you can attach an endpoint policy to controls access to the service (for ex: S3) to which you are connecting.	
 - You can modify the endpoint policy attached to your endpoint and add or remove the route tables used by the endpoint.
