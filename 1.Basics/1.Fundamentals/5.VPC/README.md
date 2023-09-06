@@ -54,7 +54,7 @@
 
 -  NAT instance can be used as a bastion server
 -  Security Groups can be associated with a NAT instance
--  NAT instance supports port forwarding"											
+-  NAT instance supports port forwarding											
 
 ### 1. Your EC2 wants to access an application on Internet. This application on Internet allows 2 IPs to be whitelisted per customer, what shall we do?											
 Configure a NAT gateway for eac AZ with an Elastic IP											
