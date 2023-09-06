@@ -157,12 +157,12 @@ Hence, the correct answer is: Set up a new IPv4 subnet with a larger CIDR range.
 # Connection Between VPCs												
 ## 1. VPC Endpoint					
 - Enables us to connect AWS Services using private Network without using IGW or NAT					
-- Gateway Endpoint		
+- **Gateway** Endpoint		
   - Provisions a Target (Endpoint ARN) as an entry point		
   - Update Route Table with the Gateway endpoint		
   - S3 and DynamoDB		
-- VPC endpoint Policies		
-- Interface Endpoint		
+  - VPC endpoint Policies		
+- **Interface** Endpoint		
   - Provisions ENI as an entry point		
   - Must attach ENI to Security Group		
   - Most AWS services		
