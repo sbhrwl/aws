@@ -27,8 +27,8 @@
 -  Newly created NACL DENY everything					
 -  One NACL per Subnet					
 -  Blocking IP at Subnet level					
-v-  NACL is StateLESS so Outbound rules are explicitly evaluated					
-v-  Setup DENY rule for Ephemeral Ports (1024-65535)					
+-  NACL is StateLESS so Outbound rules are explicitly evaluated					
+-  Setup DENY rule for Ephemeral Ports (1024-65535)					
 
 ## 7. Adding Internet Gateway to Main Route table of VPC
 <img src="images/1.png">
@@ -52,7 +52,7 @@ v-  Setup DENY rule for Ephemeral Ports (1024-65535)
 # NAT Gateway Vs NAT Instance
 <img src="images/4.png">
 
-"-  NAT instance can be used as a bastion server
+-  NAT instance can be used as a bastion server
 -  Security Groups can be associated with a NAT instance
 -  NAT instance supports port forwarding"											
 
@@ -108,7 +108,7 @@ By default, a new EC2 instance uses an IPv4 addressing protocol.
 -  You cannot disable IPv4 support for your VPC and subnets since this is the default IP addressing system for Amazon VPC and Amazon EC2
 <img src="images/11.png">
 
-"By default, a new EC2 instance uses an IPv4 addressing protocol. 
+By default, a new EC2 instance uses an IPv4 addressing protocol. 
 To fix the problem in the scenario, you need to create a new IPv4 subnet and deploy the EC2 instance in the new subnet."											
 Hence, the correct answer is: Set up a new IPv4 subnet with a larger CIDR range. Associate the new subnet with the VPC and then launch the instance.											
 <img src="images/12.png">
@@ -151,10 +151,7 @@ Hence, the correct answer is: Set up a new IPv4 subnet with a larger CIDR range.
 <img src="images/23.png">
 
 - If DB is installed on EC2, then replicate database to the other AZ as well											
-
- "You need one public subnet in each AZ where the ELB is defined and the private subnets are located
-ELB nodes have public IPs and route traffic to the private IP addresses of the EC2 instances."		
-
+- You need one public subnet in each AZ where the ELB is defined and the private subnets are located ELB nodes have public IPs and route traffic to the private IP addresses of the EC2 instances.
 <img src="images/24.png">
 
 # Connection Between VPCs												
