@@ -35,13 +35,13 @@
 - For Cross Account Access **assume role in target account to perform actions there**
 ### Options for assuming role
 1. **AssumeRole with SAML**	
-  - Return credentials for user, who is logged in with SAML	
+   - Return credentials for user, who is logged in with SAML	
 2. **AssumeRole with WebIdentity**
-  - Return credentials for users logged in with IdP (Facebook, Google)	
-  - Instead of using WebIdentity use Cognito	
+   - Return credentials for users logged in with IdP (Facebook, Google)	
+   - Instead of using WebIdentity use Cognito	
 3. **GetSession Token**
-  - GetSession token via MFA	
-  - For AWS user or Root account user	
+   - GetSession token via MFA	
+   - For AWS user or Root account user	
 ## STS and assume role
 - **Using STS to Assume a Role**
   - Define an IAM Role within your account or cross-account
