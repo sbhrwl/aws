@@ -37,6 +37,8 @@
 <img src="images/1.png" width=500>
 
 ## STS Assume Role
+- AWS offers [Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
+  - AWS provides AWS Security Token Service (AWS STS) as a web service that enables you to request **temporary, limited-privilege credentials** for users
 - Allows temporary, limited access to AWS resources	
 - Token is valid for 1 hour	
 - AssumeRole within your account for enhance security
