@@ -41,12 +41,12 @@
 - AWS offers [Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
   - AWS provides AWS Security Token Service (AWS STS) as a web service that enables you to request **temporary, limited-privilege credentials** for users
 
-## STS Assume Role
+### STS Assume Role
 - Allows temporary, limited access to AWS resources	
 - Token is valid for 1 hour	
 - AssumeRole within your account for enhance security
 - For Cross Account Access **assume role in target account to perform actions there**
-### Options for assuming role
+#### Options for assuming role
 1. **AssumeRole with SAML**	
    - Return credentials for user, who is logged in with SAML	
 2. **AssumeRole with WebIdentity**
@@ -55,7 +55,7 @@
 3. **GetSession Token**
    - GetSession token via MFA	
    - For AWS user or Root account user	
-### STS assume role in action
+#### STS assume role in action
 - **Using STS to Assume a Role**
   - Define an IAM Role within your account or cross-account
   - Define which principals can access this IAM Role
@@ -63,17 +63,17 @@
   - Temporary credentials can be valid between 15 minutes to 1 hour
 <img src="images/2.png" width=500>
 
-## SAML2 Federation
+### SAML2 Federation
 - To integrate Active Directory / ADFS with AWS (or any SAML 2.0)
 - Provides access to AWS Console or CL- (through temporary creds)
 - No need to create an IAM user for each of your employees
-### [API access to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
+#### [API access to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
 <img src="images/3.png">
 
-### [Access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
+#### [Access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
 <img src="images/4.png">
 
-### SAML2 and assume role
+#### SAML2 and assume role
 - SAML2 LDAP					
   - To Integrate LDAP based Identity store with AWS					
   - Provides access to AWS console and CLI					
