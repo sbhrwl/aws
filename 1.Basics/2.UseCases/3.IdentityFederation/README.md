@@ -18,7 +18,7 @@
   - Facebook					
   - Google					
   - Cognito User Pool (CUP)					
-- These are also refered as **Identity Providers**
+- These are also referred as **Identity Providers**
 ## Identity Federation
 - Identity Federation is 
   - process of **authenticating users** via User Pool that you may or may not own (guest users) and then 
