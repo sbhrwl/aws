@@ -63,10 +63,10 @@
 - Provides access to AWS Console or CL- (through temporary creds)
 - No need to create an IAM user for each of your employees
 ### [API access to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
-<img src="images/3.png" width=500>
+<img src="images/3.png">
 
 ### [Access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
-<img src="images/4.png" width=500>
+<img src="images/4.png">
 
 ### SAML2 and assume role
 - SAML2 LDAP					
