@@ -87,9 +87,9 @@
 - Federation through SAML is OLD way of doing things, use Amazon SSO instead										
 	
 ## Question
-<img src="images/5.png" width=500>
+<img src="images/5.png">
 
-<img src="images/6.png" width=500>
+<img src="images/6.png">
 
 ## Question
-<img src="images/7.png" width=500>
+<img src="images/7.png">
