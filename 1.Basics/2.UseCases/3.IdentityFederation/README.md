@@ -2,6 +2,12 @@
 - [Where are Users](#where-are-users)
 - [Identity Federation](#identity-federation)
 - [Identity Federation in AWS](#identity-federation-in-aws)
+  - [STS Assume Role](#sts-assume-role)
+    - [Options for assuming role](#options-for-assuming-role)
+    - [STS assume role in action](#sts-assume-role-in-action)
+  - [SAML2 Federation](#saml2-federation)
+    - [SAML2 and assume role](#saml2-and-assume-role)
+  - [Other types of Identity Federation](#other-types-of-identity-federation)
 ## Where are Users											
 - **In organisation**
   - LDAP					
@@ -30,7 +36,7 @@
 - **IAM and Cognito can be used for Identity federation**
 <img src="images/1.png" width=500>
 
-## STS Assume Role									
+## STS Assume Role
 - Allows temporary, limited access to AWS resources	
 - Token is valid for 1 hour	
 - AssumeRole within your account for enhance security
@@ -44,7 +50,7 @@
 3. **GetSession Token**
    - GetSession token via MFA	
    - For AWS user or Root account user	
-## STS and assume role
+### STS assume role in action
 - **Using STS to Assume a Role**
   - Define an IAM Role within your account or cross-account
   - Define which principals can access this IAM Role
@@ -52,7 +58,7 @@
   - Temporary credentials can be valid between 15 minutes to 1 hour
 <img src="images/2.png" width=500>
 
-## SAML 2.0 Federation
+## SAML2 Federation
 - To integrate Active Directory / ADFS with AWS (or any SAML 2.0)
 - Provides access to AWS Console or CL- (through temporary creds)
 - No need to create an IAM user for each of your employees
@@ -62,7 +68,7 @@
 ### [Access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html)
 <img src="images/4.png" width=500>
 
-## SAML2 and assume role
+### SAML2 and assume role
 - SAML2 LDAP					
   - To Integrate LDAP based Identity store with AWS					
   - Provides access to AWS console and CLI					
