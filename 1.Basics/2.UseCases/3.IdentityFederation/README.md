@@ -2,6 +2,7 @@
 - [Where are Users](#where-are-users)
 - [Identity Federation](#identity-federation)
 - [Identity Federation in AWS](#identity-federation-in-aws)
+  - [STS](#sts)
   - [STS Assume Role](#sts-assume-role)
     - [Options for assuming role](#options-for-assuming-role)
     - [STS assume role in action](#sts-assume-role-in-action)
@@ -36,9 +37,11 @@
 - **IAM and Cognito can be used for Identity federation**
 <img src="images/1.png" width=500>
 
-## STS Assume Role
+### STS
 - AWS offers [Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)
   - AWS provides AWS Security Token Service (AWS STS) as a web service that enables you to request **temporary, limited-privilege credentials** for users
+
+## STS Assume Role
 - Allows temporary, limited access to AWS resources	
 - Token is valid for 1 hour	
 - AssumeRole within your account for enhance security
