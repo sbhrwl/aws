@@ -1,5 +1,7 @@
 # Identity Federation
-
+- [Where are Users](#where-are-users)
+- [Identity Federation](#identity-federation)
+- [Identity Federation in AWS](#identity-federation-in-aws)
 ## Where are Users											
 - **In organisation**
   - LDAP					
@@ -10,7 +12,7 @@
   - Google					
   - Cognito User Pool (CUP)					
 
-## Identity Federation											
+## Identity Federation
 - Identity Federation is 
   - process of **authenticating users** via User Pool that you may or may not own (guest users) and then 
   - **providing the needed permission** to access a resource or perform an operation
