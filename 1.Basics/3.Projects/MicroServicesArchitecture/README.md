@@ -1,4 +1,4 @@
-# Micro Services architecture
+# Micro services architecture
 - [Overview](#verview)
 - [Benefits](#benefits)
 - [Micro services examples](#micro-services-examples)
