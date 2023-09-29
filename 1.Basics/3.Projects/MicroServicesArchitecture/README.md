@@ -10,8 +10,6 @@
 - Internal operations are a **black box**, accessible to external programs only via API
 <img src="images/microservice.png">
 
-<img src="https://github.com/sbhrwl/system_design/blob/main/projects/DataProcessing/images/layers_and_technology.png">
-
 ## Benefits
 - Microservices are **independently deployable** and allow for more team autonomy
   - Each microservice can be deployed independently, as needed, enabling continuous improvement and faster app updates.
