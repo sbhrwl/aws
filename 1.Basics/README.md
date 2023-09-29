@@ -5,6 +5,7 @@
 - [Compute](#compute)
 - [Auto scaling and High availability](#auto-scaling-and-high-availability)
 - [Distributing content](#distributing-content)
+- [Decoupling applications](#decoupling-applications)
 - [Security](#security)
 - [Monitoring and Logging](#monitoring-and-logging)
 - [DevOps](#devops)
