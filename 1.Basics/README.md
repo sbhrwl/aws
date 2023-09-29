@@ -1,35 +1,95 @@
 # Basics
-- [Fundamentals](#fundamentals)
-- [Use cases](#use-cases)
-- [Cloud formation](https://drive.google.com/drive/u/0/folders/1C3kwfmSzod-cVkPJirf983xjtaJSfrwB)
-## Fundamentals
-### [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
-### [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
-- Deployment models (Public cloud, Private cloud)
-- Service models (Infrastructure As A Service, Platform As A Service, Software As A Service)
-### [Global Infrastructure](1.Fundamentals/3.GlobalInfra/README.md)
-- Regions, Availability zones (Placement group), Edge locations (Cloudfront infra)
-### [EC2](1.Fundamentals/4.EC2/README.md)
-- Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
-- Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU-based "ON DEMAND INSTANCE limit per Region")
-### [VPC](1.Fundamentals/5.VPC/README.md)
-- Subnet, Internet Gateway, Route Table, NAT, DNS Resolution, NACL, Adding Internet Gateway to Main Route table of VPC
-- VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
-- VPC- IPv4 and IPv6 adressing (Dual Stack mode), Attaching IPv6 CIDRs to a subnet, Ephemerel Ports
-- Connection Between VPCs (VPC Endpoint (Endpoint Policy (VPC endpoint Policy for S3)), VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
-### [ASG](1.Fundamentals/6.ASG/README.md)
-- Step Scaling Vs Simple scaling, HA setup, Launch Templates
-- EC2 Cloudwatch agent, ELB Health Check for ASG, ASG-SNS and Instance State Change Events
-### [ELB](1.Fundamentals/7.ELB/README.md)
-- NLB, ALB, CLB, ELB Health checks
-- NLB-Routing, Encryption in Transit, NLB-BYOIP - Static IP
-- ONLY ALB supports path-based routing and host-based routing (Perfect Forward Secrecy), ALB- Authentication via CUP, ALB - Weighted Routing
-- How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate
-- Distribute traffic between On premise servers and AWS Web servers deployed on EC2
-- Configure a NAT gateway for each AZ with an Elastic IP,   
-### [Route53](1.Fundamentals/8.Route53/README.md)
-- TTL, Registrar, Routing Policies (Routing based on location)
-- Alias records, Failovers, Supported DNS Record Types, DNSSEC
+## Networking
+- [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
+- [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
+  - Deployment models (Public cloud, Private cloud)
+  - Service models (Infrastructure As A Service, Platform As A Service, Software As A Service)
+- [Global Infrastructure](1.Fundamentals/3.GlobalInfra/README.md)
+  - Regions, Availability zones (Placement group), Edge locations (Cloudfront infra)
+- [VPC](1.Fundamentals/5.VPC/README.md)
+  - Subnet, Internet Gateway, Route Table, NAT, DNS Resolution, NACL, Adding Internet Gateway to Main Route table of VPC
+  - VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
+  - VPC- IPv4 and IPv6 adressing (Dual Stack mode), Attaching IPv6 CIDRs to a subnet, Ephemerel Ports
+  - Connection Between VPCs (VPC Endpoint (Endpoint Policy (VPC endpoint Policy for S3)), VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
+## Hybrid cloud
+- [Hybrid Connections](1.Fundamentals/11.Hybrid/HybridConnections/README.md)
+  - Client VPN, Site to Site VPN, VPN Cloud Hub
+  - On premise to AWS[Direct Connect, Direct Connect Gateway, Transit Gateway, Transit Gateway + DX  Gateway]
+- [Hybrid Storage](1.Fundamentals/11.Hybrid/HybridStorage/README.md)
+- FsX for Windows, Integrate with Microsoft AD
+- FsX for Lustre, Integration with S3, Hot Storage
+- Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
+## Moving data to cloud
+- [Transferring Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Snow/README.md)
+  - Snowball, Snowball Edge, Snow Mobile, Snowball To Glacier
+- [Replication of Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Replication/README.md)
+  - Transferring Large Data [Site To Site VPN, Direct Connect, Snowball, Secured On going Replications]
+  - Replication with DataSync, Data Migration Service (DMS)
+- [DataSync](2.UseCases/4.MovingDataToCloud/DataSync/README.md)
+- [Data pipeline](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md)
+## Compute
+- [EC2](1.Fundamentals/4.EC2/README.md)
+  - Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
+  - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU-based "ON DEMAND INSTANCE limit per Region")
+- [EKS]()
+- [Lambda](2.UseCases/7.Serverless/Lambda/README.md)
+  - Limits [Execution Limits, Deployment Limits], Lambda Metrices that Cloudwatch can track
+  - Lambda@Edge (Global lambda)
+## Auto scaling and High availability
+- [ASG](1.Fundamentals/6.ASG/README.md)
+  - Step Scaling Vs Simple scaling, HA setup, Launch Templates
+  - EC2 Cloudwatch agent, ELB Health Check for ASG, ASG-SNS and Instance State Change Events
+- [ELB](1.Fundamentals/7.ELB/README.md)
+  - NLB, ALB, CLB, ELB Health checks
+  - NLB-Routing, Encryption in Transit, NLB-BYOIP - Static IP
+  - ONLY ALB supports path-based routing and host-based routing (Perfect Forward Secrecy), ALB- Authentication via CUP, ALB - Weighted Routing
+  - How to make an Application running in multi AZ on EC2 instances backed by Aurora DB exposed via ALB resilient to sporadic increase in request rate
+  - Distribute traffic between On premise servers and AWS Web servers deployed on EC2
+  - Configure a **NAT gateway** for each AZ with an Elastic IP
+- [Route53](1.Fundamentals/8.Route53/README.md)
+  - TTL, Registrar, Routing Policies (Routing based on location)
+  - Alias records, Failovers, Supported DNS Record Types, DNSSEC
+## Distributing content
+- [Cloudfront](2.UseCases/6.DistributingContent/Cloudfront.md)
+  - Origins [S3 Bucket, Custome Origin (HTTP)], Geo Restriction (WAF offers Geo Match condition)
+  - HTTPS Support, How long can an Object stay in the cache?, Origin Failover
+  - Cloudfront Signed URL/Cloudfront Signed Cookies, Cloudfront Signed URL Vs S3 Pre Signed URL
+  - Cloudfront Vs S3 Cross Region Replciation
+- [Global accelerator](2.UseCases/6.DistributingContent/GlobalAccelerator.md)
+  - AWS Global Accelerator vs CloudFront, Traffic traverses the AWS global network, Why GA, GA and NLB
+## Decoupling applications
+- [SQS](2.UseCases/5.DecouplingApplications/SQS/README.md)
+- [SNS](2.UseCases/5.DecouplingApplications/SNS/README.md)
+- [Kinesis](2.UseCases/5.DecouplingApplications/Kinesis/README.md)
+- [SWF](2.UseCases/5.DecouplingApplications/SWF/README.md)
+- [Step functions](2.UseCases/5.DecouplingApplications/StepFunction/README.md)
+  - Serverless Orchestration
+## Security
+- [IAM](2.UseCases/2.Security/IAM.md)
+  - Authentication and Authorization, Roles Vs Resource based policies, Permisssion Boundary, IAM Federation
+  - Root Account, IAM Query API, IAM-ACM
+- [Identity federation](2.UseCases/3.IdentityFederation/README.md)
+  - STS Assume Role (AssumeRole with SAML, AssumeRole with WebIdentity, GetSession Token)
+  - SAML 2.0 Federation (API access to AWS, Access the AWS Management Console)
+  - SAML2 LDAP, SAML2 ADFS
+  - [ADconnector](2.UseCases/3.IdentityFederation/ADconnector.md)
+  - [Cognito](2.UseCases/3.IdentityFederation/Cognito.md)
+    - Cognito User Pool, Cognito Sync->AppSync,Cognito Identity Pool/Federation
+- [KMS](2.UseCases/2.Security/KMS.md)
+  - Customer Master Key, Key Policies, You cannot store credentials in KMS
+## Monitoring and Logging
+- [Cloudwatch](2.UseCases/8.Monitoring/Cloudwatch.md)
+- [Cloudtrail](2.UseCases/8.Monitoring/Cloudtrail.md)
+  - Object Level Logging, Encryption and Cloudtrail,Cloudtrail in all Regions
+- [S3 or Server access logs](2.UseCases/8.Monitoring/S3accessLogs.md)
+  - S3 Access Logs Vs Cloudtrail [Logging Operations, Logging Events (Data events, Management events)]
+- [ELB access logs](2.UseCases/8.Monitoring/ELBaccessLogs.md)
+  - Capture information about HTTP requests, Analysing logs with EMR/Hadoop
+- [VPC Flow logs](2.UseCases/8.Monitoring/VPCflowLogs.md)
+- [AWS X-Ray]()
+- [AWS Inspector]()
+## DevOps
+- [DR](2.UseCases/2.Security/DR.md)
 ### Storage
 - [EBS](1.Fundamentals/9.Storage/EBS/README.md)
   - Volume Types, Snapshots, Data Lifecycle Manager, Encryption
@@ -69,56 +129,9 @@
 - [Elasticcache](1.Fundamentals/10.Databases/Elasticcache/README.md)
   - DB Cache, Session store, Write Through, Security
   - Redis(Remote Dictionary Server), Memcached
-### Hybrid
-- [Hybrid Connections](1.Fundamentals/11.Hybrid/HybridConnections/README.md)
-  - Client VPN, Site to Site VPN, VPN Cloud Hub
-  - On premise to AWS[Direct Connect, Direct Connect Gateway, Transit Gateway, Transit Gateway + DX  Gateway]
-- [Hybrid Storage](1.Fundamentals/11.Hybrid/HybridStorage/README.md)
-- FsX for Windows, Integrate with Microsoft AD
-- FsX for Lustre, Integration with S3, Hot Storage
-- Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
-
-## Use cases
-### [Design principals](2.UseCases/1.DesignPrincipals/README.md)
+## [Design principals](2.UseCases/1.DesignPrincipals/README.md)
 - Design Principals, Design Concepts, Security Principals, Shared Controls
-### Security
-- [IAM](2.UseCases/2.Security/IAM.md)
-  - Authentication and Authorization, Roles Vs Resource based policies, Permisssion Boundary, IAM Federation
-  - Root Account, IAM Query API, IAM-ACM
-- [DR](2.UseCases/2.Security/DR.md)
-- [KMS](2.UseCases/2.Security/KMS.md)
-  - Customer Master Key, Key Policies, You cannot store credentials in KMS
-### [Identity federation](2.UseCases/3.IdentityFederation/README.md)
-- STS Assume Role (AssumeRole with SAML, AssumeRole with WebIdentity, GetSession Token)
-- SAML 2.0 Federation (API access to AWS, Access the AWS Management Console)
-- SAML2 LDAP, SAML2 ADFS
-- [ADconnector](2.UseCases/3.IdentityFederation/ADconnector.md)
-- [Cognito](2.UseCases/3.IdentityFederation/Cognito.md)
-  - Cognito User Pool, Cognito Sync->AppSync,Cognito Identity Pool/Federation
-### Moving data to cloud
-- [Transferring Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Snow/README.md)
-  - Snowball, Snowball Edge, Snow Mobile, Snowball To Glacier
-- [Replication of Data On premise to AWS](2.UseCases/4.MovingDataToCloud/Replication/README.md)
-  - Transferring Large Data [Site To Site VPN, Direct Connect, Snowball, Secured On going Replications]
-  - Replication with DataSync, Data Migration Service (DMS)
-- [DataSync](2.UseCases/4.MovingDataToCloud/DataSync/README.md)
-- [Data pipeline](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md)
-### Decoupling applications
-- [SQS](2.UseCases/5.DecouplingApplications/SQS/README.md)
-- [SNS](2.UseCases/5.DecouplingApplications/SNS/README.md)
-- [Kinesis](2.UseCases/5.DecouplingApplications/Kinesis/README.md)
-- [SWF](2.UseCases/5.DecouplingApplications/SWF/README.md)
-- [Step functions](2.UseCases/5.DecouplingApplications/StepFunction/README.md)
-  - Serverless Orchestration
-### Distributing content
-- [Cloudfront](2.UseCases/6.DistributingContent/Cloudfront.md)
-  - Origins [S3 Bucket, Custome Origin (HTTP)], Geo Restriction (WAF offers Geo Match condition)
-  - HTTPS Support, How long can an Object stay in the cache?, Origin Failover
-  - Cloudfront Signed URL/Cloudfront Signed Cookies, Cloudfront Signed URL Vs S3 Pre Signed URL
-  - Cloudfront Vs S3 Cross Region Replciation
-- [Global accelerator](2.UseCases/6.DistributingContent/GlobalAccelerator.md)
-  - AWS Global Accelerator vs CloudFront, Traffic traverses the AWS global network, Why GA, GA and NLB
-### Serverless
+## Serverless
 - [API Gateway](2.UseCases/7.Serverless/API-Gateway/README.md)
   - Endpoints [Edge Optimized (Default), Regional, Private], Throttling
   - API Gateway Security [IAM Permission, Lambda Authorizer, Cognito User Pool]
@@ -131,17 +144,6 @@
   - Provisioned Throughput, Capacity Planning, On Demand Capacity
   - DynamoDB Accelerator (DAX), DaX Cluster, DynamoDB Streams, Global Table
   - Aurora Globa DB Vs DynamoDB Global Table
-### Monitoring
-- [Cloudwatch](2.UseCases/8.Monitoring/Cloudwatch.md)
-- [Cloudtrail](2.UseCases/8.Monitoring/Cloudtrail.md)
-  - Object Level Logging, Encryption and Cloudtrail,Cloudtrail in all Regions
-- [S3 or Server access logs](2.UseCases/8.Monitoring/S3accessLogs.md)
-  - S3 Access Logs Vs Cloudtrail [Logging Operations, Logging Events (Data events, Management events)]
-- [ELB access logs](2.UseCases/8.Monitoring/ELBaccessLogs.md)
-  - Capture information about HTTP requests, Analysing logs with EMR/Hadoop
-- [VPC Flow logs](2.UseCases/8.Monitoring/VPCflowLogs.md)
-- [AWS X-Ray]()
-- [AWS Inspector]()
-### [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
-### [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
-### [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
+## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
+## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
+## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
