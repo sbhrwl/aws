@@ -1,7 +1,7 @@
 # Micro Services architecture
 - [Overview](#verview)
 - [Benefits](#benefits)
-- [Micro Services Environment](#micro-services-environment)
+- [Micro services examples](#micro-services-examples)
 - [Challenges with micro services](#challenges-with-micro-services)
 ## [Overview](https://youtu.be/lTAcCNbJ7KE)
 - Each microservice has its **own data model and manages its own data**.
@@ -16,7 +16,7 @@
 - Microservices are **independently scalable**.
 - Microservices **reduce downtime through fault isolation**
 - The smaller codebase enables teams to more easily understand the code, making it simpler to maintain.
-## Micro Services Environment
+## Micro services examples 
 - We want to switch to a micro service architecture
 - **Many services interact with each other directly using a REST API**
 - Each architecture for each micro service may vary in form and shape
