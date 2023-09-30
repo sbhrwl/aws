@@ -11,11 +11,10 @@
 - [DevOps](#devops)
 - [Storage](#storage)
 - [Databases](#databases)
-- [Design principals](#design-principals)
-- [Serverless](#serverless)
-- [Support](#support)
-- [Services](#services)
 - [Datalake](#datalake)
+- [Services](#services)
+- [Support](#support)
+- [Design principals](#design-principals)
 ## Networking
 - [Networking fundamentals](1.Fundamentals/1.Networking/README.md)
 - [Cloud fundamentals](1.Fundamentals/2.Cloud/README.md)
@@ -49,9 +48,19 @@
   - Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
   - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU-based "ON DEMAND INSTANCE limit per Region")
 - [EKS]()
-- [Lambda](2.UseCases/7.Serverless/Lambda/README.md)
-  - Limits [Execution Limits, Deployment Limits], Lambda Metrices that Cloudwatch can track
-  - Lambda@Edge (Global lambda)
+- Serverless
+  - [API Gateway](2.UseCases/7.Serverless/API-Gateway/README.md)
+    - Endpoints [Edge Optimized (Default), Regional, Private], Throttling
+    - API Gateway Security [IAM Permission, Lambda Authorizer, Cognito User Pool]
+    - API Gateway with Lambda
+    - Migrating On Premise Linux API server to AWS and making it HA
+  - [Lambda](2.UseCases/7.Serverless/Lambda/README.md)
+    - Limits [Execution Limits, Deployment Limits], Lambda Metrices that Cloudwatch can track
+    - Lambda@Edge (Global lambda)
+  - [DynamoDB](2.UseCases/7.Serverless/DynamoDB/README.md)
+    - Provisioned Throughput, Capacity Planning, On Demand Capacity
+    - DynamoDB Accelerator (DAX), DaX Cluster, DynamoDB Streams, Global Table
+    - Aurora Globa DB Vs DynamoDB Global Table
 ## Auto scaling and High availability
 - [ASG](1.Fundamentals/6.ASG/README.md)
   - Step Scaling Vs Simple scaling, HA setup, Launch Templates
@@ -146,21 +155,8 @@
 - [Elasticcache](1.Fundamentals/10.Databases/Elasticcache/README.md)
   - DB Cache, Session store, Write Through, Security
   - Redis(Remote Dictionary Server), Memcached
+## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
+## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
+## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
 ## [Design principals](2.UseCases/1.DesignPrincipals/README.md)
 - Design Principals, Design Concepts, Security Principals, Shared Controls
-## Serverless
-- [API Gateway](2.UseCases/7.Serverless/API-Gateway/README.md)
-  - Endpoints [Edge Optimized (Default), Regional, Private], Throttling
-  - API Gateway Security [IAM Permission, Lambda Authorizer, Cognito User Pool]
-  - API Gateway with Lambda
-  - Migrating On Premise Linux API server to AWS and making it HA
-- [Lambda](2.UseCases/7.Serverless/Lambda/README.md)
-  - Limits [Execution Limits, Deployment Limits], Lambda Metrices that Cloudwatch can track
-  - Lambda@Edge (Global lambda)
-- [DynamoDB](2.UseCases/7.Serverless/DynamoDB/README.md)
-  - Provisioned Throughput, Capacity Planning, On Demand Capacity
-  - DynamoDB Accelerator (DAX), DaX Cluster, DynamoDB Streams, Global Table
-  - Aurora Globa DB Vs DynamoDB Global Table
-## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
-## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
-## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
