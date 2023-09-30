@@ -31,6 +31,7 @@
   - VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
   - VPC- IPv4 and IPv6 adressing (Dual Stack mode), Attaching IPv6 CIDRs to a subnet, Ephemerel Ports
   - Connection Between VPCs (VPC Endpoint (Endpoint Policy (VPC endpoint Policy for S3)), VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
+- [Security perspective - (Domain 4- Communication and Network Security )](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
 ## Hybrid cloud
 - [Hybrid Connections](1.Basics/1.Fundamentals/11.Hybrid/HybridConnections/README.md)
   - Client VPN, Site to Site VPN, VPN Cloud Hub
@@ -107,6 +108,7 @@
     - Cognito User Pool, Cognito Sync->AppSync,Cognito Identity Pool/Federation
 - [KMS](1.Basics/2.UseCases/2.Security/KMS.md)
   - Customer Master Key, Key Policies, You cannot store credentials in KMS
+- [Security perspective - (Domain 3- Software engineering and Domain 5- Identity and Access Management)](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
 ## Monitoring and Logging
 - [Cloudwatch](1.Basics/2.UseCases/8.Monitoring/Cloudwatch.md)
 - [Cloudtrail](1.Basics/2.UseCases/8.Monitoring/Cloudtrail.md)
@@ -120,6 +122,8 @@
 - [AWS Inspector]()
 ## DevOps
 - [DR](1.Basics/2.UseCases/2.Security/DR.md)
+- [Security perspective - (Domain 8- Software Development and Security)](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
+- [Security perspective - (Domain 7- Security Operations)](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
 ### Storage
 - [EBS](1.Basics/1.Fundamentals/9.Storage/EBS/README.md)
   - Volume Types, Snapshots, Data Lifecycle Manager, Encryption
