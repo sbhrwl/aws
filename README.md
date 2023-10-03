@@ -21,6 +21,7 @@
 - [Links](#links)
 ## Networking
 - [Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)
+  - [Network protocols](https://github.com/sbhrwl/system_design/blob/main/docs/Security/4.CommunicationAndNetworkSecurity/NetworkProtocols.md)
 - [Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)
   - Deployment models (Public cloud, Private cloud)
   - Service models (Infrastructure As A Service, Platform As A Service, Software As A Service)
