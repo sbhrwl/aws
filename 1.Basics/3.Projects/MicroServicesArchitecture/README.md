@@ -3,6 +3,7 @@
 - [Benefits](#benefits)
 - [Micro services examples](#micro-services-examples)
 - [Challenges with micro services](#challenges-with-micro-services)
+- [Securing microservices](#securing-microservices)
 ## [Overview](https://youtu.be/lTAcCNbJ7KE)
 - Each microservice has its **own data model and manages its own data**.
 - Data moves between microservices using “dumb pipes” such as an **event broker and/or a lightweight protocol like REST**.
@@ -40,3 +41,16 @@
   - API Gateway, Lambda scale automatically and you pay per usage
   - You can easily clone API, reproduce environments
   - Generated client SDK through Swagger integration for the API Gateway
+## Securing microservices
+- The SMOC application is running on GKE cluster.
+- The cluster will run a user interface and microservices.
+- API calls are made between backend and frontend.
+-	The services will be secured by mTLS. 
+-	JWT tokens for endpoints. 
+-	Firewall, Network security on GCP. 
+-	K8 security, IP whitelisting, CORS, rate-limiting at the API gateway level. 
+-	Limit building block API exposure and 
+-	ACL in service-to-service invocation. 
+-	OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
+- Networking Security
+  - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
