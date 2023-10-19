@@ -47,10 +47,10 @@
 - API calls are made between backend and frontend.
 -	The services will be secured by mTLS. 
 -	JWT tokens for endpoints. 
+- ACL in service-to-service invocation.
 -	Firewall, Network security on GCP. 
 -	K8 security, IP whitelisting, CORS, rate-limiting at the API gateway level. 
 -	Limit building block API exposure and 
--	ACL in service-to-service invocation. 
 -	OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
 - Networking Security
   - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
