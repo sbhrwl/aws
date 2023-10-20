@@ -50,6 +50,8 @@
   -	smoc_service has certificate of device_hub
   -	device_hub has certificate of smoc_service
 -	JWT tokens (Keycloak) for endpoints (smoc_service).
+  -	if
+  -	else
 - ACL in service-to-service invocation.
   - iec_connector can talk to device_hub
   - device_hub can talk to smoc_service
