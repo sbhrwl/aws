@@ -62,3 +62,44 @@
 -	Firewall, Network security on GCP
   - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
 <img src="images/security.jpg">
+
+```
+@startuml
+
+!include <C4/C4_Container>
+
+' See more https://github.com/plantuml-stdlib/C4-PlantUML
+
+' uncomment the following line and comment the first to use locally
+' !include C4_Container.puml' LAYOUT_TOP_DOWN()
+' LAYOUT_AS_SKETCH()
+LAYOUT_WITH_LEGEND()
+
+title Container diagram for "Meter park management"
+
+left to right direction
+
+Person(assetManager, "Asset manager", "Responsible for following up meter state after the rollout")
+System_Boundary(mpm, "Meter park management") {
+    Container(ui, "UI", "Angular")
+    Container(supergraph, "Apollo Router", "API Gateway","Node.js/Typescript")
+    Container(subgraph, "mpm-bff", Apollo GraphQL", "Node.js/Typescript")
+    Container(activemqconsumer, "iec61968-connector", "JVM", "Dapr/Springboot")
+    Container(devicehub, "device-hub", "JVM", "Dapr/Springboot")
+    Container(smocservice, "smoc-service", "JVM", "Dapr/Springboot")
+    ContainerDb(store, "Persistent store" , "Mongo Atlas")
+}
+
+System_Ext(hes, "HES", "System providing connectivity to smart meters")
+BiRel(activemqconsumer, hes, "Subscribe from IEC4HES", "jms 61616" )
+BiRel(activemqconsumer, "devicehub", "forward events", "grpc 443 ")
+BiRel("devicehub", "smocservice", "Provision devices", "grpc 443 ")
+BiRel("devicehub", "store", "Persist actors", "jdbc/27017")
+BiRel(subgraph, smocservice, "fetches", "gprc 443 ")
+BiRel(smocservice, store , "Read/Write", "jdbc 27017")
+Rel(ui, supergraph, "GraphQL", "https 443")
+Rel(supergraph, subgraph, "GraphQL", "https 443")
+
+Rel(assetManager, ui, "app", "web interface")
+@enduml
+```
