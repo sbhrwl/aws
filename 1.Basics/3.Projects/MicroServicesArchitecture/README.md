@@ -45,18 +45,20 @@
 - The SMOC application is running on GKE cluster.
 - The cluster will run a user interface and microservices.
 - API calls are made between backend and frontend.
--	The services will be secured by [mTLS](https://docs.dapr.io/operations/security/mtls/). 
+  - HTTPS (443)
+-	The services will be secured by [mTLS](https://docs.dapr.io/operations/security/mtls/).
+  -	smoc_service has certificate of device_hub
+  -	device_hub has certificate of smoc_service
 -	JWT tokens (Keycloak) for endpoints (smoc_service).
   -	if token has expired during the flow through the application, **refresh** token from keycloak
   -	smoc_service writes or read data from MongoDB, based on role/permissions associated with the JWT token
 - ACL in service-to-service invocation.
   - iec_connector can talk to device_hub
   - device_hub can talk to smoc_service
-  - iec_connector can **not** talk to smoc_service
--	Firewall, Network security on GCP. 
+  - iec_connector can **not** talk to smoc_service 
 -	K8 security, IP whitelisting, CORS, rate-limiting at the API gateway level. 
--	Limit building block API exposure and 
+-	Limit building block API exposure
 -	OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
-- Networking Security
+-	Firewall, Network security on GCP
   - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
 <img src="images/security.jpg">
