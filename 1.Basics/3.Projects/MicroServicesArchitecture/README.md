@@ -50,8 +50,6 @@
   -	smoc_service has certificate of device_hub
   -	device_hub has certificate of smoc_service
 -	JWT tokens (Keycloak) for endpoints (smoc_service).
-  -	if token has expired during the flow through the application, **refresh** token from keycloak
-  -	smoc_service writes or read data from MongoDB, based on role/permissions associated with the JWT token
 - ACL in service-to-service invocation.
   - iec_connector can talk to device_hub
   - device_hub can talk to smoc_service
