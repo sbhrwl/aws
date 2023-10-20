@@ -54,3 +54,4 @@
 -	OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
 - Networking Security
   - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
+<img src="images/security.jpg">
