@@ -47,8 +47,8 @@
 - API calls are made between backend and frontend.
   - HTTPS (443)
 -	The services will be secured by [mTLS](https://docs.dapr.io/operations/security/mtls/).
-  -	smoc_service has certificate of device_hub
-  -	device_hub has certificate of smoc_service
+    -	smoc_service has certificate of device_hub
+    -	device_hub has certificate of smoc_service
 -	JWT tokens (Keycloak) for endpoints (smoc_service)
   -	if token has expired during the flow through the application, **`refresh`** token from keycloak
   -	smoc_service writes or read data from/to MongoDB, based on `role/permissions associated with the JWT token`
