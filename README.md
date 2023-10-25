@@ -12,10 +12,11 @@
 - [Storage](#storage)
 - [Databases](#databases)
 - [Datalake](#datalake)
+- [Big data](#big-data)
+- [AI](#ai)
 - [Services](#services)
 - [Support](#support)
 - [Design principals](#design-principals)
-- [AI](#ai)
 - [Serverless analytics](#serverless-analytics)
 - [Projects](#projects)
 - [Links](#links)
@@ -165,11 +166,11 @@
   - DB Cache, Session store, Write Through, Security
   - Redis(Remote Dictionary Server), Memcached
 ## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
+## [AI](2.AI/README.md)
 ## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
 ## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
 ## [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
 - Design Principals, Design Concepts, Security Principals, Shared Controls
-## [AI](2.AI/README.md)
 ## [Serverless analytics](https://drive.google.com/drive/u/0/folders/1lsuWQwYVsdEnm_73_yHJQOyJuuMkNYRv)
 ## [Projects](1.Basics/3.Projects/README.md)
 ## Links
