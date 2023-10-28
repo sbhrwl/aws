@@ -167,8 +167,14 @@
   - DB Cache, Session store, Write Through, Security
   - Redis(Remote Dictionary Server), Memcached
 ## Data warehouse
+- [Glue]()
+- [Athena]()
+- [Redshift]()
+  - [Redshift spectrum]()
+- [Quicksight]()
 ## Big data
 - [Basics](https://github.com/sbhrwl/system_design/blob/main/projects/BigdataAnalytics/README.md)
+- [EMR]()
 ## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
 ## [AI](2.AI/README.md)
 ## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
