@@ -18,7 +18,6 @@
 - [Services](#services)
 - [Support](#support)
 - [Design principals](#design-principals)
-- [Serverless analytics](#serverless-analytics)
 - [Projects](#projects)
 - [Links](#links)
 ## Networking
@@ -176,12 +175,12 @@
 - [Basics](https://github.com/sbhrwl/system_design/blob/main/projects/BigdataAnalytics/README.md)
 - [EMR]()
 ## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
+- [Serverless analytics](https://drive.google.com/drive/u/0/folders/1lsuWQwYVsdEnm_73_yHJQOyJuuMkNYRv)
 ## [AI](2.AI/README.md)
 ## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
 ## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
 ## [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
 - Design Principals, Design Concepts, Security Principals, Shared Controls
-## [Serverless analytics](https://drive.google.com/drive/u/0/folders/1lsuWQwYVsdEnm_73_yHJQOyJuuMkNYRv)
 ## [Projects](1.Basics/3.Projects/README.md)
 ## Links
   - [Console](https://aws.amazon.com/console/)
