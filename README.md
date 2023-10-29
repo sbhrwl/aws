@@ -171,11 +171,11 @@
 - [Redshift]()
   - [Redshift spectrum]()
 - [Quicksight]()
+- [Serverless analytics](https://drive.google.com/drive/u/0/folders/1lsuWQwYVsdEnm_73_yHJQOyJuuMkNYRv)
 ## Big data
 - [Basics](https://github.com/sbhrwl/system_design/blob/main/projects/BigdataAnalytics/README.md)
 - [EMR]()
 ## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
-- [Serverless analytics](https://drive.google.com/drive/u/0/folders/1lsuWQwYVsdEnm_73_yHJQOyJuuMkNYRv)
 ## [AI](2.AI/README.md)
 ## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
 ## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
