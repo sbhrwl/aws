@@ -5,6 +5,9 @@
 - [Micro services examples](#micro-services-examples)
 - [Challenges with micro services](#challenges-with-micro-services)
 - [Securing microservices](#securing-microservices)
+- [Tech stack for microservices](#tech-stack-for-microservices)
+  - [Preprod](#preprod)
+  - [prod](#prod)
 ## [Overview](https://youtu.be/lTAcCNbJ7KE)
 - Each microservice has its **own data model and manages its own data**.
 - Data moves between microservices using “dumb pipes” such as an **event broker and/or a lightweight protocol like REST**.
@@ -107,3 +110,35 @@ Rel(supergraph, subgraph, "GraphQL", "https 443")
 Rel(assetManager, ui, "app", "web interface")
 @enduml
 ```
+## Tech stack for microservices
+### Preproduction
+- Define API
+  - This establishes a contract between frontend and backend.
+  - We can use Postman or OpenAPI for this.
+- Development
+  - Node.js or react is popular for frontend development, and java/python/go for backend development.
+  - Also, we need to change the configurations in the API gateway according to API definitions.
+- Continuous Integration
+  - JUnit and Jenkins for automated testing.
+  - The code is packaged into a Docker image and deployed as microservices.
+<img src="images/PreProduction.jpg" >
+
+### Production
+- Load balancers
+  - NGinx is a common choice for load balancers
+  - Cloudflare provides CDN (Content Delivery Network).
+- API Gateway
+  - We can use spring boot for the gateway, and use Eureka/Zookeeper for service discovery.
+- Cloud
+  - We have options among AWS, Microsoft Azure, or Google GCP.
+- Cache and Full-text Search 
+  - Redis is a common choice for caching key-value pairs.
+  - ElasticSearch is used for full-text search.
+- Communications 
+  - For services to talk to each other, we can use messaging infra Kafka or RPC.
+- Persistence 
+  - We can use MySQL or PostgreSQL for a relational database, and Amazon S3 for object store.
+  - We can also use Cassandra for the wide-column store if necessary.
+- Management & Monitoring 
+  - To manage so many microservices, the common Ops tools include Prometheus, Elastic Stack, and Kubernetes.
+<img src="images/Production.jpg" >
