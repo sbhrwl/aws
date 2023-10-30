@@ -48,6 +48,7 @@
   - API Gateway, Lambda scale automatically and you pay per usage
   - You can easily clone API, reproduce environments
   - Generated client SDK through Swagger integration for the API Gateway
+- [Refer challenges here](https://github.com/sbhrwl/system_design/blob/main/docs/Middleware/dapr/README.md)
 ## Securing microservices
 - The SMOC application is running on GKE cluster.
 - The cluster will run a user interface and microservices.
