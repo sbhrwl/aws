@@ -6,8 +6,8 @@
 - [Challenges with micro services](#challenges-with-micro-services)
 - [Securing microservices](#securing-microservices)
 - [Tech stack for microservices](#tech-stack-for-microservices)
-  - [Preprod](#preprod)
-  - [prod](#prod)
+  - [PreProduction](#preproduction)
+  - [Production](#production)
 ## [Overview](https://youtu.be/lTAcCNbJ7KE)
 - Each microservice has its **own data model and manages its own data**.
 - Data moves between microservices using “dumb pipes” such as an **event broker and/or a lightweight protocol like REST**.
