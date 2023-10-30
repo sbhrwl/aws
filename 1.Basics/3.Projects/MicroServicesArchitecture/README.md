@@ -1,6 +1,7 @@
 # Micro services architecture
 - [Overview](#verview)
 - [Benefits](#benefits)
+- [Best practices](#best-practices)
 - [Micro services examples](#micro-services-examples)
 - [Challenges with micro services](#challenges-with-micro-services)
 - [Securing microservices](#securing-microservices)
@@ -17,6 +18,9 @@
 - Microservices are **independently scalable**.
 - Microservices **reduce downtime through fault isolation**
 - The smaller codebase enables teams to more easily understand the code, making it simpler to maintain.
+## Best practices
+<img src="images/micro_service_best_practices.jpg">
+
 ## Micro services examples 
 - We want to switch to a micro service architecture
 - **Many services interact with each other directly using a REST API**
