@@ -1,6 +1,8 @@
 # [Choosing the Right Database](StorageOptions.pdf)
-We have a lot of managed databases on AWS to choose from. Questions to choose the right database based on your architecture:
-## How to choose a database
+- [Factors](#factors)
+- [Database Types](#database-types)
+- [Options](#options)
+## Factors
 - Nature of Data: Structured/Unstructured
 - Processing of Data: Real time/Batch
 - Types of Transactions: Write Intensive/Read Intensive
@@ -46,3 +48,5 @@ We have a lot of managed databases on AWS to choose from. Questions to choose th
   - Neptune – displays relationships between data
 - Timeseries
   - 
+## Options
+<img src="images/options.jpg">
