@@ -22,6 +22,37 @@
 - Microservices **reduce downtime through fault isolation**
 - The smaller codebase enables teams to more easily understand the code, making it simpler to maintain.
 ## Best practices
+- Single Responsibility
+  - Each microservice should have a single responsibility or purpose.
+  - This means that it should do one thing and do it well.
+  - This makes it easier to understand, develop, test, and maintain each microservice.
+- Separate Data Store
+  - Microservices should ideally have their own data storage.
+  - This can be a separate database, which is isolated from other microservices.
+  - This isolation ensures that changes or issues in one microservice's data won't affect others.
+- Asynchronous Communication
+  - Use asynchronous communication patterns, like message queues or publish-subscribe systems, to enable communication.
+  - This makes the system more resilient and decouples services from each other.
+- Containerization
+  - Use containerization technologies like Docker to package and deploy microservices.
+  - Containers provide a consistent and isolated environment for your microservices, making it easier to manage and scale them.
+- Orchestration
+  - Use container orchestration tools like Kubernetes to manage and scale your containers. Kubernetes provides features for load balancing, scaling, and monitoring, making it a great choice for orchestrating microservices.
+- Build and Deploy Separation
+  - Keep the build and deployment processes separate.
+  - This means that the build process should result in a deployable artifact, like a Docker container image, which can then be deployed in different environments without modification.
+- Domain-Driven Design
+  - Apply domain-driven design principles to define your microservices' boundaries and interactions.
+  - Each microservice should represent a specific domain or business capability and have a well-defined interface.
+- Stateless
+  - Microservices should be stateless as much as possible.
+  - Any necessary state should be stored in the database or an external data store.
+  - Stateless services are easier to scale and maintain.
+- Micro Frontends
+  - If you're building a web application, consider using the micro frontends approach.
+  - This involves breaking down the user interface into smaller, independently deployable components that can be developed and maintained by separate teams.
+<img src="images/micro_service_best_practices_detailed.jpg">
+
 <img src="images/micro_service_best_practices.jpg">
 
 ## Micro services examples 
