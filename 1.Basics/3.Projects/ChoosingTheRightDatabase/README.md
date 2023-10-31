@@ -44,3 +44,5 @@ We have a lot of managed databases on AWS to choose from. Questions to choose th
   - ElasticSearch (JSON) – free text, unstructured searches
 - Graphs
   - Neptune – displays relationships between data
+- Timeseries
+  - 
