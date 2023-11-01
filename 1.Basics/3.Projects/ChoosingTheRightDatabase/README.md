@@ -47,6 +47,6 @@
 - Graphs
   - Neptune – displays relationships between data
 - Timeseries
-
+  - InfluxDB
 ## Options
 <img src="images/options.jpg">
