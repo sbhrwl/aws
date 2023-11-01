@@ -47,6 +47,6 @@
 - Graphs
   - Neptune – displays relationships between data
 - Timeseries
-  - 
+
 ## Options
 <img src="images/options.jpg">
