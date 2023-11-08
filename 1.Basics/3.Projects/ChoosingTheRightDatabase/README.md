@@ -50,3 +50,5 @@
   - InfluxDB
 ## Options
 <img src="images/options.jpg">
+
+<img src="images/options-2.jpg">
