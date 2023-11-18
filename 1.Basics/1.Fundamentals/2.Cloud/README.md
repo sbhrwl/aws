@@ -8,6 +8,8 @@
   - [Infrastructure As A Service](#infrastructure-as-a-service)
   - [Platform As A Service](#platform-as-a-service)
   - [Software As A Service](#software-as-a-service)
+  - [Container As A Service](#container-as-a-service)
+  - [Function As A Service](#function-as-a-service)
 - [Shared responsibilty](#shared-responsibilty)
 ## Cloud computing
 - Cloud computing is a way of using information technology (IT) that has these `five` equally important traits
@@ -78,5 +80,7 @@
 - Cisco WebEx
 - Concur
 - GoToMeeting
+### Container As A Service
+### Function As A Service 
 ## Shared responsibilty
 <img src="https://github.com/sbhrwl/gcp/blob/master/big_data/big_data_ml_products/images/shared_responsibilty.png">
