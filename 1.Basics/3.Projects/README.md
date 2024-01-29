@@ -69,7 +69,7 @@
 - [Blocking an IP address](BlockingIP/README.md)
 - [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
 ### HPC
-- The cloud is the perfect place to perform HPC
+- The cloud is the perfect place to perform HPC (High performance computing)
 - You can create a very high number of resources in no time
 - You can speed up time to results by adding more resources
 - You can pay only for the systems you have used
