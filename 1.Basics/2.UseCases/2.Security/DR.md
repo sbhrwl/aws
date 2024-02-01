@@ -7,8 +7,8 @@
   - Other elements, such as application servers, are loaded with application code and configurations, but are "switched off" and are only used during testing or when **disaster recovery failover is invoked**.
 - Standby
   - **Warm standby**
-    - The warm standby approach involves ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region. 
-   - This approach **extends the pilot light concept** and decreases the time to recovery because your workload is always-on in another Region
+    - The warm standby approach involves ensuring that there is a `scaled down`, but `fully functional`, copy of your production environment in another Region. 
+    - This approach **extends the pilot light concept** and decreases the time to recovery because your workload is always-on in another Region
   - **Hot standby**
     - Have instance groups exist in multiple regions, and traffic is forwarded with a global load balancer.
     - You can also implement this for data storage services like multi-regional Cloud Storage buckets and database services like Spanner and Firestore.
