@@ -5,17 +5,18 @@
   - replicate your data from one Region to another and provision a copy of your core workload infrastructure
   - Resources required to support data replication and backup, such as databases and object storage, are always on.
   - Other elements, such as application servers, are loaded with application code and configurations, but are "switched off" and are only used during testing or when **disaster recovery failover is invoked**.
-- Warm Standby
-  - The warm standby approach involves ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region. 
-  - This approach **extends the pilot light concept** and decreases the time to recovery because your workload is always-on in another Region
-  - A simple disaster recovery strategy may be to have a **cold standby**.
-    - You should create snapshots of persistent disks, machine images and data backups and store them in a multi-region storage.
+- Standby
+  - **Warm standby**
+    - The warm standby approach involves ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region. 
+   - This approach **extends the pilot light concept** and decreases the time to recovery because your workload is always-on in another Region
+  - **Hot standby**
+    - Have instance groups exist in multiple regions, and traffic is forwarded with a global load balancer.
+    - You can also implement this for data storage services like multi-regional Cloud Storage buckets and database services like Spanner and Firestore.
+  - **Cold standby**.
+    - You should create snapshots of persistent disks, machine images and data backups and store them in a **multi-region** storage.
     - Snapshots are taken that could be used to recreate the system.
     - If the main region fails, you can spin up service in the backup region using the snapshot images and persistent disks.
     - You will have to route requests to the new region, and it's vital to document and test this recovery procedure regularly.
-  - Another disaster recovery strategy is to have a **hot standby**
-    - Have instance groups exist in multiple regions, and traffic is forwarded with a global load balancer.
-    - You can also implement this for data storage services like multi-regional Cloud Storage buckets and database services like Spanner and Firestore.
 - Multi Site		
   - You can run your workload simultaneously in multiple Regions as part of a multi-site **active/active** or hot standby **active/passive** strategy.
   - Multi-site active/active serves traffic from all regions to which it is deployed, whereas hot standby serves traffic only from a single region, and the other Region(s) are only used for disaster recovery
