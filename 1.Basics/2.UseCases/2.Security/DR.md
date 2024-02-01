@@ -20,8 +20,6 @@
 - Multi Site		
   - You can run your workload simultaneously in multiple Regions as part of a multi-site **active/active** or hot standby **active/passive** strategy.
   - Multi-site active/active serves traffic from all regions to which it is deployed, whereas hot standby serves traffic only from a single region, and the other Region(s) are only used for disaster recovery
-   - Hot site
-   - Multi region
 
 ## DR tips
 - Backup
