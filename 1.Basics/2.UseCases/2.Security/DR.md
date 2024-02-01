@@ -1,5 +1,6 @@
 # Disaster Recovery
 - Backup Restore
+  - Restore from a backup
 - Pilot Light
   - replicate your data from one Region to another and provision a copy of your core workload infrastructure
   - Resources required to support data replication and backup, such as databases and object storage, are always on.
