@@ -9,6 +9,9 @@
   - replicate your data from one Region to another and provision a copy of your core workload infrastructure
   - Resources required to support data replication and backup, such as databases and object storage, are always on.
   - Other elements, such as application servers, are loaded with application code and configurations, but are "switched off" and are only used during testing or when **disaster recovery failover is invoked**.
+- Multi Site		
+  - You can run your workload simultaneously in multiple Regions as part of a multi-site **active/active** or hot standby **active/passive** strategy.
+  - Multi-site active/active serves traffic from all regions to which it is deployed, whereas hot standby serves traffic only from a single region, and the other Region(s) are only used for disaster recovery
 - Standby
   - **Warm standby**
     - The warm standby approach involves ensuring that there is a `scaled down`, but `fully functional`, copy of your production environment in another Region. 
@@ -21,9 +24,6 @@
     - Snapshots are taken that could be used to recreate the system.
     - If the main region fails, you can spin up service in the backup region using the snapshot images and persistent disks.
     - You will have to route requests to the new region, and it's vital to document and test this recovery procedure regularly.
-- Multi Site		
-  - You can run your workload simultaneously in multiple Regions as part of a multi-site **active/active** or hot standby **active/passive** strategy.
-  - Multi-site active/active serves traffic from all regions to which it is deployed, whereas hot standby serves traffic only from a single region, and the other Region(s) are only used for disaster recovery
 
 ## Tips
 - Backup
