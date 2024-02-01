@@ -1,4 +1,8 @@
 # Disaster Recovery
+- [Strategies](#strategies)
+- [Tips](#tips)
+- [Metrics for disaster recovery plan](#metrics-for-disaster-recovery-plan)
+## Strategies
 - Backup Restore
   - Restore from a backup
 - Pilot Light
@@ -21,7 +25,7 @@
   - You can run your workload simultaneously in multiple Regions as part of a multi-site **active/active** or hot standby **active/passive** strategy.
   - Multi-site active/active serves traffic from all regions to which it is deployed, whereas hot standby serves traffic only from a single region, and the other Region(s) are only used for disaster recovery
 
-## DR tips
+## Tips
 - Backup
   - EBS Snapshots, RDS automated backups / Snapshots, etc... 
   - Regular pushes to S3 / S3 IA / Glacier, Lifecycle Policy, Cross Region Replication 
@@ -42,7 +46,7 @@
   - Netflix has a "simian-army" randomly terminating EC2 
 
 ## Metrics for disaster recovery plan
-- Recovery point objective and the Recovery time objective.
+- Recovery point objective (`RPO`) and the Recovery time objective (`RTO`).
 - The recovery point objective is the **amount of data that would be acceptable to lose** and
 - The recovery time objective is **how long it can take to be back up and running**.
   - You should brainstorm scenarios that might cause data loss or service failures and build a table
