@@ -81,6 +81,8 @@
 - Concur
 - GoToMeeting
 ### Container As A Service
+- GKE
 ### Function As A Service 
+- Cloud functions 
 ## Shared responsibilty
 <img src="https://github.com/sbhrwl/gcp/blob/master/big_data/big_data_ml_products/images/shared_responsibilty.png">
