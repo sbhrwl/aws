@@ -24,6 +24,8 @@
 <img src="images/architectural_patterns.jpg">
 
 ## [Design Concepts](https://www.youtube.com/watch?v=SqcXvc3ZmRU)
+<img src="images/system_design_steps.jpg">
+
 1. Vertical scaling
 2. Horizontal Scaling
 3. Microservice Architecture
