@@ -1,4 +1,5 @@
 # Projects
+- [Typical AWS Network Architecture](TypicalAWSarchitecture/README.md)
 - [Micro services architecture](#micro-services-architecture)
 - [Web applications](#web-applications)
   - [Caching strategies](#caching-strategies)
