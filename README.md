@@ -39,9 +39,9 @@
   - Client VPN, Site to Site VPN, VPN Cloud Hub
   - On premise to AWS[Direct Connect, Direct Connect Gateway, Transit Gateway, Transit Gateway + DX  Gateway]
 - [Hybrid Storage](1.Basics/1.Fundamentals/11.Hybrid/HybridStorage/README.md)
-- FsX for Windows, Integrate with Microsoft AD
-- FsX for Lustre, Integration with S3, Hot Storage
-- Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
+  - FsX for Windows, Integrate with Microsoft AD
+  - FsX for Lustre, Integration with S3, Hot Storage
+  - Storage Gateway (File Gatweway, Volume Gateway, Tape Gateway, Hardware Appliance)
 ## Moving data to cloud
 - [Transferring Data On premise to AWS](1.Basics/2.UseCases/4.MovingDataToCloud/Snow/README.md)
   - Snowball, Snowball Edge, Snow Mobile, Snowball To Glacier
