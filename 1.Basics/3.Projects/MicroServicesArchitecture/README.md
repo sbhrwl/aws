@@ -37,7 +37,8 @@
   - Use containerization technologies like Docker to package and deploy microservices.
   - Containers provide a consistent and isolated environment for your microservices, making it easier to manage and scale them.
 - Orchestration
-  - Use container orchestration tools like Kubernetes to manage and scale your containers. Kubernetes provides features for load balancing, scaling, and monitoring, making it a great choice for orchestrating microservices.
+  - Use container orchestration tools like Kubernetes to manage and scale your containers. 
+  - Kubernetes provides features for load balancing, scaling, and monitoring, making it a great choice for orchestrating microservices.
 - Build and Deploy Separation
   - Keep the build and deployment processes separate.
   - This means that the build process should result in a deployable artifact, like a Docker container image, which can then be deployed in different environments without modification.
