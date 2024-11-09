@@ -1,13 +1,12 @@
 # Ingest data
 - Streaming data with Spark
 - On premise data with AWS services
-  - Hybrid Connections/OnPremise To AWS
-    - [Direct Connect](#direct-connect)
+  - Hybrid Connections
+    - On-premise To AWS: [Direct Connect](#direct-connect)
   - Bring On Premise data via physical means
     - Storage Gateway
     - Snow ball
     - Storage mobile
-  - DMS
   - Data Pipeline
     - [Task Runner Package for On Premise](#task-runner-package-for-on-premise)
     - Data Pipeline with Amazon Services
@@ -16,7 +15,6 @@
         - ML Use case
 - Streaming data with AWS services
   - Kinesis
-## [Spark](Spark/README.md)
 ## 1. Direct Connect
 ## 2. Storage Gateway	
 <img src="images/1.png">
