@@ -2,11 +2,12 @@
 - Streaming data with Spark
 - On premise data with AWS services
   - Hybrid Connections
-    - On-premise To AWS: [Direct Connect](#direct-connect)
+    - [Direct Connect](#direct-connect)
   - Bring On Premise data via physical means
     - Storage Gateway
     - Snow ball
     - Storage mobile
+  - Data Migration Service
   - Data Pipeline
     - [Task Runner Package for On Premise](#task-runner-package-for-on-premise)
     - Data Pipeline with Amazon Services
