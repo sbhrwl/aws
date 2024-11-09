@@ -1,5 +1,4 @@
 # Ingest data
-- Streaming data with Spark
 - On premise data with AWS services
   - Hybrid Connections
     - [Direct Connect](#direct-connect)
@@ -14,8 +13,9 @@
       - [AWS RDS](#data-pipeline-with-amazon-rds)
       - [AWS Dynamo DB](#data-pipeline-with-amazon-Dynamodb)
         - ML Use case
-- Streaming data with AWS services
-  - Kinesis
+- Streaming data
+  - Use Spark
+  - Use AWS services: Kinesis
 ## 1. Direct Connect
 ## 2. Storage Gateway	
 <img src="images/1.png">
