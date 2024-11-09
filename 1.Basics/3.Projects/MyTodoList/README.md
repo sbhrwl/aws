@@ -25,5 +25,8 @@ We want to create a mobile application with the following requirements
   - App users can directly access AWS resources this way. 
   - Pattern can be applied to DynamoDB, Lambda…
 - Caching the reads on DynamoDB using DAX
+  - Amazon DynamoDB Accelerator (DAX) 
+    - DAX is a fully managed, highly available caching service built for Amazon DynamoDB. 
+    - DAX delivers up to a 10 times performance improvement
 - Caching the REST requests at the API Gateway level
 - Security for authentication and authorization with Cognito, STS
