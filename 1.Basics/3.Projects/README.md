@@ -76,22 +76,7 @@
 - [Offloading software updates](SoftwareUpdatesOffloading/README.md)
 - [Blocking an IP address](BlockingIP/README.md)
 - [Secure file upload](https://drive.google.com/drive/u/0/folders/109yWGA_es3a9MekffBQ6s3x81o1QycPX)
-- HPC
-  <details>
-    <summary>Details</summary>
-    
-    - The cloud is the perfect place to perform HPC (High performance computing)
-    - You can create a very high number of resources in no time
-    - You can speed up time to results by adding more resources
-    - You can pay only for the systems you have used
-    - Perform genomics, computational chemistry, financial risk modeling, weather prediction, machine learning, deep learning, autonomous driving
-    - Which services help perform HPC?
-      - Elastic Fabric Adapter (EFA)
-        - Improved ENA for HPC, only works for Linux
-        - Great for inter-node communications, tightly coupled workloads
-        - Leverages Message Passing Interface (MPI) standard
-        - Bypasses the underlying Linux OS to provide low-latency, reliable transport
-  </details>
+- [HPC](https://github.com/sbhrwl/aws/blob/main/1.Basics/3.Projects/hpc/README.md)
   
 ## Miscellaneous
 - [Enrich IoT data](https://github.com/sbhrwl/system_design/blob/main/projects/ReadEventQueue/README.md)
