@@ -61,7 +61,7 @@
   - [Data Pipeline with Amazon DynamoDB](https://github.com/sbhrwl/aws/blob/main/2.AI/DataProcessing/IngestData/README.md#data-pipeline-with-amazon-dynamodb)
 ## Event driven architectures and Data analytics
 ### Bigdata analytics
-- [Basics](BigdataAnalytics/README.md)
+- [Basics](https://github.com/sbhrwl/system_design/blob/main/projects/BigdataAnalytics/README.md)
 - [AWS services for event driven architectures](https://github.com/sbhrwl/aws/blob/main/1.Basics/3.Projects/EventDrivenArchitectures/README.md)
 - [Big Data Ingestion Pipeline](BigDataIngestionPipeline/README.md)
 - [BigQuery data warehouse architecture](https://github.com/sbhrwl/gcp/blob/master/data_analytics%2FREADME.md)
