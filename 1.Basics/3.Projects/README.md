@@ -90,7 +90,7 @@
 ### Metering data analytics
 - [Enrich IoT data](https://github.com/sbhrwl/system_design/blob/main/projects/ReadEventQueue/README.md)
 - [TechStack](https://github.com/sbhrwl/system_design/blob/main/projects/TechStack/README.md)
-- [Generate Attacks](subscribeToActiveMQ/README.md)
+- [Generate Attacks](https://github.com/sbhrwl/system_design/blob/main/projects/subscribeToActiveMQ/README.md)
 - [Metering infra on cloud](MeteringInfraOnCloud/README.md)
 - [Choosing the Right Database](ChoosingTheRightDatabase/README.md)
 - [Tech companies architecture](https://www.linkedin.com/posts/rajendrauppal_softwarearchitecture-softwaredesign-softwareengineers-activity-6984804253202571264-41Ln?utm_source=share&utm_medium=member_android)
