@@ -68,7 +68,6 @@
 - [Workflow with dataflow](https://github.com/sbhrwl/gcp/blob/master/dataflow%2FREADME.md)
 ### AI on streaming data
 - [Metering AI applications](https://github.com/sbhrwl/system_design/blob/main/projects/MeteringAIApplications/README.md)
-- [Machine learning with BigQuery using SQL - BQML](https://github.com/sbhrwl/gcp/blob/master/docs/big_query/README.md#machine-learning-with-bigquery)
 - [IoT Data Processing and Analytics](https://github.com/sbhrwl/system_design/blob/main/projects/IoTDataProcessingAnalytics/README.md)
 - [DDos Attack Catcher](https://github.com/sbhrwl/system_design/blob/main/projects/DDosAttackCatcher/README.md)
 - [Product Recommendation](https://github.com/sbhrwl/system_design/blob/main/projects/ProductRecommendation/README.md)
