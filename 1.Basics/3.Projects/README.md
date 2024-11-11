@@ -10,6 +10,7 @@
 - [Moving data to cloud](#moving-data-to-cloud)
 - [Event driven architectures and Data analytics](#event-driven-architectures-and-data-analytics)
 - [Other use cases](#other-use-cases)
+- [Miscellaneous](#miscellaneous)
 
 ## Web applications
 - [3 Tier Web app](3TierWebApp/README.md)
@@ -92,7 +93,7 @@
         - Bypasses the underlying Linux OS to provide low-latency, reliable transport
   </details>
   
-### Metering data analytics
+## Miscellaneous
 - [Enrich IoT data](https://github.com/sbhrwl/system_design/blob/main/projects/ReadEventQueue/README.md)
 - [TechStack](https://github.com/sbhrwl/system_design/blob/main/projects/TechStack/README.md)
 - [Generate Attacks](https://github.com/sbhrwl/system_design/blob/main/projects/subscribeToActiveMQ/README.md)
