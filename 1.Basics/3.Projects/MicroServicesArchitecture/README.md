@@ -96,18 +96,19 @@
   - iec_connector can talk to device_hub
   - device_hub can talk to smoc_service
   - iec_connector can **not** talk to smoc_service 
--	K8 security, IP whitelisting, CORS, rate-limiting at the API gateway level. 
--	OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
--	Firewall, Network security on GCP
+- K8 security, IP whitelisting, CORS, rate-limiting at the API gateway level.
+- OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
+- Firewall, Network security on GCP
   - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
--	Limit building block API exposure
-  -	Limit building block API exposure refers to restricting or controlling access to the fundamental components or services (building blocks) of an API.
-  -	In an API context, building blocks are core functions or endpoints that provide essential functionality.
-  -	Limiting their exposure means
+- Limit building block API exposure
+  - Limit building block API exposure refers to restricting or controlling access to the fundamental components or services (building blocks) of an API.
+  - In an API context, building blocks are core functions or endpoints that provide essential functionality.
+  - Limiting their exposure means
     - **Restricting access**: Only authorized users or applications are allowed to access specific building blocks.
     - **Encapsulation**: Hiding certain internal operations or features that aren't meant to be used directly by external consumers, promoting abstraction.
     - **Security**: Preventing misuse, exploitation, or unnecessary access by external parties, which can reduce vulnerabilities.
     - **Performance**: By limiting API exposure, you can better control the load and ensure the system is not overloaded or compromised by unnecessary API calls.
+
 <img src="images/security.jpg">
 
 ```
