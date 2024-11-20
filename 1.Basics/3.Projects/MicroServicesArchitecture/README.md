@@ -99,8 +99,8 @@
 -	K8 security, IP whitelisting, CORS, rate-limiting at the API gateway level. 
 -	Limit building block API exposure
   -	`Limit building block API exposure` refers to restricting or controlling access to the fundamental components or services (building blocks) of an API.
-  -	In an API context, building blocks are core functions or endpoints that provide essential functionality. 
-  - Limiting their exposure means:
+  -	In an API context, building blocks are core functions or endpoints that provide essential functionality.
+  -	Limiting their exposure means:
     - **Restricting access**: Only authorized users or applications are allowed to access specific building blocks.
     - **Encapsulation**: Hiding certain internal operations or features that aren't meant to be used directly by external consumers, promoting abstraction.
     - **Security**: Preventing misuse, exploitation, or unnecessary access by external parties, which can reduce vulnerabilities.
