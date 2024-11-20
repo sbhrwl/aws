@@ -108,9 +108,6 @@
     - **Encapsulation**: Hiding certain internal operations or features that aren't meant to be used directly by external consumers, promoting abstraction.
     - **Security**: Preventing misuse, exploitation, or unnecessary access by external parties, which can reduce vulnerabilities.
     - **Performance**: By limiting API exposure, you can better control the load and ensure the system is not overloaded or compromised by unnecessary API calls.
-
-<img src="images/security.jpg">
-
 ```
 @startuml
 
