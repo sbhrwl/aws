@@ -100,9 +100,9 @@
 -	OWASP based dependency checker against CVEs and upgrade and/or exclude transitive dependencies.
 -	Firewall, Network security on GCP
   - The security of networking in SMOC environment relies on those of the underlying LZ, which will include Firewall rules protecting the VPC network from internal and external accesses and isolating customers.
+-	Limit building block API exposure
   -	Limit building block API exposure refers to restricting or controlling access to the fundamental components or services (building blocks) of an API.
   -	In an API context, building blocks are core functions or endpoints that provide essential functionality.
--	Limit building block API exposure
   -	Limiting their exposure means
     - **Restricting access**: Only authorized users or applications are allowed to access specific building blocks.
     - **Encapsulation**: Hiding certain internal operations or features that aren't meant to be used directly by external consumers, promoting abstraction.
