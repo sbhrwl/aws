@@ -3,6 +3,37 @@
 - [Database Types](#database-types)
 - [Options](#options)
 ## Factors
+
+| **S.No** | **Category**                  | **Details**                                  |
+|----------|-------------------------------|----------------------------------------------|
+| 1        | Nature of Data                | Structured/Unstructured                      |
+| 2        | Processing of Data            | Real time/Batch                              |
+| 3        | Types of Transactions         | Write Intensive/Read Intensive               |
+| 4        | Modification of Data          | Frequency of updates to data                 |
+| 5        | Workload Type                 | Read-heavy, write-heavy, or balanced         |
+| 6        | Throughput Needs              |                                              |
+| 7        | Scalability Requirements      | Will it change, does it need to scale or fluctuate during the day? |
+| 8        | Data Storage                  | How much data to store and for how long?     |
+| 9        | Data Growth                   | Will it grow?                                |
+| 10       | Average Object Size           |                                              |
+| 11       | Access Patterns               | How are they accessed?                       |
+| 12       | Data Durability               |                                              |
+| 13       | Source of Truth               |                                              |
+| 14       | Latency Requirements          |                                              |
+| 15       | Concurrent Users              |                                              |
+| 16       | Data Model                    |                                              |
+| 17       | Query Method                  | How will you query the data?                 |
+| 18       | Joins                         |                                              |
+| 19       | Data Structure                | Structured? Semi-Structured?                 |
+| 20       | Schema Flexibility            | Strong schema? More flexibility?             |
+| 21       | Reporting                     |                                              |
+| 22       | Search                        |                                              |
+| 23       | Database Type                 | RDBMS / NoSQL?                               |
+| 24       | License Costs                 |                                              |
+| 25       | Cloud Native DB               | Switch to Cloud Native DB such as Aurora?    |
+
+Let me know if there's anything else you need! 😊
+
 - Nature of Data: Structured/Unstructured
 - Processing of Data: Real time/Batch
 - Types of Transactions: Write Intensive/Read Intensive
