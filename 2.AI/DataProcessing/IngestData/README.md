@@ -1,11 +1,11 @@
 # Ingest data
 - On premise data with AWS services
-  - Hybrid Connections
-    - [Direct Connect](#direct-connect)
   - Bring On Premise data via physical means
     - Storage Gateway
     - Snow ball
     - Storage mobile
+  - Hybrid Connections
+    - [Direct Connect](#direct-connect)
   - Data Migration Service
   - Data Pipeline
     - [Task Runner Package for On Premise](#task-runner-package-for-on-premise)
@@ -16,20 +16,19 @@
 - Streaming data
   - Use Spark
   - Use AWS services: Kinesis
-## 1. Direct Connect
-## 2. Storage Gateway	
+## 1. Storage Gateway	
 <img src="images/1.png">
 
-## 3. Snowball
+## 2. Snowball
 <img src="images/2.png">
 
-## 4. Snowmobile
+## 3. Snowmobile
 <img src="images/3.png">
 
-## 5. SDK and CLI
+## 4. SDK and CLI
 - Software Driven architecture
 - SDK and CLI can integrate with other tools as well
-
+## 5. Direct Connect
 ## [6. Data Migration Service (DMS)](https://aws.amazon.com/blogs/big-data/loading-ongoing-data-lake-changes-with-aws-dms-and-aws-glue/)
 - Migrate Onpremise Databases to AWS
 - Enable Continuous Replication via CDC 
