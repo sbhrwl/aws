@@ -62,6 +62,20 @@ Let me know if there's anything else you need! 😊
   - Switch to Cloud Native DB such as Aurora?
 
 ## Database Types
+Here's a table for the provided information:
+
+| **S.No** | **Category**                  | **Details**                                                         |
+|----------|-------------------------------|---------------------------------------------------------------------|
+| 1        | RDBMS (= SQL / OLTP)          | RDS, Aurora – great for joins                                       |
+| 2        | NoSQL database                | DynamoDB (~JSON), ElastiCache (key/value pairs), Neptune (graphs) – no joins, no SQL |
+| 3        | Object Store                  | S3 (for big objects), Glacier (for backups/archives)                |
+| 4        | Data Warehouse (= SQL Analytics / BI) | Redshift (OLAP), Athena                                             |
+| 5        | Search                        | ElasticSearch (JSON) – free text, unstructured searches             |
+| 6        | Graphs                        | Neptune – displays relationships between data                       |
+| 7        | Timeseries                    | InfluxDB                                                            |
+
+I hope this helps! If there's anything else you'd like to add or modify, just let me know! 😊
+
 - RDBMS (= SQL / OLTP)
   - RDS, Aurora – great for joins
 - NoSQL database
