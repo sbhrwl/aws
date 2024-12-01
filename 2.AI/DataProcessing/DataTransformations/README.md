@@ -109,10 +109,8 @@
   - Apache Spark (running on the EMR cluster in this use-case) can write the output in RecorIO-Protobuf format.
   - The Glue generated ETL script can be used to load data on AWS EMR managed HIVE or SPARK table										
 ## 4. Firehose
-```
 - Firehose can transform STREAMING JSON to Parquet but cannot transform STREAMING CSV to Parquet
-- Create a streaming ETL job in AWS Glue to convert data from CSV to Apache Parquet"									
-```
+- Create a streaming ETL job in AWS Glue to convert data from CSV to Apache Parquet							
 ### 1. Firehose can transform incoming JSON data DIRECTLY to Parquet format
 - A media company needs to ingest and store a continuous stream of social media data. 
 - The source data is in JSON format. 
