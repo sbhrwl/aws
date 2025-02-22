@@ -82,8 +82,6 @@
 - [Enrich IoT data](https://github.com/sbhrwl/system_design/blob/main/projects/ReadEventQueue/README.md)
 - [TechStack](https://github.com/sbhrwl/system_design/blob/main/projects/TechStack/README.md)
 - [Generate Attacks](https://github.com/sbhrwl/system_design/blob/main/projects/subscribeToActiveMQ/README.md)
-- [Metering infra on cloud](MeteringInfraOnCloud/README.md)
-- [Metering AI applications](https://github.com/sbhrwl/system_design/blob/main/projects/MeteringAIApplications/README.md)
 - [IoT Data Processing and Analytics](https://github.com/sbhrwl/system_design/blob/main/projects/IoTDataProcessingAnalytics/README.md)
 - [DDos Attack Catcher](https://github.com/sbhrwl/system_design/blob/main/projects/DDosAttackCatcher/README.md)
 - [Product Recommendation](https://github.com/sbhrwl/system_design/blob/main/projects/ProductRecommendation/README.md)
