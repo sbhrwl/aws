@@ -85,7 +85,6 @@
 - [IoT Data Processing and Analytics](https://github.com/sbhrwl/system_design/blob/main/projects/IoTDataProcessingAnalytics/README.md)
 - [DDos Attack Catcher](https://github.com/sbhrwl/system_design/blob/main/projects/DDosAttackCatcher/README.md)
 - [Product Recommendation](https://github.com/sbhrwl/system_design/blob/main/projects/ProductRecommendation/README.md)
-- [AI-Air Conditioner](https://github.com/sbhrwl/system_design/blob/main/projects/AI-AirConditioner/AI-AirConditioner.md)
 - [Instagram Reels](https://github.com/sbhrwl/system_design/blob/main/projects/Instagram_Reels/README.md)
 - [Serverless your Machine Learning Model](https://medium.com/analytics-vidhya/serverless-your-machine-learning-model-with-pycaret-and-aws-lambda-c33334ee6011)
 - [Cloud-based Microservices Architecture at Netflix](https://medium.com/swlh/a-design-analysis-of-cloud-based-microservices-architecture-at-netflix-98836b2da45f)
