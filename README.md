@@ -7,22 +7,22 @@
 - [Distributing content](#distributing-content)
 - [Decoupling applications](#decoupling-applications)
 - [Security](#security)
-- [Monitoring and Logging](#monitoring-and-logging)
-- [DevOps](#devops)
+- [Services](#services)
 - [Storage](#storage)
 - [Databases](#databases)
 - [Data warehouse](#data-warehouse)
 - [Big data](#big-data)
 - [Datalake](#datalake)
-- [AI](#ai)
-- [Services](#services)
+- [Artificial intelligence](#artificial-intelligence)
+- [Monitoring and Logging](#monitoring-and-logging)
+- [DevOps](#devops)
 - [Support](#support)
 - [Design principals](#design-principals)
 - [Projects](#projects)
 - [Links](#links)
 ## Networking
 - [Networking fundamentals](1.Basics/1.Fundamentals/1.Networking/README.md)
-  - [Network protocols](https://github.com/sbhrwl/system_design/blob/main/docs/Security/4.CommunicationAndNetworkSecurity/NetworkProtocols.md)
+  - [Network protocols](https://github.com/sbhrwl/system_design/blob/main/docs/designprincipals/security/informationsystemsecurity/4.CommunicationAndNetworkSecurity/NetworkProtocols.md)
 - [Cloud fundamentals](1.Basics/1.Fundamentals/2.Cloud/README.md)
   - Deployment models (Public cloud, Private cloud)
   - Service models (Infrastructure As A Service, Platform As A Service, Software As A Service)
@@ -33,7 +33,7 @@
   - VPC-Defaults, NAT Gateway Vs NAT Instance, DNS-DHCP options, DNS Hostnames
   - VPC- IPv4 and IPv6 adressing (Dual Stack mode), Attaching IPv6 CIDRs to a subnet, Ephemerel Ports
   - Connection Between VPCs (VPC Endpoint (Endpoint Policy (VPC endpoint Policy for S3)), VPC Private Link, VPC Classic Link, VPC Peering, AWS Resource Access Manager, Sharing VPC resources together with VPC Peering and RAM)
-- [Security perspective - (Domain 4- Communication and Network Security )](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
+- [Security perspective - (Domain 4- Communication and Network Security )](https://github.com/sbhrwl/system_design/blob/main/docs/designprincipals/security/informationsystemsecurity/README.md)
 ## Hybrid cloud
 - [Hybrid Connections](1.Basics/1.Fundamentals/11.Hybrid/HybridConnections/README.md)
   - Client VPN, Site to Site VPN, VPN Cloud Hub
@@ -110,22 +110,8 @@
     - Cognito User Pool, Cognito Sync->AppSync,Cognito Identity Pool/Federation
 - [KMS](1.Basics/2.UseCases/2.Security/KMS.md)
   - Customer Master Key, Key Policies, You cannot store credentials in KMS
-- [Security perspective - (Domain 3- Software engineering and Domain 5- Identity and Access Management)](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
-## Monitoring and Logging
-- [Cloudwatch](1.Basics/2.UseCases/8.Monitoring/Cloudwatch.md)
-- [Cloudtrail](1.Basics/2.UseCases/8.Monitoring/Cloudtrail.md)
-  - Object Level Logging, Encryption and Cloudtrail,Cloudtrail in all Regions
-- [S3 or Server access logs](1.Basics/2.UseCases/8.Monitoring/S3accessLogs.md)
-  - S3 Access Logs Vs Cloudtrail [Logging Operations, Logging Events (Data events, Management events)]
-- [ELB access logs](1.Basics/2.UseCases/8.Monitoring/ELBaccessLogs.md)
-  - Capture information about HTTP requests, Analysing logs with EMR/Hadoop
-- [VPC Flow logs](1.Basics/2.UseCases/8.Monitoring/VPCflowLogs.md)
-- [AWS X-Ray]()
-- [AWS Inspector]()
-## DevOps
-- [DR](1.Basics/2.UseCases/2.Security/DR.md)
-- [Security perspective - (Domain 8- Software Development and Security)](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
-- [Security perspective - (Domain 7- Security Operations)](https://github.com/sbhrwl/system_design/blob/main/docs/Security/README.md)
+- [Security perspective - (Domain 3- Software engineering and Domain 5- Identity and Access Management)](https://github.com/sbhrwl/system_design/blob/main/docs/designprincipals/security/informationsystemsecurity/README.md)
+## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
 ### Storage
 - [EBS](1.Basics/1.Fundamentals/9.Storage/EBS/README.md)
   - Volume Types, Snapshots, Data Lifecycle Manager, Encryption
@@ -173,11 +159,25 @@
 - [Quicksight]()
 - [Serverless analytics](https://drive.google.com/drive/u/0/folders/1lsuWQwYVsdEnm_73_yHJQOyJuuMkNYRv)
 ## Big data
-- [Basics](https://github.com/sbhrwl/system_design/blob/main/projects/BigdataAnalytics/README.md)
+- [Basics](https://github.com/sbhrwl/system_design/blob/main/docs/analytics/BigData/README.md)
 - [EMR]()
 ## [Datalake](https://drive.google.com/drive/u/0/folders/1eVM5cPoc-SwNaWopF_Yw5hoRXpbYrPnn)
-## [AI](2.AI/README.md)
-## [Services](https://drive.google.com/drive/u/0/folders/1ePxjdA9MI5arPMNxWpaG8BslyZjZ6KIu)
+## [Artificial intelligence](2.AI/README.md)
+## Monitoring and Logging
+- [Cloudwatch](1.Basics/2.UseCases/8.Monitoring/Cloudwatch.md)
+- [Cloudtrail](1.Basics/2.UseCases/8.Monitoring/Cloudtrail.md)
+  - Object Level Logging, Encryption and Cloudtrail,Cloudtrail in all Regions
+- [S3 or Server access logs](1.Basics/2.UseCases/8.Monitoring/S3accessLogs.md)
+  - S3 Access Logs Vs Cloudtrail [Logging Operations, Logging Events (Data events, Management events)]
+- [ELB access logs](1.Basics/2.UseCases/8.Monitoring/ELBaccessLogs.md)
+  - Capture information about HTTP requests, Analysing logs with EMR/Hadoop
+- [VPC Flow logs](1.Basics/2.UseCases/8.Monitoring/VPCflowLogs.md)
+- [AWS X-Ray]()
+- [AWS Inspector]()
+## DevOps
+- [DR](1.Basics/2.UseCases/2.Security/DR.md)
+- [Security perspective - (Domain 8- Software Development and Security)](https://github.com/sbhrwl/system_design/blob/main/docs/designprincipals/security/informationsystemsecurity/README.md)
+- [Security perspective - (Domain 7- Security Operations)](https://github.com/sbhrwl/system_design/blob/main/docs/designprincipals/security/informationsystemsecurity/README.md)
 ## [Support](https://drive.google.com/drive/u/0/folders/1eOe4f4HRPdWUsEngpABwc800TvO-pH0T)
 ## [Design principals](1.Basics/2.UseCases/1.DesignPrincipals/README.md)
 - Design Principals, Design Concepts, Security Principals, Shared Controls
