@@ -54,7 +54,7 @@
 - [EC2](1.Basics/1.Fundamentals/4.EC2/README.md)
   - Connect to EC2, Security Group, Instance lifecycle, Instance family, Instance launch types
   - Dedicated host Vs instance, Spot request, ENI Vs ENA Vs EFA, Placement Groups (Enhanced_networking, vCPU-based "ON DEMAND INSTANCE limit per Region")
-- [EKS]()
+- [EKS](1.Basics/1.Fundamentals/12.EKS/README.md)
 - Serverless
   - [API Gateway](1.Basics/2.UseCases/7.Serverless/API-Gateway/README.md)
     - Endpoints [Edge Optimized (Default), Regional, Private], Throttling
